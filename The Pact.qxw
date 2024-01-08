@@ -4,15 +4,13 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>User</Author>
+  <Author>Christian Prison</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="PACER" Line="0"/>
-    <Output Plugin="MIDI" UID="MIDIOUT2 (PACER)" Line="2">
-     <PluginParameters UniverseChannels="131"/>
-    </Output>
+    <Input Plugin="MIDI" UID="None" Line="0"/>
+    <Output Plugin="MIDI" UID="None" Line="2"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -823,9 +821,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="blockSize" Value="2"/>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="Green"/>
+   <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking">
    <Fixture>
@@ -1073,13 +1071,13 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="presetSize" Value="1"/>
+   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetSize" Value="1"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1285,14 +1283,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="2"/>
+   <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="color1Index" Value="Orange"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="color1Index" Value="Orange"/>
+   <Property Name="presetSize" Value="2"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1421,7 +1419,7 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="94" Type="Chaser" Name="Down in the past 🚫">
+  <Function ID="94" Type="Chaser" Name="Down in the past 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -2429,7 +2427,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="20" Y="30" Width="940" Height="790"/>
+    <WindowState Visible="True" X="15" Y="30" Width="940" Height="790"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2518,7 +2516,7 @@
     <Shortcut Page="59" Name="Seite: 60"/>
     <PagesLoop>False</PagesLoop>
     <CueList Caption="Cue-Liste" ID="22">
-     <WindowState Visible="False" X="25" Y="100" Width="895" Height="670"/>
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2542,17 +2540,17 @@
      </Stop>
     </CueList>
     <Label Caption="All the small things" ID="0">
-     <WindowState Visible="False" X="335" Y="50" Width="240" Height="40"/>
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0,Fett</Font>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <CueList Caption="Cue-Liste" ID="23" Page="1">
-     <WindowState Visible="False" X="20" Y="100" Width="895" Height="670"/>
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="695"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2576,17 +2574,17 @@
      </Stop>
     </CueList>
     <Label Caption="Along comes Mary" ID="24" Page="1">
-     <WindowState Visible="False" X="340" Y="50" Width="240" Height="40"/>
+     <WindowState Visible="False" X="-10" Y="55" Width="950" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0,Fett</Font>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <CueList Caption="Cue-Liste" ID="25" Page="2">
-     <WindowState Visible="False" X="25" Y="105" Width="895" Height="670"/>
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2610,15 +2608,777 @@
      </Stop>
     </CueList>
     <Label Caption="Always where I need to be" ID="26" Page="2">
-     <WindowState Visible="False" X="285" Y="50" Width="370" Height="45"/>
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0,Fett</Font>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
+    <Label Caption="Animal" ID="27" Page="3">
+     <WindowState Visible="True" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Are you gonna be my girl" ID="29" Page="4">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Basket Case" ID="30" Page="5">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Boys don't cry" ID="37" Page="6">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="38" Page="7">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="39" Page="8">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="40" Page="9">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Chalsea Dagger" ID="41" Page="10">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Creep" ID="42" Page="11">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Dancing with myself" ID="43" Page="12">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Down in the past" ID="44" Page="13">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Every You Every Me" ID="45" Page="14">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Fight for your Right" ID="47" Page="15">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Fluorescent Adolescent" ID="48" Page="16">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="49" Page="17">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="50" Page="18">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="51" Page="19">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Hail to the Freaks" ID="52" Page="20">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Inside" ID="53" Page="21">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Join me in death" ID="54" Page="22">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Last Nite" ID="55" Page="23">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Lonely Boy" ID="56" Page="24">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Mr.  Brightside" ID="57" Page="25">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Narcotic" ID="58" Page="26">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="59" Page="27">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="60" Page="28">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="61" Page="29">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Rock'n'Roll Queen" ID="62" Page="30">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Run" ID="63" Page="31">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Self Esteem" ID="64" Page="32">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Seven Nation Army / Sweet Dreams" ID="65" Page="33">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Sex on Fire" ID="66" Page="34">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="She hates me" ID="67" Page="35">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Should I stay or should I go" ID="68" Page="36">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Song 2" ID="69" Page="37">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Spacelord" ID="70" Page="38">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="71" Page="39">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Teenage Dirtbag" ID="72" Page="40">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Tension" ID="73" Page="41">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="The boys of summer" ID="74" Page="42">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="The Middle" ID="75" Page="43">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="The Pretender" ID="76" Page="44">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="The Reason" ID="77" Page="45">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Today" ID="78" Page="46">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Torn" ID="79" Page="47">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="80" Page="48">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="81" Page="49">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Valerie" ID="82" Page="50">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Word up" ID="83" Page="51">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Yellow" ID="84" Page="52">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="85" Page="53">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="86" Page="54">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="87" Page="55">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="88" Page="56">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="89" Page="57">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="90" Page="58">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="untitled" ID="91" Page="59">
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+     </Appearance>
+    </Label>
+    <CueList Caption="Cue-Liste" ID="92" Page="4">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>175</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="93" Page="11">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>176</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="94" Page="12">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>177</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="95" Page="20">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>174</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="96" Page="3">
+     <WindowState Visible="True" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>90</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="97" Page="5">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>91</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="98" Page="6">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>92</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="99" Page="10">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>93</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
    </SoloFrame>
   </Frame>
   <Properties>
