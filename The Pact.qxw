@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>User</Author>
+  <Author>Christian Prison</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="PACER" Line="0"/>
-    <Output Plugin="MIDI" UID="MIDIOUT2 (PACER)" Line="2">
-     <PluginParameters UniverseChannels="131" midichannel="16"/>
-    </Output>
+    <Input Plugin="MIDI" UID="None" Line="0"/>
+    <Output Plugin="MIDI" UID="None" Line="2"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -26,9 +24,9 @@
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Expolite</Manufacturer>
-   <Model>TourSpot 50 Mini</Model>
-   <Mode>16b</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>13 Channel</Mode>
    <ID>1</ID>
    <Name>19 TourSpot</Name>
    <Universe>0</Universe>
@@ -46,9 +44,9 @@
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>lightmaXX</Manufacturer>
-   <Model>LED Par 56 10mm</Model>
-   <Mode>4 channel</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
    <ID>3</ID>
    <Name>01 LED Par56 Pete</Name>
    <Universe>0</Universe>
@@ -66,9 +64,9 @@
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Expolite</Manufacturer>
-   <Model>TourSpot 50 Mini</Model>
-   <Mode>16b</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>13 Channel</Mode>
    <ID>5</ID>
    <Name>20 TourSpot</Name>
    <Universe>0</Universe>
@@ -227,8 +225,8 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>DMX Relay (Fog)</Model>
-   <Mode>2 channel</Mode>
+   <Model>Generic</Model>
+   <Mode>2 Channel</Mode>
    <ID>21</ID>
    <Name>21 DMX Relay</Name>
    <Universe>0</Universe>
@@ -771,8 +769,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
    <Property Name="StarsAmount" Value="50"/>
+   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -823,9 +821,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
    <Property Name="blockSize" Value="2"/>
-   <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking">
    <Fixture>
@@ -1073,13 +1071,13 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="presetSize" Value="1"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="presetSize" Value="1"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="presetNumber" Value="5"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1285,14 +1283,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="color1Index" Value="Orange"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="presetNumber" Value="5"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1396,6 +1394,144 @@
    <Step Number="37" FadeIn="0" Hold="3072" FadeOut="0" Note="Chorus 6">81</Step>
    <Step Number="38" FadeIn="0" Hold="1536" FadeOut="0" Note="&quot;Punch&quot;">82</Step>
    <Step Number="39" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+  </Function>
+  <Function ID="90" Type="Chaser" Name="Animal 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="91" Type="Chaser" Name="Basket Case 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="92" Type="Chaser" Name="Boys don't cry 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="93" Type="Chaser" Name="Chelsea Dagger 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="94" Type="Chaser" Name="Down in the past 🚫">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="95" Type="Chaser" Name="Every you every me 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="96" Type="Chaser" Name="Fight for your right 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="97" Type="Chaser" Name="Fluorescent Adolescent 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="98" Type="Chaser" Name="Mr. Brightside 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="99" Type="Chaser" Name="Narcotic 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="100" Type="Chaser" Name="Rock'n'Roll Queen 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="101" Type="Chaser" Name="Run 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="102" Type="Chaser" Name="Self Esteem 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="103" Type="Chaser" Name="Seven Nation Army / Sweet Dreams 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="104" Type="Chaser" Name="Sex on Fire 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="105" Type="Chaser" Name="Should I stay or should I go 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="106" Type="Chaser" Name="Song 2 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="107" Type="Chaser" Name="Teenage Dirtbag 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="108" Type="Chaser" Name="The boys of summer 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="109" Type="Chaser" Name="The Reason 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="110" Type="Chaser" Name="Today 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="111" Type="Chaser" Name="Torn 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="112" Type="Chaser" Name="Word up 🚫" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
   <Function ID="167" Type="Scene" Name="Spot auf Bibo 🟡">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1909,7 +2045,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="965" Y="25" Width="475" Height="605"/>
+    <WindowState Visible="False" X="965" Y="25" Width="475" Height="605"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1918,7 +2054,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="07 round'n'round 🔄" ID="4" Icon="">
-     <WindowState Visible="True" X="15" Y="350" Width="145" Height="50"/>
+     <WindowState Visible="False" X="15" Y="350" Width="145" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1932,7 +2068,7 @@
      <Input Universe="0" Channel="138"/>
     </Button>
     <Button Caption="01 statisch bunt 🎉" ID="1" Icon="">
-     <WindowState Visible="True" X="15" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1946,7 +2082,7 @@
      <Input Universe="0" Channel="130"/>
     </Button>
     <Button Caption="02 slow blue 🔵" ID="6" Icon="">
-     <WindowState Visible="True" X="15" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1960,7 +2096,7 @@
      <Input Universe="0" Channel="128"/>
     </Button>
     <Button Caption="04 up'n'down ↕️" ID="7" Icon="">
-     <WindowState Visible="True" X="15" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1974,7 +2110,7 @@
      <Input Universe="0" Channel="136"/>
     </Button>
     <Button Caption="05 left'n'right ↔️" ID="8" Icon="">
-     <WindowState Visible="True" X="15" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1988,7 +2124,7 @@
      <Input Universe="0" Channel="137"/>
     </Button>
     <Button Caption="03 walking 🚶" ID="9" Icon="">
-     <WindowState Visible="True" X="15" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2002,7 +2138,7 @@
      <Input Universe="0" Channel="131"/>
     </Button>
     <Button Caption="08 swimming 🏊🏻‍" ID="10" Icon="">
-     <WindowState Visible="True" X="15" Y="405" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="405" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2016,7 +2152,7 @@
      <Input Universe="0" Channel="133"/>
     </Button>
     <Button Caption="10 Strobe ✳️" ID="11" Icon="">
-     <WindowState Visible="True" X="15" Y="505" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="505" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2030,7 +2166,7 @@
      <Input Universe="0" Channel="160"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="True" X="315" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2044,7 +2180,7 @@
      <Input Universe="0" Channel="149"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢 hot" ID="13" Icon="">
-     <WindowState Visible="True" X="315" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2058,7 +2194,7 @@
      <Input Universe="0" Channel="152"/>
     </Button>
     <Button Caption="Spot auf Bibo 🟡" ID="14" Icon="">
-     <WindowState Visible="True" X="315" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2072,7 +2208,7 @@
      <Input Universe="0" Channel="150"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️" ID="15" Icon="">
-     <WindowState Visible="True" X="315" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2086,7 +2222,7 @@
      <Input Universe="0" Channel="151"/>
     </Button>
     <Button Caption="Spot auf Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="True" X="315" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2100,7 +2236,7 @@
      <Input Universe="0" Channel="148"/>
     </Button>
     <Button Caption="16 Searchlight 🔦" ID="17" Icon="">
-     <WindowState Visible="True" X="15" Y="555" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="555" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2114,7 +2250,7 @@
      <Input Universe="0" Channel="129"/>
     </Button>
     <Button Caption="09 Alarm 🔔" ID="18" Icon="">
-     <WindowState Visible="True" X="15" Y="455" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="455" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2128,7 +2264,7 @@
      <Input Universe="0" Channel="134"/>
     </Button>
     <Button Caption="11 Stop 🛑" ID="19" Icon="">
-     <WindowState Visible="True" X="165" Y="250" Width="145" Height="95"/>
+     <WindowState Visible="False" X="165" Y="250" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2142,7 +2278,7 @@
      <Input Universe="0" Channel="135"/>
     </Button>
     <Button Caption="blackout" ID="28" Icon="">
-     <WindowState Visible="True" X="165" Y="50" Width="145" Height="95"/>
+     <WindowState Visible="False" X="165" Y="50" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2156,7 +2292,7 @@
      <Input Universe="0" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="True" X="165" Y="150" Width="145" Height="95"/>
+     <WindowState Visible="False" X="165" Y="150" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2170,7 +2306,7 @@
      <Input Universe="0" Channel="158"/>
     </Button>
     <Button Caption="06 blinking 🔆" ID="20" Icon="">
-     <WindowState Visible="True" X="15" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2184,7 +2320,7 @@
      <Input Universe="0" Channel="132"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️ hot" ID="21" Icon="">
-     <WindowState Visible="True" X="315" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2198,7 +2334,7 @@
      <Input Universe="0" Channel="153"/>
     </Button>
     <Button Caption="Fog 5s √ " ID="36" Icon="">
-     <WindowState Visible="True" X="165" Y="350" Width="145" Height="100"/>
+     <WindowState Visible="False" X="165" Y="350" Width="145" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2213,7 +2349,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="3">
-    <WindowState Visible="True" X="1195" Y="640" Width="200" Height="175"/>
+    <WindowState Visible="False" X="1195" Y="640" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2244,7 +2380,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="6">55</Function>
    </SpeedDial>
    <Label Caption="2.  Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="True" X="10" Y="675" Width="220" Height="30"/>
+    <WindowState Visible="False" X="30" Y="665" Width="220" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2254,7 +2390,7 @@
     </Appearance>
    </Label>
    <Label Caption="1.  Fixtures identifizieren" ID="33">
-    <WindowState Visible="True" X="30" Y="615" Width="175" Height="30"/>
+    <WindowState Visible="False" X="30" Y="635" Width="175" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2264,7 +2400,7 @@
     </Appearance>
    </Label>
    <Label Caption="4.  Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="True" X="35" Y="745" Width="185" Height="25"/>
+    <WindowState Visible="False" X="30" Y="725" Width="185" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2274,7 +2410,7 @@
     </Appearance>
    </Label>
    <Label Caption="3.  Offset Moving Heads in RGBMatrix anpassen" ID="35">
-    <WindowState Visible="True" X="0" Y="715" Width="315" Height="30"/>
+    <WindowState Visible="False" X="30" Y="695" Width="315" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2291,7 +2427,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="30" Y="25" Width="865" Height="605"/>
+    <WindowState Visible="False" X="30" Y="25" Width="865" Height="605"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
