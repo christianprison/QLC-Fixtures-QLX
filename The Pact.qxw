@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
@@ -9,7 +9,7 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="None" Line="0"/>
+    <Input Plugin="MIDI" UID="BandHelper" Line="0"/>
     <Output Plugin="MIDI" UID="None" Line="2"/>
    </Universe>
   </InputOutputMap>
@@ -769,8 +769,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -821,9 +821,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking">
    <Fixture>
@@ -1071,13 +1071,13 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetSize" Value="1"/>
    <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetNumber" Value="5"/>
    <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetSize" Value="1"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1283,14 +1283,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetSize" Value="2"/>
    <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="color1Index" Value="Orange"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetNumber" Value="5"/>
    <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="presetSize" Value="2"/>
+   <Property Name="color1Index" Value="Orange"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1419,11 +1419,39 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="94" Type="Chaser" Name="Down in the past 🚫" Path="Pact Songs">
+  <Function ID="94" Type="Chaser" Name="Down in the past" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="DOWN IN THE PAST">82</Step>
+   <Step Number="1" FadeIn="0" Hold="9000" FadeOut="0" Note="Intro">80</Step>
+   <Step Number="2" FadeIn="0" Hold="18000" FadeOut="0" Note="Thema">81</Step>
+   <Step Number="3" FadeIn="0" Hold="23000" FadeOut="0" Note="Verse 1">74</Step>
+   <Step Number="4" FadeIn="0" Hold="4000" FadeOut="0" Note="Bridge1">80</Step>
+   <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0">74</Step>
+   <Step Number="6" FadeIn="0" Hold="5000" FadeOut="0">78</Step>
+   <Step Number="7" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 1">80</Step>
+   <Step Number="8" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
+   <Step Number="9" FadeIn="0" Hold="9000" FadeOut="0" Note="Thema">80</Step>
+   <Step Number="10" FadeIn="0" Hold="22000" FadeOut="0" Note="Verse 2">74</Step>
+   <Step Number="11" FadeIn="0" Hold="5000" FadeOut="0" Note="Bridge">80</Step>
+   <Step Number="12" FadeIn="0" Hold="4000" FadeOut="0">74</Step>
+   <Step Number="13" FadeIn="0" Hold="4000" FadeOut="0">78</Step>
+   <Step Number="14" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 2">80</Step>
+   <Step Number="15" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
+   <Step Number="16" FadeIn="0" Hold="19000" FadeOut="0" Note="Guitar Solo">169</Step>
+   <Step Number="17" FadeIn="0" Hold="8000" FadeOut="0" Note="Bass Solo">167</Step>
+   <Step Number="18" FadeIn="0" Hold="18000" FadeOut="0" Note="Intro">74</Step>
+   <Step Number="19" FadeIn="0" Hold="9000" FadeOut="0" Note="ruhiger Teil">70</Step>
+   <Step Number="20" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 3 (ruhig)">74</Step>
+   <Step Number="21" FadeIn="0" Hold="1000" FadeOut="0">81</Step>
+   <Step Number="22" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 3">80</Step>
+   <Step Number="23" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
+   <Step Number="24" FadeIn="0" Hold="9000" FadeOut="0" Note="Thema">80</Step>
+   <Step Number="25" FadeIn="0" Hold="9000" FadeOut="0">81</Step>
+   <Step Number="26" FadeIn="0" Hold="6000" FadeOut="0" Note="Ausklang">43</Step>
+   <Step Number="27" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="95" Type="Chaser" Name="Every you every me 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1449,11 +1477,34 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="99" Type="Chaser" Name="Narcotic 🚫" Path="Pact Songs">
+  <Function ID="99" Type="Chaser" Name="Narcotic" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="10000" FadeOut="0" Note="Intro">6</Step>
+   <Step Number="2" FadeIn="0" Hold="10000" FadeOut="0">75</Step>
+   <Step Number="3" FadeIn="0" Hold="33000" FadeOut="0" Note="Verse 1">79</Step>
+   <Step Number="4" FadeIn="0" Hold="5000" FadeOut="0">80</Step>
+   <Step Number="5" FadeIn="0" Hold="19000" FadeOut="0" Note="Chorus 1">75</Step>
+   <Step Number="6" FadeIn="0" Hold="33000" FadeOut="0" Note="Verse 2">79</Step>
+   <Step Number="7" FadeIn="0" Hold="5000" FadeOut="0">80</Step>
+   <Step Number="8" FadeIn="0" Hold="19000" FadeOut="0" Note="Chorus 2">75</Step>
+   <Step Number="9" FadeIn="0" Hold="2100" FadeOut="0" Note="Verse 3 (mit Stops)">36</Step>
+   <Step Number="10" FadeIn="0" Hold="7500" FadeOut="0">79</Step>
+   <Step Number="11" FadeIn="0" Hold="2100" FadeOut="0">36</Step>
+   <Step Number="12" FadeIn="0" Hold="7500" FadeOut="0">79</Step>
+   <Step Number="13" FadeIn="0" Hold="2100" FadeOut="0">36</Step>
+   <Step Number="14" FadeIn="0" Hold="7500" FadeOut="0">79</Step>
+   <Step Number="15" FadeIn="0" Hold="2100" FadeOut="0">36</Step>
+   <Step Number="16" FadeIn="0" Hold="5000" FadeOut="0">79</Step>
+   <Step Number="17" FadeIn="0" Hold="19000" FadeOut="0" Note="Chorus 3">75</Step>
+   <Step Number="18" FadeIn="0" Hold="14250" FadeOut="0" Note="Chorus 4">80</Step>
+   <Step Number="19" FadeIn="0" Hold="1250" FadeOut="0" Note="Kadenz">43</Step>
+   <Step Number="20" FadeIn="0" Hold="1700" FadeOut="0">71</Step>
+   <Step Number="21" FadeIn="0" Hold="9000" FadeOut="0">81</Step>
+   <Step Number="22" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="100" Type="Chaser" Name="Rock'n'Roll Queen 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1527,11 +1578,27 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="112" Type="Chaser" Name="Word up 🚫" Path="Pact Songs">
+  <Function ID="112" Type="Chaser" Name="Word up" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0" Note="Intro">6</Step>
+   <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0">80</Step>
+   <Step Number="3" FadeIn="0" Hold="33000" FadeOut="0" Note="Verse 1">75</Step>
+   <Step Number="4" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 1">80</Step>
+   <Step Number="5" FadeIn="0" Hold="32000" FadeOut="0" Note="Verse 2">75</Step>
+   <Step Number="6" FadeIn="0" Hold="8000" FadeOut="0" Note="Chorus 2 (short)">80</Step>
+   <Step Number="7" FadeIn="0" Hold="17000" FadeOut="0" Note="Interlude">78</Step>
+   <Step Number="8" FadeIn="0" Hold="32000" FadeOut="0" Note="Solo Axel">6</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">81</Step>
+   <Step Number="10" FadeIn="0" Hold="5000" FadeOut="0" Note="W-O-R-D-up!">40</Step>
+   <Step Number="11" FadeIn="0" Hold="11000" FadeOut="0">81</Step>
+   <Step Number="12" FadeIn="0" Hold="32000" FadeOut="0" Note="Verse 3">80</Step>
+   <Step Number="13" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 3">81</Step>
+   <Step Number="14" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">43</Step>
+   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="167" Type="Scene" Name="Spot auf Bibo 🟡">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2045,7 +2112,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="995" Y="30" Width="475" Height="605"/>
+    <WindowState Visible="False" X="995" Y="30" Width="475" Height="605"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2054,7 +2121,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="07 round'n'round 🔄" ID="4" Icon="">
-     <WindowState Visible="True" X="15" Y="350" Width="145" Height="50"/>
+     <WindowState Visible="False" X="15" Y="350" Width="145" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2068,7 +2135,7 @@
      <Input Universe="0" Channel="138"/>
     </Button>
     <Button Caption="01 statisch bunt 🎉" ID="1" Icon="">
-     <WindowState Visible="True" X="15" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2082,7 +2149,7 @@
      <Input Universe="0" Channel="130"/>
     </Button>
     <Button Caption="02 slow blue 🔵" ID="6" Icon="">
-     <WindowState Visible="True" X="15" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2096,7 +2163,7 @@
      <Input Universe="0" Channel="128"/>
     </Button>
     <Button Caption="04 up'n'down ↕️" ID="7" Icon="">
-     <WindowState Visible="True" X="15" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2110,7 +2177,7 @@
      <Input Universe="0" Channel="136"/>
     </Button>
     <Button Caption="05 left'n'right ↔️" ID="8" Icon="">
-     <WindowState Visible="True" X="15" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2124,7 +2191,7 @@
      <Input Universe="0" Channel="137"/>
     </Button>
     <Button Caption="03 walking 🚶" ID="9" Icon="">
-     <WindowState Visible="True" X="15" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2138,7 +2205,7 @@
      <Input Universe="0" Channel="131"/>
     </Button>
     <Button Caption="08 swimming 🏊🏻‍" ID="10" Icon="">
-     <WindowState Visible="True" X="15" Y="405" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="405" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2152,7 +2219,7 @@
      <Input Universe="0" Channel="133"/>
     </Button>
     <Button Caption="10 Strobe ✳️" ID="11" Icon="">
-     <WindowState Visible="True" X="15" Y="505" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="505" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2166,7 +2233,7 @@
      <Input Universe="0" Channel="160"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="True" X="315" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2180,7 +2247,7 @@
      <Input Universe="0" Channel="149"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢 hot" ID="13" Icon="">
-     <WindowState Visible="True" X="315" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2194,7 +2261,7 @@
      <Input Universe="0" Channel="152"/>
     </Button>
     <Button Caption="Spot auf Bibo 🟡" ID="14" Icon="">
-     <WindowState Visible="True" X="315" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2208,7 +2275,7 @@
      <Input Universe="0" Channel="150"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️" ID="15" Icon="">
-     <WindowState Visible="True" X="315" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2222,7 +2289,7 @@
      <Input Universe="0" Channel="151"/>
     </Button>
     <Button Caption="Spot auf Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="True" X="315" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2236,7 +2303,7 @@
      <Input Universe="0" Channel="148"/>
     </Button>
     <Button Caption="16 Searchlight 🔦" ID="17" Icon="">
-     <WindowState Visible="True" X="15" Y="555" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="555" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2250,7 +2317,7 @@
      <Input Universe="0" Channel="129"/>
     </Button>
     <Button Caption="09 Alarm 🔔" ID="18" Icon="">
-     <WindowState Visible="True" X="15" Y="455" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="455" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2264,7 +2331,7 @@
      <Input Universe="0" Channel="134"/>
     </Button>
     <Button Caption="11 Stop 🛑" ID="19" Icon="">
-     <WindowState Visible="True" X="165" Y="250" Width="145" Height="95"/>
+     <WindowState Visible="False" X="165" Y="250" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2278,7 +2345,7 @@
      <Input Universe="0" Channel="135"/>
     </Button>
     <Button Caption="blackout" ID="28" Icon="">
-     <WindowState Visible="True" X="165" Y="50" Width="145" Height="95"/>
+     <WindowState Visible="False" X="165" Y="50" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2292,7 +2359,7 @@
      <Input Universe="0" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="True" X="165" Y="150" Width="145" Height="95"/>
+     <WindowState Visible="False" X="165" Y="150" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2306,7 +2373,7 @@
      <Input Universe="0" Channel="158"/>
     </Button>
     <Button Caption="06 blinking 🔆" ID="20" Icon="">
-     <WindowState Visible="True" X="15" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="False" X="15" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2320,7 +2387,7 @@
      <Input Universe="0" Channel="132"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️ hot" ID="21" Icon="">
-     <WindowState Visible="True" X="315" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="False" X="315" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2334,7 +2401,7 @@
      <Input Universe="0" Channel="153"/>
     </Button>
     <Button Caption="Fog 5s √ " ID="36" Icon="">
-     <WindowState Visible="True" X="165" Y="350" Width="145" Height="100"/>
+     <WindowState Visible="False" X="165" Y="350" Width="145" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2349,7 +2416,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="3">
-    <WindowState Visible="True" X="1195" Y="640" Width="200" Height="175"/>
+    <WindowState Visible="False" X="1195" Y="640" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2380,7 +2447,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="6">55</Function>
    </SpeedDial>
    <Label Caption="2.  Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="True" X="1530" Y="195" Width="220" Height="30"/>
+    <WindowState Visible="False" X="1530" Y="195" Width="220" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2390,7 +2457,7 @@
     </Appearance>
    </Label>
    <Label Caption="1.  Fixtures identifizieren" ID="33">
-    <WindowState Visible="True" X="1545" Y="90" Width="175" Height="30"/>
+    <WindowState Visible="False" X="1545" Y="90" Width="175" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2400,7 +2467,7 @@
     </Appearance>
    </Label>
    <Label Caption="4.  Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="True" X="1535" Y="365" Width="185" Height="25"/>
+    <WindowState Visible="False" X="1535" Y="365" Width="185" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2410,7 +2477,7 @@
     </Appearance>
    </Label>
    <Label Caption="3.  Offset Moving Heads in RGBMatrix anpassen" ID="35">
-    <WindowState Visible="True" X="1460" Y="315" Width="315" Height="30"/>
+    <WindowState Visible="False" X="1460" Y="315" Width="315" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2419,7 +2486,7 @@
      <Font>Default</Font>
     </Appearance>
    </Label>
-   <SoloFrame Caption="" ID="2">
+   <SoloFrame Caption="The Pact" ID="2">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2427,7 +2494,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="15" Y="30" Width="940" Height="790"/>
+    <WindowState Visible="False" X="15" Y="30" Width="940" Height="790"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2435,29 +2502,29 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="3"/>
+    <Multipage PagesNum="60" CurrentPage="13"/>
     <Next>
      <Input Universe="0" Channel="173"/>
     </Next>
     <Previous>
      <Input Universe="0" Channel="172"/>
     </Previous>
-    <Shortcut Page="0" Name="Seite: 1">
+    <Shortcut Page="0" Name="All the small things">
      <Input Universe="0" Channel="179"/>
     </Shortcut>
-    <Shortcut Page="1" Name="Seite: 2"/>
+    <Shortcut Page="1" Name="Along comes Mary"/>
     <Shortcut Page="2" Name="Seite: 3"/>
     <Shortcut Page="3" Name="Seite: 4"/>
-    <Shortcut Page="4" Name="Seite: 5"/>
+    <Shortcut Page="4" Name="Are you gonna be my girl"/>
     <Shortcut Page="5" Name="Seite: 6"/>
     <Shortcut Page="6" Name="Seite: 7"/>
     <Shortcut Page="7" Name="Seite: 8"/>
     <Shortcut Page="8" Name="Seite: 9"/>
     <Shortcut Page="9" Name="Seite: 10"/>
-    <Shortcut Page="10" Name="Seite: 11">
+    <Shortcut Page="10" Name="Chalsea Dagger">
      <Input Universe="0" Channel="174"/>
     </Shortcut>
-    <Shortcut Page="11" Name="Seite: 12"/>
+    <Shortcut Page="11" Name="Creep"/>
     <Shortcut Page="12" Name="Seite: 13"/>
     <Shortcut Page="13" Name="Seite: 14"/>
     <Shortcut Page="14" Name="Seite: 15"/>
@@ -2466,31 +2533,31 @@
     <Shortcut Page="17" Name="Seite: 18"/>
     <Shortcut Page="18" Name="Seite: 19"/>
     <Shortcut Page="19" Name="Seite: 20"/>
-    <Shortcut Page="20" Name="Seite: 21">
+    <Shortcut Page="20" Name="Hail to the freaks">
      <Input Universe="0" Channel="175"/>
     </Shortcut>
     <Shortcut Page="21" Name="Seite: 22"/>
-    <Shortcut Page="22" Name="Seite: 23"/>
-    <Shortcut Page="23" Name="Seite: 24"/>
+    <Shortcut Page="22" Name="Join me in death"/>
+    <Shortcut Page="23" Name="Last Nite"/>
     <Shortcut Page="24" Name="Seite: 25"/>
     <Shortcut Page="25" Name="Seite: 26"/>
     <Shortcut Page="26" Name="Seite: 27"/>
     <Shortcut Page="27" Name="Seite: 28"/>
     <Shortcut Page="28" Name="Seite: 29"/>
     <Shortcut Page="29" Name="Seite: 30"/>
-    <Shortcut Page="30" Name="Seite: 31">
+    <Shortcut Page="30" Name="Rock'n'Roll Queen">
      <Input Universe="0" Channel="176"/>
     </Shortcut>
     <Shortcut Page="31" Name="Seite: 32"/>
     <Shortcut Page="32" Name="Seite: 33"/>
     <Shortcut Page="33" Name="Seite: 34"/>
     <Shortcut Page="34" Name="Seite: 35"/>
-    <Shortcut Page="35" Name="Seite: 36"/>
+    <Shortcut Page="35" Name="She hates me"/>
     <Shortcut Page="36" Name="Seite: 37"/>
     <Shortcut Page="37" Name="Seite: 38"/>
     <Shortcut Page="38" Name="Seite: 39"/>
     <Shortcut Page="39" Name="Seite: 40"/>
-    <Shortcut Page="40" Name="Seite: 41">
+    <Shortcut Page="40" Name="Teenage dirtbag">
      <Input Universe="0" Channel="177"/>
     </Shortcut>
     <Shortcut Page="41" Name="Seite: 42"/>
@@ -2618,7 +2685,7 @@
      </Appearance>
     </Label>
     <Label Caption="Animal" ID="27" Page="3">
-     <WindowState Visible="True" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3284,7 +3351,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="96" Page="3">
-     <WindowState Visible="True" X="0" Y="100" Width="940" Height="690"/>
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3365,6 +3432,726 @@
       <Font>Default</Font>
      </Appearance>
      <Chaser>93</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="46" Page="13">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>94</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="100" Page="14">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>95</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="101" Page="15">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>96</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="102" Page="16">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>97</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="103" Page="21">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>87</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="104" Page="22">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>178</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="105" Page="23">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>41</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="106" Page="24">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>30</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="107" Page="25">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>98</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="108" Page="26">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>99</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="109" Page="30">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>100</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="110" Page="31">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>101</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="111" Page="32">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>102</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="112" Page="33">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>103</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="113" Page="34">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>104</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="114" Page="35">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>171</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="115" Page="36">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>105</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="116" Page="37">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>106</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="117" Page="38">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>172</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="118" Page="40">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>107</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="119" Page="41">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>56</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="120" Page="42">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>108</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="121" Page="43">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>73</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="122" Page="44">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>173</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="123" Page="45">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>109</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="124" Page="46">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>110</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="125" Page="47">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>111</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="126" Page="50">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>72</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="127" Page="51">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>112</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="0" Channel="131241"/>
+     </Next>
+     <Previous>
+      <Input Universe="0" Channel="131240"/>
+     </Previous>
+     <Playback>
+      <Input Universe="0" Channel="131243"/>
+     </Playback>
+     <Stop>
+      <Input Universe="0" Channel="131242"/>
+     </Stop>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="128" Page="52">
+     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>24</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="0" Channel="131241"/>
