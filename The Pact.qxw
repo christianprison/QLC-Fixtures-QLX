@@ -1651,11 +1651,25 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="101" Type="Chaser" Name="Run 🚫" Path="Pact Songs">
+  <Function ID="101" Type="Chaser" Name="Run ❗️" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="10" FadeOut="0" Note="Intro Pete">86</Step>
+   <Step Number="2" FadeIn="0" Hold="14000" FadeOut="0">40</Step>
+   <Step Number="3" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro alle 14s">70</Step>
+   <Step Number="4" FadeIn="0" Hold="50000" FadeOut="0" Note="Verse 1 26s">74</Step>
+   <Step Number="5" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 1 1:16">79</Step>
+   <Step Number="6" FadeIn="0" Hold="12500" FadeOut="0" Note="Interlude 2:07">70</Step>
+   <Step Number="7" FadeIn="0" Hold="12500" FadeOut="0" Note="Verse 2 - Stop 2:19:500">86</Step>
+   <Step Number="8" FadeIn="0" Hold="12000" FadeOut="0" Note="Verse 2 2:32">74</Step>
+   <Step Number="9" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 2:44">79</Step>
+   <Step Number="10" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Guitar Solo 3:35">6</Step>
+   <Step Number="11" FadeIn="0" Hold="50000" FadeOut="0" Note="Chorus 3 5:15">79</Step>
+   <Step Number="12" FadeIn="0" Hold="25000" FadeOut="0" Note="Outro 6:05">86</Step>
+   <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0" Note="Ende 6.30">36</Step>
   </Function>
   <Function ID="102" Type="Chaser" Name="Self Esteem 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
