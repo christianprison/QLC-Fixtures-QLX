@@ -1720,30 +1720,28 @@
    <Step Number="18" FadeIn="0" Hold="10000" FadeOut="0" Note="[3:45]">71</Step>
    <Step Number="19" FadeIn="0" Hold="5000" FadeOut="0" Note="[4:02]">36</Step>
   </Function>
-  <Function ID="109" Type="Chaser" Name="The Reason 🚫" Path="Pact Songs">
+  <Function ID="109" Type="Chaser" Name="The Reason" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">167</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">168</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">6</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">74</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">76</Step>
-   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">74</Step>
-   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">74</Step>
-   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">76</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">74</Step>
-   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">77</Step>
-   <Step Number="11" FadeIn="0" Hold="10000" FadeOut="0">37</Step>
-   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">79</Step>
-   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">83</Step>
-   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">74</Step>
-   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">76</Step>
-   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">80</Step>
-   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0">83</Step>
-   <Step Number="18" FadeIn="0" Hold="0" FadeOut="0">36</Step>
+   <Step Number="1" FadeIn="0" Hold="3000" FadeOut="0" Note="Intro (Bass hoch) 16s">167</Step>
+   <Step Number="2" FadeIn="0" Hold="3000" FadeOut="0" Note="19s">168</Step>
+   <Step Number="3" FadeIn="0" Hold="6000" FadeOut="0" Note="22s">6</Step>
+   <Step Number="4" FadeIn="0" Hold="34000" FadeOut="0" Note="Verse 1 28s">74</Step>
+   <Step Number="5" FadeIn="0" Hold="13000" FadeOut="0" Note="Chorus 1 1:02">76</Step>
+   <Step Number="6" FadeIn="0" Hold="35000" FadeOut="0" Note="Verse 2 1:25">74</Step>
+   <Step Number="7" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 2 2:00">76</Step>
+   <Step Number="8" FadeIn="0" Hold="10" FadeOut="0" Note="Interlude 2:23">78</Step>
+   <Step Number="9" FadeIn="0" Hold="10000" FadeOut="0">37</Step>
+   <Step Number="10" FadeIn="0" Hold="14000" FadeOut="0">78</Step>
+   <Step Number="11" FadeIn="0" Hold="11500" FadeOut="0" Note="Verse 3a Drums Stop 2:47">83</Step>
+   <Step Number="12" FadeIn="0" Hold="11500" FadeOut="0" Note="Verse 3b normal 2:58">74</Step>
+   <Step Number="13" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 3 3:10">76</Step>
+   <Step Number="14" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 4 3:33">80</Step>
+   <Step Number="15" FadeIn="0" Hold="8000" FadeOut="0" Note="Ausklang 3:56">70</Step>
+   <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="110" Type="Chaser" Name="Today 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
