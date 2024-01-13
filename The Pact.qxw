@@ -1672,11 +1672,31 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="108" Type="Chaser" Name="The boys of summer 🚫" Path="Pact Songs">
+  <Function ID="108" Type="Chaser" Name="The boys of summer " Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="5000" FadeOut="0" Note="Intro">43</Step>
+   <Step Number="2" FadeIn="0" Hold="21000" FadeOut="0" Note="[26s]">70</Step>
+   <Step Number="3" FadeIn="0" Hold="19000" FadeOut="0" Note="Verse 1">79</Step>
+   <Step Number="4" FadeIn="0" Hold="20000" FadeOut="0" Note="Chorus 1 [45s]">80</Step>
+   <Step Number="5" FadeIn="0" Hold="20000" FadeOut="0" Note="Interlude [1:05]">77</Step>
+   <Step Number="6" FadeIn="0" Hold="20000" FadeOut="0" Note="Verse 2 [1:25]">74</Step>
+   <Step Number="7" FadeIn="0" Hold="20000" FadeOut="0" Note="Chorus 2 [1:45]">80</Step>
+   <Step Number="8" FadeIn="0" Hold="10000" FadeOut="0" Note="Interlude [2:05]">70</Step>
+   <Step Number="9" FadeIn="0" Hold="21000" FadeOut="0" Note="Guitar Solo [2:15]">169</Step>
+   <Step Number="10" FadeIn="0" Hold="10000" FadeOut="0" Note="Verse 3 [2:36]">79</Step>
+   <Step Number="11" FadeIn="0" Hold="7500" FadeOut="0">77</Step>
+   <Step Number="12" FadeIn="0" Hold="2500" FadeOut="0" Note="Stop [2:54]">71</Step>
+   <Step Number="13" FadeIn="0" Hold="20000" FadeOut="0" Note="Chorus 3 [2:56]">80</Step>
+   <Step Number="14" FadeIn="0" Hold="20000" FadeOut="0" Note="Chours 4 [3:16]">81</Step>
+   <Step Number="15" FadeIn="0" Hold="3000" FadeOut="0" Note="Outro [3:36]">43</Step>
+   <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0" Note="[3:39]">71</Step>
+   <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0" Note="[3:42]">31</Step>
+   <Step Number="18" FadeIn="0" Hold="10000" FadeOut="0" Note="[3:45]">71</Step>
+   <Step Number="19" FadeIn="0" Hold="5000" FadeOut="0" Note="[4:02]">36</Step>
   </Function>
   <Function ID="109" Type="Chaser" Name="The Reason 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2124,7 +2144,8 @@
    <Step Number="94" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="95" FadeIn="0" Hold="600" FadeOut="0">43</Step>
    <Step Number="96" FadeIn="0" Hold="600" FadeOut="0">36</Step>
-   <Step Number="97" FadeIn="0" Hold="0" FadeOut="0">71</Step>
+   <Step Number="97" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
+   <Step Number="98" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="176" Type="Chaser" Name="Creep" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
