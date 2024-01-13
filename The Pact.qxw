@@ -452,11 +452,11 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="1" Type="Scene" Name="04 Strip VL" Path="identify fixtures">
+  <Function ID="1" Type="Scene" Name="04 Strip VL" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="13">3,255</FixtureVal>
   </Function>
-  <Function ID="2" Type="Scene" Name="Heads White" Path="Heads Colors">
+  <Function ID="2" Type="Scene" Name="Heads White" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,0,6,0,7,129,8,45,9,255</FixtureVal>
    <FixtureVal ID="5">5,0,6,0,7,129,8,45,9,255</FixtureVal>
@@ -504,7 +504,7 @@
    <FixtureVal ID="2">1,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="15">1,255</FixtureVal>
   </Function>
-  <Function ID="7" Type="Scene" Name="10 Strip Tim L" Path="identify fixtures">
+  <Function ID="7" Type="Scene" Name="10 Strip Tim L" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="14">3,255</FixtureVal>
   </Function>
@@ -539,27 +539,27 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
   </Function>
-  <Function ID="13" Type="Scene" Name="06 Strip Axel" Path="identify fixtures">
+  <Function ID="13" Type="Scene" Name="06 Strip Axel" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="15">3,255</FixtureVal>
   </Function>
-  <Function ID="14" Type="Scene" Name="08 Strip HL" Path="identify fixtures">
+  <Function ID="14" Type="Scene" Name="08 Strip HL" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="16">3,255</FixtureVal>
   </Function>
-  <Function ID="15" Type="Scene" Name="12 Strip Tim R" Path="identify fixtures">
+  <Function ID="15" Type="Scene" Name="12 Strip Tim R" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17">3,255</FixtureVal>
   </Function>
-  <Function ID="16" Type="Scene" Name="14 Strip HR" Path="identify fixtures">
+  <Function ID="16" Type="Scene" Name="14 Strip HR" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="20">3,255</FixtureVal>
   </Function>
-  <Function ID="17" Type="Scene" Name="18 Strip Bibo" Path="identify fixtures">
+  <Function ID="17" Type="Scene" Name="18 Strip Bibo" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="19">3,255</FixtureVal>
   </Function>
-  <Function ID="18" Type="Scene" Name="22 Strip Pete" Path="identify fixtures">
+  <Function ID="18" Type="Scene" Name="22 Strip Pete" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="18">3,255</FixtureVal>
   </Function>
@@ -588,7 +588,7 @@
    <Step Number="0">19</Step>
    <Step Number="1">55</Step>
   </Function>
-  <Function ID="23" Type="Scene" Name="Heads up" Path="Heads Movement">
+  <Function ID="23" Type="Scene" Name="Heads up" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,37,1,127,2,200,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
    <FixtureVal ID="5">0,37,1,127,2,200,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
@@ -613,7 +613,7 @@
    <Step Number="12" FadeIn="0" Hold="16000" FadeOut="0" Note="Outro">86</Step>
    <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="25" Type="Scene" Name="Heads down" Path="Heads Movement">
+  <Function ID="25" Type="Scene" Name="Heads down" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,37,1,127,2,127,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
    <FixtureVal ID="5">0,37,1,127,2,127,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
@@ -748,7 +748,7 @@
    <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">71</Step>
    <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="42" Type="Scene" Name="White all except backlight" Path="RGB Colors">
+  <Function ID="42" Type="Scene" Name="White all except backlight" Path="ZZZ RGB Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="0">0,253,1,255,2,255,3,251</FixtureVal>
@@ -783,7 +783,7 @@
    <FixtureVal ID="1">0,110,2,32,4,0,5,0,6,0,8,46,9,255,11,30</FixtureVal>
    <FixtureVal ID="5">0,110,2,32,4,0,5,0,6,0,8,46,9,255,11,30</FixtureVal>
   </Function>
-  <Function ID="44" Type="Scene" Name="statisch bunt" Path="RGB Colors">
+  <Function ID="44" Type="Scene" Name="statisch bunt" Path="ZZZ RGB Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,255,1,0,2,0,3,255</FixtureVal>
    <FixtureVal ID="0">0,255,1,0,2,255,3,0</FixtureVal>
@@ -796,17 +796,17 @@
    <FixtureVal ID="10">0,255,1,0,2,147,3,255,4,0,5,0</FixtureVal>
    <FixtureVal ID="4">0,0,1,162,2,255,3,0,4,0</FixtureVal>
   </Function>
-  <Function ID="45" Type="Scene" Name="Heads Publikum" Path="Heads Movement">
+  <Function ID="45" Type="Scene" Name="Heads Publikum" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,37,1,127,2,230,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
    <FixtureVal ID="5">0,37,1,127,2,230,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
   </Function>
-  <Function ID="46" Type="Scene" Name="Heads cross" Path="Heads Movement">
+  <Function ID="46" Type="Scene" Name="Heads cross" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,68,1,126,2,180,3,126,4,0,5,0,6,0,7,0,8,255,9,16,10,0,11,0,12,0</FixtureVal>
    <FixtureVal ID="5">0,16,1,127,2,180,3,127,4,0,5,0,6,0,7,0,8,255,9,23,10,0,11,0,12,0</FixtureVal>
   </Function>
-  <Function ID="47" Type="Scene" Name="Heads blue and red" Path="Heads Colors">
+  <Function ID="47" Type="Scene" Name="Heads blue and red" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,16,6,0,7,129,9,255,11,154</FixtureVal>
    <FixtureVal ID="5">5,37,6,0,7,129,9,255,11,154</FixtureVal>
@@ -822,7 +822,7 @@
    <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
   </Function>
-  <Function ID="49" Type="Scene" Name="Heads blue" Path="Heads Colors">
+  <Function ID="49" Type="Scene" Name="Heads blue" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
    <FixtureVal ID="5">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
@@ -911,7 +911,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="53" Type="Scene" Name="Heads Rainbow static" Path="Heads Colors">
+  <Function ID="53" Type="Scene" Name="Heads Rainbow static" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,168,6,0,8,45,9,255,11,0</FixtureVal>
    <FixtureVal ID="5">5,168,6,0,8,45,9,255,11,0</FixtureVal>
@@ -1036,7 +1036,7 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
   </Function>
-  <Function ID="60" Type="Scene" Name="Heads Rainbow blinking" Path="Heads Colors">
+  <Function ID="60" Type="Scene" Name="Heads Rainbow blinking" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,180,6,0,8,157,9,255,11,0</FixtureVal>
    <FixtureVal ID="5">5,168,6,0,8,157,9,255,11,0</FixtureVal>
@@ -1199,12 +1199,12 @@
    <FixtureGroup>4</FixtureGroup>
    <Property Name="frequency" Value="2"/>
   </Function>
-  <Function ID="67" Type="Scene" Name="Heads white strobe" Path="Heads Colors">
+  <Function ID="67" Type="Scene" Name="Heads white strobe" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,0,6,0,8,93,9,255,11,35</FixtureVal>
    <FixtureVal ID="5">5,0,6,0,8,93,9,255,11,35</FixtureVal>
   </Function>
-  <Function ID="68" Type="Scene" Name="07 LED Pot Backlight L" Path="identify fixtures">
+  <Function ID="68" Type="Scene" Name="07 LED Pot Backlight L" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="6">0,255,1,255,2,255,3,255,4,255</FixtureVal>
   </Function>
@@ -1342,7 +1342,7 @@
    <Property Name="presetSize" Value="2"/>
    <Property Name="color5Index" Value="Yellow"/>
   </Function>
-  <Function ID="85" Type="Scene" Name="Heads purple" Path="Heads Colors">
+  <Function ID="85" Type="Scene" Name="Heads purple" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,90,6,0,9,255</FixtureVal>
    <FixtureVal ID="5">5,90,6,0,9,255</FixtureVal>
@@ -1457,11 +1457,33 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="92" Type="Chaser" Name="Boys don't cry 🚫" Path="Pact Songs">
+  <Function ID="92" Type="Chaser" Name="Boys don't cry" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="1500" FadeOut="0" Note="2s">43</Step>
+   <Step Number="2" FadeIn="0" Hold="1500" FadeOut="0">71</Step>
+   <Step Number="3" FadeIn="0" Hold="1500" FadeOut="0">43</Step>
+   <Step Number="4" FadeIn="0" Hold="1500" FadeOut="0">36</Step>
+   <Step Number="5" FadeIn="0" Hold="15000" FadeOut="0" Note="Thema 8s">80</Step>
+   <Step Number="6" FadeIn="0" Hold="6000" FadeOut="0" Note="23s">71</Step>
+   <Step Number="7" FadeIn="0" Hold="4000" FadeOut="1000" Note="Verse 1 29s">74</Step>
+   <Step Number="8" FadeIn="0" Hold="12000" FadeOut="0" Note="34s">86</Step>
+   <Step Number="9" FadeIn="0" Hold="11000" FadeOut="0" Note="46s">80</Step>
+   <Step Number="10" FadeIn="0" Hold="11000" FadeOut="0" Note="57s">79</Step>
+   <Step Number="11" FadeIn="0" Hold="12000" FadeOut="0" Note="Bridge 1 1:08">70</Step>
+   <Step Number="12" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 1 1:20">80</Step>
+   <Step Number="13" FadeIn="0" Hold="19000" FadeOut="0" Note="Verse 2 1:41">168</Step>
+   <Step Number="14" FadeIn="0" Hold="11000" FadeOut="0" Note="Interlude 2:00">81</Step>
+   <Step Number="15" FadeIn="0" Hold="11000" FadeOut="0" Note="Verse 3 2:11">79</Step>
+   <Step Number="16" FadeIn="0" Hold="22000" FadeOut="0" Note="Chorus 2 2:22">80</Step>
+   <Step Number="17" FadeIn="0" Hold="2000" FadeOut="0" Note="Ende 2:44">43</Step>
+   <Step Number="18" FadeIn="0" Hold="2000" FadeOut="0" Note="2:46">71</Step>
+   <Step Number="19" FadeIn="0" Hold="2000" FadeOut="0" Note="2:48">43</Step>
+   <Step Number="20" FadeIn="0" Hold="5000" FadeOut="0" Note="2:50">71</Step>
+   <Step Number="21" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="93" Type="Chaser" Name="Chelsea Dagger 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2237,11 +2259,11 @@
    <Step Number="43" FadeIn="0" Hold="5000" FadeOut="0" Note="Ausklang">43</Step>
    <Step Number="44" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="179" Type="Scene" Name="19 TourSpot" Path="identify fixtures">
+  <Function ID="179" Type="Scene" Name="19 TourSpot" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,134,2,137,4,225,5,11,8,106,9,255,10,0</FixtureVal>
   </Function>
-  <Function ID="180" Type="Scene" Name="20 TourSpot" Path="identify fixtures">
+  <Function ID="180" Type="Scene" Name="20 TourSpot" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="5">0,134,2,130,5,0,8,105,9,255</FixtureVal>
   </Function>
