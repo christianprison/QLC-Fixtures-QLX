@@ -1991,11 +1991,45 @@
    <Step Number="12" FadeIn="0" Hold="25000" FadeOut="0" Note="Outro 6:05">86</Step>
    <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0" Note="Ende 6.30">36</Step>
   </Function>
-  <Function ID="102" Type="Chaser" Name="Self Esteem 🚫" Path="Pact Songs">
+  <Function ID="102" Type="Chaser" Name="Self Esteem" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="9000" FadeOut="0" Note="Intro 5s">75</Step>
+   <Step Number="2" FadeIn="0" Hold="4500" FadeOut="0" Note="Übergang 14s">77</Step>
+   <Step Number="3" FadeIn="0" Hold="8000" FadeOut="0" Note="Bass Solo 18s">167</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0" Note="Hits 27s">43</Step>
+   <Step Number="5" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 1 28s">75</Step>
+   <Step Number="6" FadeIn="0" Hold="1500" FadeOut="0" Note="Hits 45s">43</Step>
+   <Step Number="7" FadeIn="0" Hold="18500" FadeOut="0" Note="Verse 2 46s">75</Step>
+   <Step Number="8" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 1 1:05">80</Step>
+   <Step Number="9" FadeIn="0" Hold="19000" FadeOut="0" Note="Verse 3 1:21">75</Step>
+   <Step Number="10" FadeIn="0" Hold="17500" FadeOut="0" Note="Chorus 2 1:40">80</Step>
+   <Step Number="11" FadeIn="0" Hold="7500" FadeOut="0" Note="Interlude 1:57">78</Step>
+   <Step Number="12" FadeIn="0" Hold="1000" FadeOut="0" Note="Snare 2:05">81</Step>
+   <Step Number="13" FadeIn="0" Hold="8000" FadeOut="0" Note="Interlude ctd. 2:06">78</Step>
+   <Step Number="14" FadeIn="0" Hold="1000" FadeOut="0" Note="Snare 2:14">81</Step>
+   <Step Number="15" FadeIn="0" Hold="8000" FadeOut="0" Note="Interlude ctd. 2:15">78</Step>
+   <Step Number="16" FadeIn="0" Hold="1000" FadeOut="0" Note="Snare 2:24">81</Step>
+   <Step Number="17" FadeIn="0" Hold="4500" FadeOut="0" Note="Interlude ctd. 2:25">78</Step>
+   <Step Number="18" FadeIn="0" Hold="4500" FadeOut="0" Note="Übergang 2:30">77</Step>
+   <Step Number="19" FadeIn="0" Hold="8000" FadeOut="0" Note="Basssolo 2:35">167</Step>
+   <Step Number="20" FadeIn="0" Hold="1000" FadeOut="0" Note="Hits 2:43">43</Step>
+   <Step Number="21" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 4 2:44">75</Step>
+   <Step Number="22" FadeIn="0" Hold="1000" FadeOut="0" Note="Hits 3:01">43</Step>
+   <Step Number="23" FadeIn="0" Hold="19000" FadeOut="0" Note="Verse 5 3:02">75</Step>
+   <Step Number="24" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 3 3:21">80</Step>
+   <Step Number="25" FadeIn="0" Hold="7500" FadeOut="0" Note="Interlude 3:37">78</Step>
+   <Step Number="26" FadeIn="0" Hold="1000" FadeOut="0" Note="Snare 3:45">81</Step>
+   <Step Number="27" FadeIn="0" Hold="8000" FadeOut="0" Note="Interlude ctd. 3:46">78</Step>
+   <Step Number="28" FadeIn="0" Hold="1000" FadeOut="0" Note="Snare 3:54">81</Step>
+   <Step Number="29" FadeIn="0" Hold="8000" FadeOut="0" Note="Interlude ctd. 3:55">78</Step>
+   <Step Number="30" FadeIn="0" Hold="1000" FadeOut="0" Note="Snare 4:03">81</Step>
+   <Step Number="31" FadeIn="0" Hold="4500" FadeOut="0" Note="Interlude ctd. 4:04">78</Step>
+   <Step Number="32" FadeIn="0" Hold="4500" FadeOut="0" Note="Übergang 4:09">77</Step>
+   <Step Number="33" FadeIn="0" Hold="0" FadeOut="0" Note="Ende 4:14">36</Step>
   </Function>
   <Function ID="103" Type="Chaser" Name="Seven Nation Army / Sweet Dreams 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
