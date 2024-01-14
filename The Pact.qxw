@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>Christian Prison</Author>
+  <Author>User</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="None" Line="0"/>
-    <Output Plugin="MIDI" UID="None" Line="2"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AU0K2FP2)" Line="0">
+     <PluginParameters UniverseChannels="196"/>
+    </Output>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -24,9 +26,9 @@
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>13 Channel</Mode>
+   <Manufacturer>Expolite</Manufacturer>
+   <Model>TourSpot 50 Mini</Model>
+   <Mode>16b</Mode>
    <ID>1</ID>
    <Name>19 TourSpot</Name>
    <Universe>0</Universe>
@@ -64,9 +66,9 @@
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>13 Channel</Mode>
+   <Manufacturer>Expolite</Manufacturer>
+   <Model>TourSpot 50 Mini</Model>
+   <Mode>16b</Mode>
    <ID>5</ID>
    <Name>20 TourSpot</Name>
    <Universe>0</Universe>
@@ -225,8 +227,8 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>2 Channel</Mode>
+   <Model>DMX Relay (Fog)</Model>
+   <Mode>2 channel</Mode>
    <ID>21</ID>
    <Name>21 DMX Relay</Name>
    <Universe>0</Universe>
@@ -544,7 +546,7 @@
    <FixtureVal ID="2">1,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="15">1,255</FixtureVal>
   </Function>
-  <Function ID="7" Type="Scene" Name="10 Strip Tim L" Path="ZZZ identify fixtures">
+  <Function ID="7" Type="Scene" Name="10 Strip Tim L">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="14">3,255</FixtureVal>
   </Function>
@@ -587,7 +589,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="16">3,255</FixtureVal>
   </Function>
-  <Function ID="15" Type="Scene" Name="12 Strip Tim R" Path="ZZZ identify fixtures">
+  <Function ID="15" Type="Scene" Name="12 Strip Tim R">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17">3,255</FixtureVal>
   </Function>
@@ -1396,13 +1398,13 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="presetSize" Value="1"/>
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetSize" Value="1"/>
-   <Property Name="color5Index" Value="Orange"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1648,14 +1650,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="presetSize" Value="2"/>
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="color5Index" Value="Yellow"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2221,6 +2223,14 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="26">0,31,1,30,2,6,3,4,4,0,5,132,6,0,7,128,9,128</FixtureVal>
   </Function>
+  <Function ID="118" Type="Scene" Name="02 LED Pot Axel" Path="ZZZ identify fixtures">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">3,247</FixtureVal>
+  </Function>
+  <Function ID="119" Type="Scene" Name="11 LED Pot Backlight R" Path="ZZZ identify fixtures">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,255,1,255,2,255,3,255</FixtureVal>
+  </Function>
   <Function ID="167" Type="Scene" Name="Spot auf Bibo 🟡">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="19">0,255,1,255</FixtureVal>
@@ -2708,11 +2718,11 @@
   </Function>
   <Function ID="179" Type="Scene" Name="19 TourSpot" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,134,2,137,4,225,5,11,8,106,9,255,10,0</FixtureVal>
+   <FixtureVal ID="1">0,136,2,137,4,225,5,11,8,106,9,255,10,0</FixtureVal>
   </Function>
   <Function ID="180" Type="Scene" Name="20 TourSpot" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">0,134,2,130,5,0,8,105,9,255</FixtureVal>
+   <FixtureVal ID="5">0,117,2,184,5,0,8,150,9,255</FixtureVal>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
