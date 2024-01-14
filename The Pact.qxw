@@ -2037,12 +2037,50 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="104" Type="Chaser" Name="Sex on Fire 🚫" Path="Pact Songs">
+  <Function ID="104" Type="Chaser" Name="Sex on Fire" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0" Note="Intro 5s">6</Step>
+   <Step Number="2" FadeIn="0" Hold="18000" FadeOut="0" Note="alle 13s">70</Step>
+   <Step Number="3" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 1 31s">74</Step>
+   <Step Number="4" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 1 44s">79</Step>
+   <Step Number="5" FadeIn="0" Hold="12000" FadeOut="0" Note="Chorus 1 57s">80</Step>
+   <Step Number="6" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 2 1:09">74</Step>
+   <Step Number="7" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 2 1:22">79</Step>
+   <Step Number="8" FadeIn="0" Hold="25000" FadeOut="0" Note="Chorus 2 1:35">80</Step>
+   <Step Number="9" FadeIn="0" Hold="12000" FadeOut="0" Note="Verse 3 2:00">74</Step>
+   <Step Number="10" FadeIn="0" Hold="12000" FadeOut="0" Note="Verse 3 2:12">79</Step>
+   <Step Number="11" FadeIn="0" Hold="25000" FadeOut="0" Note="Chorus 3 2:24">80</Step>
+   <Step Number="12" FadeIn="0" Hold="760" FadeOut="0" Note="Stops 2:49">81</Step>
+   <Step Number="13" FadeIn="0" Hold="760" FadeOut="0" Note="2:51">36</Step>
+   <Step Number="14" FadeIn="0" Hold="760" FadeOut="0" Note="2:52">81</Step>
+   <Step Number="15" FadeIn="0" Hold="760" FadeOut="0" Note="2:53">36</Step>
+   <Step Number="16" FadeIn="0" Hold="760" FadeOut="0" Note="2:53">81</Step>
+   <Step Number="17" FadeIn="0" Hold="760" FadeOut="0">36</Step>
+   <Step Number="18" FadeIn="0" Hold="380" FadeOut="0">81</Step>
+   <Step Number="19" FadeIn="0" Hold="380" FadeOut="0">36</Step>
+   <Step Number="20" FadeIn="0" Hold="380" FadeOut="0">81</Step>
+   <Step Number="21" FadeIn="0" Hold="380" FadeOut="0">36</Step>
+   <Step Number="22" FadeIn="0" Hold="6500" FadeOut="0">6</Step>
+   <Step Number="23" FadeIn="0" Hold="760" FadeOut="0" Note="Stops 2:49">81</Step>
+   <Step Number="24" FadeIn="0" Hold="760" FadeOut="0" Note="2:51">36</Step>
+   <Step Number="25" FadeIn="0" Hold="760" FadeOut="0" Note="2:52">81</Step>
+   <Step Number="26" FadeIn="0" Hold="760" FadeOut="0" Note="2:53">36</Step>
+   <Step Number="27" FadeIn="0" Hold="760" FadeOut="0" Note="2:53">81</Step>
+   <Step Number="28" FadeIn="0" Hold="760" FadeOut="0">36</Step>
+   <Step Number="29" FadeIn="0" Hold="380" FadeOut="0">81</Step>
+   <Step Number="30" FadeIn="0" Hold="380" FadeOut="0">36</Step>
+   <Step Number="31" FadeIn="0" Hold="380" FadeOut="0">81</Step>
+   <Step Number="32" FadeIn="0" Hold="380" FadeOut="0">36</Step>
+   <Step Number="33" FadeIn="0" Hold="10" FadeOut="0">168</Step>
+   <Step Number="34" FadeIn="0" Hold="5000" FadeOut="0">40</Step>
+   <Step Number="35" FadeIn="0" Hold="1500" FadeOut="0">170</Step>
+   <Step Number="36" FadeIn="0" Hold="25000" FadeOut="0" Note="Chorus 4">80</Step>
+   <Step Number="37" FadeIn="0" Hold="760" FadeOut="0">43</Step>
+   <Step Number="38" FadeIn="0" Hold="0" FadeOut="0">36</Step>
   </Function>
   <Function ID="105" Type="Chaser" Name="Should I stay or should I go 🚫" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2195,6 +2233,11 @@
    <FixtureVal ID="9">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="1">0,136,1,127,2,84,3,127,4,0,5,0,6,27,7,155,8,90,9,255,11,55</FixtureVal>
    <FixtureVal ID="5">0,90,1,127,2,71,3,127,4,0,5,0,6,27,7,155,8,90,9,255,11,55</FixtureVal>
+   <FixtureVal ID="22">0,56,1,255,2,209,3,202,4,130,7,124,9,121</FixtureVal>
+   <FixtureVal ID="23">0,56,1,255,2,209,3,202,4,130,7,124,9,121</FixtureVal>
+   <FixtureVal ID="24">0,56,1,255,2,209,3,202,4,130,7,124,9,121</FixtureVal>
+   <FixtureVal ID="25">0,56,1,255,2,209,3,202,4,130,7,124,9,121</FixtureVal>
+   <FixtureVal ID="26"/>
   </Function>
   <Function ID="171" Type="Chaser" Name="She hates me" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
