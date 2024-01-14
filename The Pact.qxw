@@ -1845,11 +1845,29 @@
    <Step Number="26" FadeIn="0" Hold="6000" FadeOut="0" Note="Ausklang">43</Step>
    <Step Number="27" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="95" Type="Chaser" Name="Every you every me 🚫" Path="Pact Songs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  <Function ID="95" Type="Chaser" Name="Every you every me" Path="Pact Songs">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="32000" FadeOut="0" Note="Intro Guitar 0:02">6</Step>
+   <Step Number="2" FadeIn="0" Hold="33000" FadeOut="0" Note="+ Drums">168</Step>
+   <Step Number="3" FadeIn="0" Hold="11000" FadeOut="0" Note="Verse 1 1:05">79</Step>
+   <Step Number="4" FadeIn="0" Hold="10000" FadeOut="0" Note="Bridge 1:16">78</Step>
+   <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0" Note="Chorus 1:26">80</Step>
+   <Step Number="6" FadeIn="0" Hold="12000" FadeOut="0" Note="Verse 2 1:30">79</Step>
+   <Step Number="7" FadeIn="0" Hold="9000" FadeOut="0" Note="Bridge 2 1:42">78</Step>
+   <Step Number="8" FadeIn="0" Hold="10000" FadeOut="0" Note="Chorus 2 1:51">80</Step>
+   <Step Number="9" FadeIn="0" Hold="12000" FadeOut="0" Note="Verse 3 2:01">79</Step>
+   <Step Number="10" FadeIn="0" Hold="10000" FadeOut="0" Note="Bridge 3 2:13">78</Step>
+   <Step Number="11" FadeIn="0" Hold="15000" FadeOut="0" Note="Chorus 3 2:23">80</Step>
+   <Step Number="12" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 4 (quiet) 2:38">79</Step>
+   <Step Number="13" FadeIn="0" Hold="12000" FadeOut="0" Note="Bridge 4 2:51">78</Step>
+   <Step Number="14" FadeIn="0" Hold="25000" FadeOut="0" Note="Chorus 4 3:03">80</Step>
+   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Guitar Solo 3:28">6</Step>
+   <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
+   <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="96" Type="Chaser" Name="Fight for your right" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
