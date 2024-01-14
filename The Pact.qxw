@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
@@ -238,7 +238,7 @@
    <Model>MAC250+</Model>
    <Mode>Mode 4</Mode>
    <ID>22</ID>
-   <Name>MAC250+ #1</Name>
+   <Name>23 MAC250+ #1</Name>
    <Universe>0</Universe>
    <Address>131</Address>
    <Channels>13</Channels>
@@ -248,7 +248,7 @@
    <Model>MAC250+</Model>
    <Mode>Mode 4</Mode>
    <ID>23</ID>
-   <Name>MAC250+ #2</Name>
+   <Name>24 MAC250+ #2</Name>
    <Universe>0</Universe>
    <Address>144</Address>
    <Channels>13</Channels>
@@ -258,7 +258,7 @@
    <Model>MAC250+</Model>
    <Mode>Mode 4</Mode>
    <ID>24</ID>
-   <Name>MAC250+ #3</Name>
+   <Name>25 MAC250+ #3</Name>
    <Universe>0</Universe>
    <Address>157</Address>
    <Channels>13</Channels>
@@ -268,7 +268,7 @@
    <Model>MAC250+</Model>
    <Mode>Mode 4</Mode>
    <ID>25</ID>
-   <Name>MAC250+ #4</Name>
+   <Name>26 MAC250+ #4</Name>
    <Universe>0</Universe>
    <Address>170</Address>
    <Channels>13</Channels>
@@ -278,7 +278,7 @@
    <Model>MAC250+</Model>
    <Mode>Mode 4</Mode>
    <ID>26</ID>
-   <Name>MAC250+ #5</Name>
+   <Name>27 MAC250+ #5</Name>
    <Universe>0</Universe>
    <Address>183</Address>
    <Channels>13</Channels>
@@ -429,7 +429,42 @@
     <Head>0</Head>
     <Mode>1</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>45</StartOffset>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>100</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>150</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>200</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>250</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>1</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>300</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="40423"/>
@@ -460,6 +495,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,0,6,0,7,129,8,45,9,255</FixtureVal>
    <FixtureVal ID="5">5,0,6,0,7,129,8,45,9,255</FixtureVal>
+   <FixtureVal ID="22">1,255,2,0</FixtureVal>
+   <FixtureVal ID="23">1,255,2,0</FixtureVal>
+   <FixtureVal ID="24">1,255,2,0</FixtureVal>
+   <FixtureVal ID="25">1,255,2,0</FixtureVal>
+   <FixtureVal ID="26">1,255,2,0</FixtureVal>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Strips Twinkle">
    <Speed FadeIn="0" FadeOut="0" Duration="378"/>
@@ -810,6 +850,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,16,6,0,7,129,9,255,11,154</FixtureVal>
    <FixtureVal ID="5">5,37,6,0,7,129,9,255,11,154</FixtureVal>
+   <FixtureVal ID="22">1,80,2,80</FixtureVal>
+   <FixtureVal ID="23">1,80,2,180</FixtureVal>
+   <FixtureVal ID="24">1,80,2,80</FixtureVal>
+   <FixtureVal ID="25">1,80,2,180</FixtureVal>
+   <FixtureVal ID="26">1,80,2,80</FixtureVal>
   </Function>
   <Function ID="48" Type="RGBMatrix" Name="Blue Starfield">
    <Speed FadeIn="0" FadeOut="0" Duration="378"/>
@@ -826,6 +871,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
    <FixtureVal ID="5">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
+   <FixtureVal ID="22">1,82,2,82</FixtureVal>
+   <FixtureVal ID="23">1,82,2,82</FixtureVal>
+   <FixtureVal ID="24">1,82,2,82</FixtureVal>
+   <FixtureVal ID="25">1,82,2,82</FixtureVal>
+   <FixtureVal ID="26">1,82,2,82</FixtureVal>
   </Function>
   <Function ID="50" Type="EFX" Name="slow left and right">
    <Fixture>
@@ -840,7 +890,42 @@
     <Head>0</Head>
     <Mode>1</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>90</StartOffset>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>100</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>150</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>200</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>250</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>300</StartOffset>
    </Fixture>
    <PropagationMode>Serial</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="15000"/>
@@ -890,8 +975,43 @@
     <Direction>Forward</Direction>
     <StartOffset>20</StartOffset>
    </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>40</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>80</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>100</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>120</StartOffset>
+   </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="378"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8378"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -915,6 +1035,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,168,6,0,8,45,9,255,11,0</FixtureVal>
    <FixtureVal ID="5">5,168,6,0,8,45,9,255,11,0</FixtureVal>
+   <FixtureVal ID="22">1,80,2,77</FixtureVal>
+   <FixtureVal ID="23">1,80,2,161</FixtureVal>
+   <FixtureVal ID="24">1,80,2,177</FixtureVal>
+   <FixtureVal ID="25">1,80,2,102</FixtureVal>
+   <FixtureVal ID="26">1,80,2,29</FixtureVal>
   </Function>
   <Function ID="54" Type="EFX" Name="swimming">
    <Fixture>
@@ -931,8 +1056,43 @@
     <Direction>Forward</Direction>
     <StartOffset>40</StartOffset>
    </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>80</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>120</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>160</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>200</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>240</StartOffset>
+   </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="378"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1027"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -1005,6 +1165,41 @@
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="378"/>
    <Direction>Forward</Direction>
@@ -1040,6 +1235,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,180,6,0,8,157,9,255,11,0</FixtureVal>
    <FixtureVal ID="5">5,168,6,0,8,157,9,255,11,0</FixtureVal>
+   <FixtureVal ID="22">0,90,1,80,2,235</FixtureVal>
+   <FixtureVal ID="23">0,90,1,80,2,235</FixtureVal>
+   <FixtureVal ID="24">0,90,1,80,2,235</FixtureVal>
+   <FixtureVal ID="25">0,90,1,80,2,235</FixtureVal>
+   <FixtureVal ID="26">0,90,1,80,2,235</FixtureVal>
   </Function>
   <Function ID="61" Type="EFX" Name="fast random">
    <Fixture>
@@ -1054,7 +1254,42 @@
     <Head>0</Head>
     <Mode>1</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>90</StartOffset>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>100</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>150</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>200</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>250</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>300</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
@@ -1090,7 +1325,42 @@
     <Head>0</Head>
     <Mode>1</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>90</StartOffset>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>100</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>150</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>200</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>250</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>300</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="378"/>
@@ -1168,6 +1438,41 @@
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
+   <Fixture>
+    <ID>22</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>23</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>24</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>25</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>26</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="378"/>
    <Direction>Forward</Direction>
@@ -1203,6 +1508,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,0,6,0,8,93,9,255,11,35</FixtureVal>
    <FixtureVal ID="5">5,0,6,0,8,93,9,255,11,35</FixtureVal>
+   <FixtureVal ID="22">0,50,1,255,2,0</FixtureVal>
+   <FixtureVal ID="23">0,50,1,255,2,0</FixtureVal>
+   <FixtureVal ID="24">0,50,1,255,2,0</FixtureVal>
+   <FixtureVal ID="25">0,50,1,255,2,0</FixtureVal>
+   <FixtureVal ID="26">0,50,1,255,2,0</FixtureVal>
   </Function>
   <Function ID="68" Type="Scene" Name="07 LED Pot Backlight L" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1346,6 +1656,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,90,6,0,9,255</FixtureVal>
    <FixtureVal ID="5">5,90,6,0,9,255</FixtureVal>
+   <FixtureVal ID="22">1,80,2,150</FixtureVal>
+   <FixtureVal ID="23">1,80,2,150</FixtureVal>
+   <FixtureVal ID="24">1,80,2,150</FixtureVal>
+   <FixtureVal ID="25">1,80,2,150</FixtureVal>
+   <FixtureVal ID="26">1,80,2,150</FixtureVal>
   </Function>
   <Function ID="86" Type="Scene" Name="Spot auf Pete 🔵">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1651,7 +1966,7 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="101" Type="Chaser" Name="Run ❗️" Path="Pact Songs">
+  <Function ID="101" Type="Chaser" Name="Run" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
@@ -2324,7 +2639,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="995" Y="30" Width="475" Height="605"/>
+    <WindowState Visible="True" X="995" Y="30" Width="475" Height="605"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2333,7 +2648,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="07 round'n'round 🔄" ID="4" Icon="">
-     <WindowState Visible="False" X="15" Y="350" Width="145" Height="50"/>
+     <WindowState Visible="True" X="15" Y="350" Width="145" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2347,7 +2662,7 @@
      <Input Universe="0" Channel="138"/>
     </Button>
     <Button Caption="01 statisch bunt 🎉" ID="1" Icon="">
-     <WindowState Visible="False" X="15" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2361,7 +2676,7 @@
      <Input Universe="0" Channel="130"/>
     </Button>
     <Button Caption="02 slow blue 🔵" ID="6" Icon="">
-     <WindowState Visible="False" X="15" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2375,7 +2690,7 @@
      <Input Universe="0" Channel="128"/>
     </Button>
     <Button Caption="04 up'n'down ↕️" ID="7" Icon="">
-     <WindowState Visible="False" X="15" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2389,7 +2704,7 @@
      <Input Universe="0" Channel="136"/>
     </Button>
     <Button Caption="05 left'n'right ↔️" ID="8" Icon="">
-     <WindowState Visible="False" X="15" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2403,7 +2718,7 @@
      <Input Universe="0" Channel="137"/>
     </Button>
     <Button Caption="03 walking 🚶" ID="9" Icon="">
-     <WindowState Visible="False" X="15" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2417,7 +2732,7 @@
      <Input Universe="0" Channel="131"/>
     </Button>
     <Button Caption="08 swimming 🏊🏻‍" ID="10" Icon="">
-     <WindowState Visible="False" X="15" Y="405" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="405" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2431,7 +2746,7 @@
      <Input Universe="0" Channel="133"/>
     </Button>
     <Button Caption="10 Strobe ✳️" ID="11" Icon="">
-     <WindowState Visible="False" X="15" Y="505" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="505" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2445,7 +2760,7 @@
      <Input Universe="0" Channel="160"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="False" X="315" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2459,7 +2774,7 @@
      <Input Universe="0" Channel="149"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢 hot" ID="13" Icon="">
-     <WindowState Visible="False" X="315" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2473,7 +2788,7 @@
      <Input Universe="0" Channel="152"/>
     </Button>
     <Button Caption="Spot auf Bibo 🟡" ID="14" Icon="">
-     <WindowState Visible="False" X="315" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2487,7 +2802,7 @@
      <Input Universe="0" Channel="150"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️" ID="15" Icon="">
-     <WindowState Visible="False" X="315" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2501,7 +2816,7 @@
      <Input Universe="0" Channel="151"/>
     </Button>
     <Button Caption="Spot auf Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="False" X="315" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2515,7 +2830,7 @@
      <Input Universe="0" Channel="148"/>
     </Button>
     <Button Caption="16 Searchlight 🔦" ID="17" Icon="">
-     <WindowState Visible="False" X="15" Y="555" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="555" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2529,7 +2844,7 @@
      <Input Universe="0" Channel="129"/>
     </Button>
     <Button Caption="09 Alarm 🔔" ID="18" Icon="">
-     <WindowState Visible="False" X="15" Y="455" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="455" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2543,7 +2858,7 @@
      <Input Universe="0" Channel="134"/>
     </Button>
     <Button Caption="11 Stop 🛑" ID="19" Icon="">
-     <WindowState Visible="False" X="165" Y="250" Width="145" Height="95"/>
+     <WindowState Visible="True" X="165" Y="250" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2557,7 +2872,7 @@
      <Input Universe="0" Channel="135"/>
     </Button>
     <Button Caption="blackout" ID="28" Icon="">
-     <WindowState Visible="False" X="165" Y="50" Width="145" Height="95"/>
+     <WindowState Visible="True" X="165" Y="50" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2571,7 +2886,7 @@
      <Input Universe="0" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="False" X="165" Y="150" Width="145" Height="95"/>
+     <WindowState Visible="True" X="165" Y="150" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2585,7 +2900,7 @@
      <Input Universe="0" Channel="158"/>
     </Button>
     <Button Caption="06 blinking 🔆" ID="20" Icon="">
-     <WindowState Visible="False" X="15" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2599,7 +2914,7 @@
      <Input Universe="0" Channel="132"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️ hot" ID="21" Icon="">
-     <WindowState Visible="False" X="315" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2613,7 +2928,7 @@
      <Input Universe="0" Channel="153"/>
     </Button>
     <Button Caption="Fog 5s √ " ID="36" Icon="">
-     <WindowState Visible="False" X="165" Y="350" Width="145" Height="100"/>
+     <WindowState Visible="True" X="165" Y="350" Width="145" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2628,7 +2943,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="3">
-    <WindowState Visible="False" X="1195" Y="640" Width="200" Height="175"/>
+    <WindowState Visible="True" X="1195" Y="640" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2659,7 +2974,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="6">55</Function>
    </SpeedDial>
    <Label Caption="2.  Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="False" X="1530" Y="195" Width="220" Height="30"/>
+    <WindowState Visible="True" X="1530" Y="195" Width="220" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2669,7 +2984,7 @@
     </Appearance>
    </Label>
    <Label Caption="1.  Fixtures identifizieren" ID="33">
-    <WindowState Visible="False" X="1545" Y="90" Width="175" Height="30"/>
+    <WindowState Visible="True" X="1530" Y="155" Width="175" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2678,8 +2993,8 @@
      <Font>Default</Font>
     </Appearance>
    </Label>
-   <Label Caption="4.  Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="False" X="1535" Y="365" Width="185" Height="25"/>
+   <Label Caption="5. Solo-Szenen anpassen" ID="34">
+    <WindowState Visible="True" X="1530" Y="300" Width="185" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2688,8 +3003,8 @@
      <Font>Default</Font>
     </Appearance>
    </Label>
-   <Label Caption="3.  Offset Moving Heads in RGBMatrix anpassen" ID="35">
-    <WindowState Visible="False" X="1460" Y="315" Width="315" Height="30"/>
+   <Label Caption="4.  Offset Moving Heads in RGBMatrix anpassen" ID="35">
+    <WindowState Visible="True" X="1530" Y="260" Width="315" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2706,7 +3021,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="15" Y="30" Width="940" Height="790"/>
+    <WindowState Visible="True" X="15" Y="30" Width="940" Height="790"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2907,7 +3222,7 @@
      </Appearance>
     </Label>
     <Label Caption="Are you gonna be my girl" ID="29" Page="4">
-     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="True" X="0" Y="55" Width="940" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3467,7 +3782,7 @@
      </Appearance>
     </Label>
     <CueList Caption="Cue-Liste" ID="92" Page="4">
-     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <WindowState Visible="True" X="0" Y="100" Width="940" Height="690"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4379,6 +4694,16 @@
      </Stop>
     </CueList>
    </SoloFrame>
+   <Label Caption="3. Helligkeit große Heads anpassen (scenes)" ID="129">
+    <WindowState Visible="True" X="1530" Y="230" Width="305" Height="25"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Label>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
