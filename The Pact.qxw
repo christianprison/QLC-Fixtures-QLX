@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
@@ -2806,7 +2806,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="995" Y="30" Width="475" Height="605"/>
+    <WindowState Visible="True" X="995" Y="30" Width="475" Height="605"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2815,7 +2815,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="07 round'n'round 🔄" ID="4" Icon="">
-     <WindowState Visible="False" X="15" Y="350" Width="145" Height="50"/>
+     <WindowState Visible="True" X="15" Y="350" Width="145" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2829,7 +2829,7 @@
      <Input Universe="0" Channel="138"/>
     </Button>
     <Button Caption="01 statisch bunt 🎉" ID="1" Icon="">
-     <WindowState Visible="False" X="15" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2843,7 +2843,7 @@
      <Input Universe="0" Channel="130"/>
     </Button>
     <Button Caption="02 slow blue 🔵" ID="6" Icon="">
-     <WindowState Visible="False" X="15" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2857,7 +2857,7 @@
      <Input Universe="0" Channel="128"/>
     </Button>
     <Button Caption="04 up'n'down ↕️" ID="7" Icon="">
-     <WindowState Visible="False" X="15" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2871,7 +2871,7 @@
      <Input Universe="0" Channel="136"/>
     </Button>
     <Button Caption="05 left'n'right ↔️" ID="8" Icon="">
-     <WindowState Visible="False" X="15" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2885,7 +2885,7 @@
      <Input Universe="0" Channel="137"/>
     </Button>
     <Button Caption="03 walking 🚶" ID="9" Icon="">
-     <WindowState Visible="False" X="15" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2899,7 +2899,7 @@
      <Input Universe="0" Channel="131"/>
     </Button>
     <Button Caption="08 swimming 🏊🏻‍" ID="10" Icon="">
-     <WindowState Visible="False" X="15" Y="405" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="405" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2913,7 +2913,7 @@
      <Input Universe="0" Channel="133"/>
     </Button>
     <Button Caption="10 Strobe ✳️" ID="11" Icon="">
-     <WindowState Visible="False" X="15" Y="505" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="505" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2927,7 +2927,7 @@
      <Input Universe="0" Channel="160"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="False" X="315" Y="100" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="100" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2941,7 +2941,7 @@
      <Input Universe="0" Channel="149"/>
     </Button>
     <Button Caption="Spot auf Axel 🟢 hot" ID="13" Icon="">
-     <WindowState Visible="False" X="315" Y="150" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="150" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2955,7 +2955,7 @@
      <Input Universe="0" Channel="152"/>
     </Button>
     <Button Caption="Spot auf Bibo 🟡" ID="14" Icon="">
-     <WindowState Visible="False" X="315" Y="200" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="200" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2969,7 +2969,7 @@
      <Input Universe="0" Channel="150"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️" ID="15" Icon="">
-     <WindowState Visible="False" X="315" Y="250" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="250" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2983,7 +2983,7 @@
      <Input Universe="0" Channel="151"/>
     </Button>
     <Button Caption="Spot auf Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="False" X="315" Y="50" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="50" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2997,7 +2997,7 @@
      <Input Universe="0" Channel="148"/>
     </Button>
     <Button Caption="16 Searchlight 🔦" ID="17" Icon="">
-     <WindowState Visible="False" X="15" Y="555" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="555" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3011,7 +3011,7 @@
      <Input Universe="0" Channel="129"/>
     </Button>
     <Button Caption="09 Alarm 🔔" ID="18" Icon="">
-     <WindowState Visible="False" X="15" Y="455" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="455" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3025,7 +3025,7 @@
      <Input Universe="0" Channel="134"/>
     </Button>
     <Button Caption="11 Stop 🛑" ID="19" Icon="">
-     <WindowState Visible="False" X="165" Y="250" Width="145" Height="95"/>
+     <WindowState Visible="True" X="165" Y="250" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3039,7 +3039,7 @@
      <Input Universe="0" Channel="135"/>
     </Button>
     <Button Caption="blackout" ID="28" Icon="">
-     <WindowState Visible="False" X="165" Y="50" Width="145" Height="95"/>
+     <WindowState Visible="True" X="165" Y="50" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3053,7 +3053,7 @@
      <Input Universe="0" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="False" X="165" Y="150" Width="145" Height="95"/>
+     <WindowState Visible="True" X="165" Y="150" Width="145" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3067,7 +3067,7 @@
      <Input Universe="0" Channel="158"/>
     </Button>
     <Button Caption="06 blinking 🔆" ID="20" Icon="">
-     <WindowState Visible="False" X="15" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="True" X="15" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3081,7 +3081,7 @@
      <Input Universe="0" Channel="132"/>
     </Button>
     <Button Caption="Spot auf Tim ⚪️ hot" ID="21" Icon="">
-     <WindowState Visible="False" X="315" Y="300" Width="145" Height="45"/>
+     <WindowState Visible="True" X="315" Y="300" Width="145" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3095,7 +3095,7 @@
      <Input Universe="0" Channel="153"/>
     </Button>
     <Button Caption="Fog 5s √ " ID="36" Icon="">
-     <WindowState Visible="False" X="165" Y="350" Width="145" Height="100"/>
+     <WindowState Visible="True" X="165" Y="350" Width="145" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3110,7 +3110,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="3">
-    <WindowState Visible="False" X="1195" Y="640" Width="200" Height="175"/>
+    <WindowState Visible="True" X="1195" Y="640" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3141,7 +3141,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="6">55</Function>
    </SpeedDial>
    <Label Caption="2.  Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="False" X="1530" Y="195" Width="220" Height="30"/>
+    <WindowState Visible="True" X="1530" Y="195" Width="220" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3151,7 +3151,7 @@
     </Appearance>
    </Label>
    <Label Caption="1.  Fixtures identifizieren" ID="33">
-    <WindowState Visible="False" X="1530" Y="155" Width="175" Height="30"/>
+    <WindowState Visible="True" X="1530" Y="155" Width="175" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3161,7 +3161,7 @@
     </Appearance>
    </Label>
    <Label Caption="5. Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="False" X="1530" Y="300" Width="185" Height="25"/>
+    <WindowState Visible="True" X="1530" Y="300" Width="185" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3171,7 +3171,7 @@
     </Appearance>
    </Label>
    <Label Caption="4.  Offset Moving Heads in RGBMatrix anpassen" ID="35">
-    <WindowState Visible="False" X="1530" Y="260" Width="315" Height="30"/>
+    <WindowState Visible="True" X="1530" Y="260" Width="315" Height="30"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3188,7 +3188,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="15" Y="30" Width="940" Height="790"/>
+    <WindowState Visible="True" X="15" Y="25" Width="940" Height="790"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3196,7 +3196,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="47"/>
+    <Multipage PagesNum="60" CurrentPage="58"/>
     <Next>
      <Input Universe="0" Channel="173"/>
     </Next>
@@ -3207,11 +3207,11 @@
      <Input Universe="0" Channel="179"/>
     </Shortcut>
     <Shortcut Page="1" Name="Along comes Mary"/>
-    <Shortcut Page="2" Name="Seite: 3"/>
+    <Shortcut Page="2" Name="Always where I need to be"/>
     <Shortcut Page="3" Name="Seite: 4"/>
     <Shortcut Page="4" Name="Are you gonna be my girl"/>
     <Shortcut Page="5" Name="Seite: 6"/>
-    <Shortcut Page="6" Name="Seite: 7"/>
+    <Shortcut Page="6" Name="Boys don't cry"/>
     <Shortcut Page="7" Name="Seite: 8"/>
     <Shortcut Page="8" Name="Seite: 9"/>
     <Shortcut Page="9" Name="Seite: 10"/>
@@ -3219,9 +3219,9 @@
      <Input Universe="0" Channel="174"/>
     </Shortcut>
     <Shortcut Page="11" Name="Creep"/>
-    <Shortcut Page="12" Name="Seite: 13"/>
+    <Shortcut Page="12" Name="Dancing with myself"/>
     <Shortcut Page="13" Name="Seite: 14"/>
-    <Shortcut Page="14" Name="Seite: 15"/>
+    <Shortcut Page="14" Name="Every you every me"/>
     <Shortcut Page="15" Name="Seite: 16"/>
     <Shortcut Page="16" Name="Seite: 17"/>
     <Shortcut Page="17" Name="Seite: 18"/>
@@ -3230,44 +3230,44 @@
     <Shortcut Page="20" Name="Hail to the freaks">
      <Input Universe="0" Channel="175"/>
     </Shortcut>
-    <Shortcut Page="21" Name="Seite: 22"/>
+    <Shortcut Page="21" Name="Inside"/>
     <Shortcut Page="22" Name="Join me in death"/>
     <Shortcut Page="23" Name="Last Nite"/>
-    <Shortcut Page="24" Name="Seite: 25"/>
-    <Shortcut Page="25" Name="Seite: 26"/>
-    <Shortcut Page="26" Name="Seite: 27"/>
+    <Shortcut Page="24" Name="Lonely Boy"/>
+    <Shortcut Page="25" Name="Mr. Brightside"/>
+    <Shortcut Page="26" Name="Narcotic"/>
     <Shortcut Page="27" Name="Seite: 28"/>
     <Shortcut Page="28" Name="Seite: 29"/>
     <Shortcut Page="29" Name="Seite: 30"/>
     <Shortcut Page="30" Name="Rock'n'Roll Queen">
      <Input Universe="0" Channel="176"/>
     </Shortcut>
-    <Shortcut Page="31" Name="Seite: 32"/>
-    <Shortcut Page="32" Name="Seite: 33"/>
+    <Shortcut Page="31" Name="Run"/>
+    <Shortcut Page="32" Name="Self Esteem"/>
     <Shortcut Page="33" Name="Seite: 34"/>
-    <Shortcut Page="34" Name="Seite: 35"/>
+    <Shortcut Page="34" Name="Sex on fire"/>
     <Shortcut Page="35" Name="She hates me"/>
     <Shortcut Page="36" Name="Seite: 37"/>
     <Shortcut Page="37" Name="Seite: 38"/>
-    <Shortcut Page="38" Name="Seite: 39"/>
+    <Shortcut Page="38" Name="Space Lord"/>
     <Shortcut Page="39" Name="Seite: 40"/>
     <Shortcut Page="40" Name="Teenage dirtbag">
      <Input Universe="0" Channel="177"/>
     </Shortcut>
-    <Shortcut Page="41" Name="Seite: 42"/>
-    <Shortcut Page="42" Name="Seite: 43"/>
-    <Shortcut Page="43" Name="Seite: 44"/>
-    <Shortcut Page="44" Name="Seite: 45"/>
-    <Shortcut Page="45" Name="Seite: 46"/>
+    <Shortcut Page="41" Name="Tension"/>
+    <Shortcut Page="42" Name="The boys of summer"/>
+    <Shortcut Page="43" Name="The Middle"/>
+    <Shortcut Page="44" Name="The Pretender"/>
+    <Shortcut Page="45" Name="The Reason"/>
     <Shortcut Page="46" Name="Seite: 47"/>
-    <Shortcut Page="47" Name="Seite: 48"/>
+    <Shortcut Page="47" Name="Torn"/>
     <Shortcut Page="48" Name="Seite: 49"/>
     <Shortcut Page="49" Name="Seite: 50"/>
-    <Shortcut Page="50" Name="Seite: 51">
+    <Shortcut Page="50" Name="Valerie">
      <Input Universe="0" Channel="178"/>
     </Shortcut>
-    <Shortcut Page="51" Name="Seite: 52"/>
-    <Shortcut Page="52" Name="Seite: 53"/>
+    <Shortcut Page="51" Name="Word up"/>
+    <Shortcut Page="52" Name="Yellow"/>
     <Shortcut Page="53" Name="Seite: 54"/>
     <Shortcut Page="54" Name="Seite: 55"/>
     <Shortcut Page="55" Name="Seite: 56"/>
@@ -3929,7 +3929,7 @@
      </Appearance>
     </Label>
     <Label Caption="untitled" ID="90" Page="58">
-     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="True" X="0" Y="55" Width="940" Height="45"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4862,7 +4862,7 @@
     </CueList>
    </SoloFrame>
    <Label Caption="3. Helligkeit große Heads anpassen (scenes)" ID="129">
-    <WindowState Visible="False" X="1530" Y="230" Width="305" Height="25"/>
+    <WindowState Visible="True" X="1530" Y="230" Width="305" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
