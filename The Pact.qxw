@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>User</Author>
+  <Author>Christian Prison</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="None" Line="0"/>
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AU0K2FP2)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -26,9 +24,9 @@
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Expolite</Manufacturer>
-   <Model>TourSpot 50 Mini</Model>
-   <Mode>16b</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>13 Channel</Mode>
    <ID>1</ID>
    <Name>19 TourSpot</Name>
    <Universe>0</Universe>
@@ -66,9 +64,9 @@
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Expolite</Manufacturer>
-   <Model>TourSpot 50 Mini</Model>
-   <Mode>16b</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>13 Channel</Mode>
    <ID>5</ID>
    <Name>20 TourSpot</Name>
    <Universe>0</Universe>
@@ -227,8 +225,8 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>DMX Relay (Fog)</Model>
-   <Mode>2 channel</Mode>
+   <Model>Generic</Model>
+   <Mode>2 Channel</Mode>
    <ID>21</ID>
    <Name>21 DMX Relay</Name>
    <Universe>0</Universe>
@@ -871,8 +869,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -963,9 +961,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking">
    <Fixture>
@@ -1399,12 +1397,12 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
    <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="presetSize" Value="1"/>
-   <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="color4Index" Value="Blue"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1651,13 +1649,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="presetSize" Value="2"/>
-   <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="color1Index" Value="Orange"/>
+   <Property Name="color4Index" Value="Blue"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2175,11 +2173,29 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="111" Type="Chaser" Name="Torn 🚫" Path="Pact Songs">
+  <Function ID="111" Type="Chaser" Name="Torn ❗️" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="20000" FadeOut="0" Note="Intro 0:04">86</Step>
+   <Step Number="2" FadeIn="0" Hold="15000" FadeOut="0" Note="Verse 1 0:24">70</Step>
+   <Step Number="3" FadeIn="0" Hold="11000" FadeOut="0" Note="Bridge 1 0:39">78</Step>
+   <Step Number="4" FadeIn="0" Hold="30000" FadeOut="0" Note="Chorus 1 0:50">74</Step>
+   <Step Number="5" FadeIn="0" Hold="5000" FadeOut="0" Note="Verse 2 1:20">86</Step>
+   <Step Number="6" FadeIn="0" Hold="10000" FadeOut="0" Note="1:25">70</Step>
+   <Step Number="7" FadeIn="0" Hold="10000" FadeOut="0" Note="Bridge 2 1:35">78</Step>
+   <Step Number="8" FadeIn="0" Hold="30000" FadeOut="0" Note="Chorus 2 1:45">74</Step>
+   <Step Number="9" FadeIn="0" Hold="11000" FadeOut="0" Note="Interlude 2:15">168</Step>
+   <Step Number="10" FadeIn="0" Hold="10000" FadeOut="0" Note="Basssolo 2:26">167</Step>
+   <Step Number="11" FadeIn="0" Hold="10000" FadeOut="0" Note="Stop 2:36">70</Step>
+   <Step Number="12" FadeIn="0" Hold="10000" FadeOut="0" Note="2:46">86</Step>
+   <Step Number="13" FadeIn="0" Hold="29000" FadeOut="0" Note="Chorus 3 2:56">74</Step>
+   <Step Number="14" FadeIn="0" Hold="10000" FadeOut="0" Note="Steigerung 3:25">77</Step>
+   <Step Number="15" FadeIn="0" Hold="38000" FadeOut="0" Note="Gitarrensolo 3:35">6</Step>
+   <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang 4:13">71</Step>
+   <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0" Note="4:16">36</Step>
   </Function>
   <Function ID="112" Type="Chaser" Name="Word up" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
