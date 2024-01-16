@@ -1948,11 +1948,32 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="98" Type="Chaser" Name="Mr. Brightside 🚫" Path="Pact Songs">
+  <Function ID="98" Type="Chaser" Name="Mr. Brightside" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="6500" FadeOut="0" Note="Intro 0:02">3</Step>
+   <Step Number="2" FadeIn="0" Hold="13000" FadeOut="0" Note="mit HH 0:09">79</Step>
+   <Step Number="3" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 1 0:22">77</Step>
+   <Step Number="4" FadeIn="0" Hold="19500" FadeOut="0" Note="Bridge 1 0:35">74</Step>
+   <Step Number="5" FadeIn="0" Hold="6500" FadeOut="0" Note="0:54">70</Step>
+   <Step Number="6" FadeIn="0" Hold="26000" FadeOut="0" Note="Chorus 1 1:01">80</Step>
+   <Step Number="7" FadeIn="0" Hold="13000" FadeOut="0" Note="Thema 1:27">77</Step>
+   <Step Number="8" FadeIn="0" Hold="9500" FadeOut="0" Note="Verse 2 1:40">79</Step>
+   <Step Number="9" FadeIn="0" Hold="3500" FadeOut="0" Note="Stop 1:49">71</Step>
+   <Step Number="10" FadeIn="0" Hold="12500" FadeOut="0" Note="1:53">79</Step>
+   <Step Number="11" FadeIn="0" Hold="20000" FadeOut="0" Note="Bridge 2 2:05">74</Step>
+   <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0" Note="2:25">70</Step>
+   <Step Number="13" FadeIn="0" Hold="26000" FadeOut="0" Note="Chorus 2 2:31">80</Step>
+   <Step Number="14" FadeIn="0" Hold="13000" FadeOut="0" Note="Gitarrensolo 2:57">6</Step>
+   <Step Number="15" FadeIn="0" Hold="13000" FadeOut="0" Note="Finale 3:10">80</Step>
+   <Step Number="16" FadeIn="0" Hold="11000" FadeOut="0" Note="3:23">81</Step>
+   <Step Number="17" FadeIn="0" Hold="375" FadeOut="0" Note="3:34">71</Step>
+   <Step Number="18" FadeIn="0" Hold="375" FadeOut="0">43</Step>
+   <Step Number="19" FadeIn="0" Hold="5000" FadeOut="0">71</Step>
+   <Step Number="20" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="99" Type="Chaser" Name="Narcotic" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2173,7 +2194,7 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="111" Type="Chaser" Name="Torn ❗️" Path="Pact Songs">
+  <Function ID="111" Type="Chaser" Name="Torn" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
@@ -2192,8 +2213,8 @@
    <Step Number="11" FadeIn="0" Hold="10000" FadeOut="0" Note="Stop 2:36">70</Step>
    <Step Number="12" FadeIn="0" Hold="10000" FadeOut="0" Note="2:46">86</Step>
    <Step Number="13" FadeIn="0" Hold="29000" FadeOut="0" Note="Chorus 3 2:56">74</Step>
-   <Step Number="14" FadeIn="0" Hold="10000" FadeOut="0" Note="Steigerung 3:25">77</Step>
-   <Step Number="15" FadeIn="0" Hold="38000" FadeOut="0" Note="Gitarrensolo 3:35">6</Step>
+   <Step Number="14" FadeIn="0" Hold="9000" FadeOut="0" Note="Steigerung 3:25">77</Step>
+   <Step Number="15" FadeIn="0" Hold="39000" FadeOut="0" Note="Gitarrensolo 3:35">6</Step>
    <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang 4:13">71</Step>
    <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0" Note="4:16">36</Step>
   </Function>
@@ -3175,7 +3196,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="4"/>
+    <Multipage PagesNum="60" CurrentPage="47"/>
     <Next>
      <Input Universe="0" Channel="173"/>
     </Next>
