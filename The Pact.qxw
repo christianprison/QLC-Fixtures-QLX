@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>Christian Prison</Author>
+  <Author>User</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="None" Line="0"/>
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID=" (S/N: )" Line="0">
+     <PluginParameters UniverseChannels="196"/>
+    </Output>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -24,11 +26,11 @@
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>13 Channel</Mode>
+   <Manufacturer>Expolite</Manufacturer>
+   <Model>TourSpot 50 Mini</Model>
+   <Mode>16b</Mode>
    <ID>1</ID>
-   <Name>19 TourSpot</Name>
+   <Name>19 TourSpot (58)</Name>
    <Universe>0</Universe>
    <Address>57</Address>
    <Channels>13</Channels>
@@ -54,11 +56,11 @@
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>13 Channel</Mode>
+   <Manufacturer>Expolite</Manufacturer>
+   <Model>TourSpot 50 Mini</Model>
+   <Mode>16b</Mode>
    <ID>5</ID>
-   <Name>20 TourSpot</Name>
+   <Name>20 TourSpot (91)</Name>
    <Universe>0</Universe>
    <Address>90</Address>
    <Channels>13</Channels>
@@ -474,7 +476,7 @@
    <FixtureVal ID="26">1,255,2,0</FixtureVal>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Strips Twinkle">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">3D Starfield</Algorithm>
@@ -485,7 +487,7 @@
    <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="4" Type="RGBMatrix" Name="Static Dark Blue">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -604,8 +606,8 @@
   </Function>
   <Function ID="23" Type="Scene" Name="Heads up" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,37,1,127,2,255,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
-   <FixtureVal ID="5">0,37,1,127,2,255,3,127,4,0,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="1">0,57,1,127,2,255,3,127,4,225,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="5">0,37,1,127,2,255,3,127,4,225,5,0,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
    <FixtureVal ID="22">0,20,1,255,2,0,3,0,4,0,5,255,7,39,9,29</FixtureVal>
    <FixtureVal ID="23">0,20,1,255,2,0,3,44,4,0,5,255,7,41,9,96</FixtureVal>
    <FixtureVal ID="24">0,20,1,255,2,0,3,44,4,0,5,255,6,0,7,41,9,101</FixtureVal>
@@ -731,17 +733,17 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="557"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm>Lissajous</Algorithm>
-   <Width>32</Width>
+   <Algorithm>Line</Algorithm>
+   <Width>10</Width>
    <Height>32</Height>
-   <Rotation>0</Rotation>
+   <Rotation>73</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>130</Offset>
+    <Offset>40</Offset>
     <Frequency>9</Frequency>
     <Phase>90</Phase>
    </Axis>
@@ -883,8 +885,8 @@
   </Function>
   <Function ID="46" Type="Scene" Name="Heads cross" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,68,1,126,2,180,3,126,4,0,5,0,6,0,7,0,8,255,9,16,10,0,11,0,12,0</FixtureVal>
-   <FixtureVal ID="5">0,16,1,127,2,180,3,127,4,0,5,0,6,0,7,0,8,255,9,23,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="5">0,37,1,127,2,199,3,127,5,0,6,0,7,0,8,255,9,23,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="1">0,206,1,72,2,79,3,0,4,225</FixtureVal>
   </Function>
   <Function ID="47" Type="Scene" Name="Heads blue and red" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -897,15 +899,15 @@
    <FixtureVal ID="26">1,80,2,80</FixtureVal>
   </Function>
   <Function ID="48" Type="RGBMatrix" Name="Blue Starfield">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">3D Starfield</Algorithm>
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -954,16 +956,16 @@
    </Axis>
   </Function>
   <Function ID="51" Type="RGBMatrix" Name="red and green alternating">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color2Index" Value="Green"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins">
    <Fixture>
@@ -1002,7 +1004,7 @@
     <StartOffset>120</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -1026,11 +1028,11 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,168,8,45,9,255,11,0</FixtureVal>
    <FixtureVal ID="5">5,168,8,45,9,255,11,0</FixtureVal>
-   <FixtureVal ID="22">1,80,2,77</FixtureVal>
-   <FixtureVal ID="23">1,80,2,161</FixtureVal>
-   <FixtureVal ID="24">1,80,2,177</FixtureVal>
-   <FixtureVal ID="25">1,80,2,102</FixtureVal>
-   <FixtureVal ID="26">1,80,2,29</FixtureVal>
+   <FixtureVal ID="22">1,80,2,77,11,3</FixtureVal>
+   <FixtureVal ID="23">1,80,2,161,11,3</FixtureVal>
+   <FixtureVal ID="24">1,80,2,177,11,3</FixtureVal>
+   <FixtureVal ID="25">1,80,2,102,11,3</FixtureVal>
+   <FixtureVal ID="26">1,80,2,29,11,3</FixtureVal>
   </Function>
   <Function ID="54" Type="EFX" Name="swimming Martins">
    <Fixture>
@@ -1069,7 +1071,7 @@
     <StartOffset>240</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -1090,7 +1092,7 @@
    </Axis>
   </Function>
   <Function ID="55" Type="RGBMatrix" Name="Backlights blinking">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -1118,7 +1120,7 @@
    <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0" Note="abruptes Ende">36</Step>
   </Function>
   <Function ID="57" Type="RGBMatrix" Name="Stripes from Center">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes From Center</Algorithm>
@@ -1131,29 +1133,29 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>1</Mode>
+    <Mode>0</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>1</Mode>
+    <Mode>0</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm>Lissajous</Algorithm>
+   <Algorithm>Line</Algorithm>
    <Width>32</Width>
    <Height>32</Height>
-   <Rotation>0</Rotation>
+   <Rotation>45</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>130</Offset>
+    <Offset>110</Offset>
     <Frequency>9</Frequency>
     <Phase>90</Phase>
    </Axis>
@@ -1164,7 +1166,7 @@
    </Axis>
   </Function>
   <Function ID="59" Type="RGBMatrix" Name="Blinking rainbow">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Random Pixel Per Row Multicolor</Algorithm>
@@ -1230,7 +1232,7 @@
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>60</Offset>
+    <Offset>45</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
@@ -1244,54 +1246,19 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>1</Mode>
+    <Mode>0</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>1</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>50</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>22</ID>
-    <Head>0</Head>
     <Mode>0</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>100</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>23</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>150</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>24</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>200</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>25</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>250</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>26</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>300</StartOffset>
+    <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1312,21 +1279,21 @@
    </Axis>
   </Function>
   <Function ID="63" Type="RGBMatrix" Name="fast balls">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Balls (Colors)</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetCollision" Value="No"/>
-   <Property Name="presetNumber" Value="2"/>
-   <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="presetSize" Value="3"/>
    <Property Name="color2Index" Value="Red"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetNumber" Value="2"/>
+   <Property Name="presetSize" Value="3"/>
+   <Property Name="color1Index" Value="Dim Orange"/>
+   <Property Name="presetCollision" Value="No"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1389,7 +1356,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -1410,7 +1377,7 @@
    </Axis>
   </Function>
   <Function ID="66" Type="RGBMatrix" Name="White Strobe">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -1557,6 +1524,7 @@
   <Function ID="82" Type="Collection" Name="11 Stop 🛑">
    <Step Number="0">42</Step>
    <Step Number="1">39</Step>
+   <Step Number="2">23</Step>
   </Function>
   <Function ID="83" Type="Collection" Name="16 Searchlight 🔦">
    <Step Number="0">0</Step>
@@ -1564,21 +1532,21 @@
    <Step Number="2">141</Step>
   </Function>
   <Function ID="84" Type="RGBMatrix" Name="fast balls color (only strips)">
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="479"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Balls (Colors)</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="color1Index" Value="Orange"/>
-   <Property Name="presetSize" Value="2"/>
    <Property Name="color2Index" Value="Red"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color1Index" Value="Orange"/>
+   <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2291,35 +2259,35 @@
     <Head>0</Head>
     <Mode>0</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>100</StartOffset>
+    <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>23</ID>
     <Head>0</Head>
     <Mode>0</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>150</StartOffset>
+    <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>24</ID>
     <Head>0</Head>
     <Mode>0</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>200</StartOffset>
+    <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>25</ID>
     <Head>0</Head>
     <Mode>0</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>250</StartOffset>
+    <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>26</ID>
     <Head>0</Head>
     <Mode>0</Mode>
     <Direction>Forward</Direction>
-    <StartOffset>300</StartOffset>
+    <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="954"/>
@@ -2332,12 +2300,12 @@
    <StartOffset>0</StartOffset>
    <IsRelative>1</IsRelative>
    <Axis Name="X">
-    <Offset>100</Offset>
+    <Offset>128</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>65</Offset>
+    <Offset>121</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -2367,11 +2335,10 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">127</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">128</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">130</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">129</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">131</Step>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">128</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">130</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">129</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">131</Step>
   </Function>
   <Function ID="133" Type="Scene" Name="PAR blue" Path="ZZZ PAR Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2673,7 +2640,7 @@
    <FixtureVal ID="17">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="9">0,255,1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="1">0,130,1,127,2,80,3,127,4,0,5,0,6,27,7,155,8,106,9,255,11,55</FixtureVal>
+   <FixtureVal ID="1">0,129,1,127,2,80,3,127,4,0,5,0,6,27,7,155,8,106,9,255,11,55</FixtureVal>
    <FixtureVal ID="5">0,89,1,145,2,70,3,127,4,0,5,0,6,28,7,155,8,106,9,255,11,55</FixtureVal>
    <FixtureVal ID="14">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="22">0,20,1,255,2,0,3,0,4,0,7,49,9,0,10,0</FixtureVal>
@@ -3526,7 +3493,7 @@
     <Tap>
      <Input Universe="0" Channel="158"/>
     </Tap>
-    <Time>954</Time>
+    <Time>479</Time>
     <Function FadeIn="0" FadeOut="0" Duration="6">66</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">52</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">65</Function>
@@ -3601,10 +3568,10 @@
     <Disabled>False</Disabled>
     <Multipage PagesNum="60" CurrentPage="0"/>
     <Next>
-     <Input Universe="0" Channel="173"/>
+     <Input Universe="0" Channel="169"/>
     </Next>
     <Previous>
-     <Input Universe="0" Channel="172"/>
+     <Input Universe="0" Channel="168"/>
     </Previous>
     <Shortcut Page="0" Name="All the small things">
      <Input Universe="0" Channel="179"/>
@@ -3691,10 +3658,10 @@
      <Chaser>88</Chaser>
      <NextPrevBehavior>3</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="169"/>
+      <Input Universe="0" Channel="173"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="168"/>
+      <Input Universe="0" Channel="172"/>
      </Previous>
      <Playback>
       <Input Universe="0" Channel="171"/>
