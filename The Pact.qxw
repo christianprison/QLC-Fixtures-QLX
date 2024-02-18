@@ -10,9 +10,7 @@
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="None" Line="0"/>
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AU0K2FP2)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -234,27 +232,6 @@
    <Head X="4" Y="3" Fixture="10">0</Head>
    <Head X="5" Y="3" Fixture="8">0</Head>
   </FixtureGroup>
-  <FixtureGroup ID="4">
-   <Name>Strips and PARs</Name>
-   <Size X="8" Y="8"/>
-   <Head X="0" Y="0" Fixture="11">0</Head>
-   <Head X="1" Y="0" Fixture="11">1</Head>
-   <Head X="2" Y="0" Fixture="11">2</Head>
-   <Head X="3" Y="0" Fixture="11">3</Head>
-   <Head X="4" Y="0" Fixture="11">4</Head>
-   <Head X="5" Y="0" Fixture="11">5</Head>
-   <Head X="6" Y="0" Fixture="11">6</Head>
-   <Head X="7" Y="0" Fixture="11">7</Head>
-   <Head X="1" Y="1" Fixture="6">0</Head>
-   <Head X="6" Y="1" Fixture="7">0</Head>
-   <Head X="0" Y="4" Fixture="2">0</Head>
-   <Head X="7" Y="4" Fixture="12">0</Head>
-   <Head X="4" Y="6" Fixture="4">0</Head>
-   <Head X="1" Y="7" Fixture="9">0</Head>
-   <Head X="2" Y="7" Fixture="0">0</Head>
-   <Head X="5" Y="7" Fixture="10">0</Head>
-   <Head X="6" Y="7" Fixture="8">0</Head>
-  </FixtureGroup>
   <FixtureGroup ID="5">
    <Name>Backlights</Name>
    <Size X="12" Y="4"/>
@@ -369,7 +346,7 @@
    <FixtureVal ID="26">0,43,1,255,2,99,3,0,4,0,5,117</FixtureVal>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Strips Twinkle">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">3D Starfield</Algorithm>
@@ -380,7 +357,7 @@
    <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="4" Type="RGBMatrix" Name="Static Dark Blue">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -402,7 +379,7 @@
    <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
   </Function>
-  <Function ID="6" Type="Scene" Name="Spot auf Axel 🟢">
+  <Function ID="6" Type="Scene" Name="Spot auf Axel 🟢" Path="Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,35,1,111,2,226,3,127,4,0,5,64,6,27,7,155,8,110,9,255,11,55</FixtureVal>
    <FixtureVal ID="5">0,169,1,127,2,225,3,127,4,0,5,62,6,25,7,110,8,110,9,255,11,43</FixtureVal>
@@ -412,9 +389,6 @@
    <FixtureVal ID="25">0,23,1,255,2,61,3,88,4,15,7,130,9,203</FixtureVal>
    <FixtureVal ID="26">0,23,1,255,2,61,3,88,4,9,7,122,9,185</FixtureVal>
    <FixtureVal ID="22">0,188,1,255,2,185,3,88,4,15,7,151,9,119</FixtureVal>
-  </Function>
-  <Function ID="7" Type="Scene" Name="10 Strip Tim L">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="8" Type="Show" Name="Wohnzimmer Weihnachten">
    <TimeDivision Type="BPM_4_4" BPM="110"/>
@@ -453,9 +427,6 @@
   <Function ID="14" Type="Scene" Name="08 Strip HL" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="15" Type="Scene" Name="12 Strip Tim R">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
   <Function ID="16" Type="Scene" Name="14 Strip HR" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
@@ -465,34 +436,19 @@
   <Function ID="18" Type="Scene" Name="22 Strip Pete" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="19" Type="Scene" Name="All PAR dimmers on">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>3,255</ChannelGroupsVal>
-   <FixtureVal ID="0">0,255</FixtureVal>
-   <FixtureVal ID="9">0,255</FixtureVal>
-   <FixtureVal ID="2">3,255</FixtureVal>
-   <FixtureVal ID="6">0,255</FixtureVal>
-   <FixtureVal ID="7">0,255</FixtureVal>
-   <FixtureVal ID="12">3,255</FixtureVal>
-   <FixtureVal ID="8">0,255</FixtureVal>
-   <FixtureVal ID="10">0,255</FixtureVal>
-   <FixtureVal ID="4"/>
-  </Function>
   <Function ID="20" Type="Show" Name="Pyramidenmarkt 203">
    <TimeDivision Type="Time" BPM="120"/>
   </Function>
   <Function ID="21" Type="Collection" Name="Blue Starfield">
    <Step Number="0">48</Step>
-   <Step Number="1">19</Step>
   </Function>
   <Function ID="22" Type="Collection" Name="Backlights Blinking">
-   <Step Number="0">19</Step>
-   <Step Number="1">55</Step>
+   <Step Number="0">55</Step>
   </Function>
   <Function ID="23" Type="Scene" Name="Heads up" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,57,1,127,2,255,3,127</FixtureVal>
-   <FixtureVal ID="5">0,37,1,127,2,255,3,127</FixtureVal>
+   <FixtureVal ID="1">2,255,3,127</FixtureVal>
+   <FixtureVal ID="5">2,255,3,127</FixtureVal>
    <FixtureVal ID="23">7,41,9,96</FixtureVal>
    <FixtureVal ID="24">7,41,9,101</FixtureVal>
    <FixtureVal ID="25">7,41,9,99</FixtureVal>
@@ -518,30 +474,23 @@
    <Step Number="12" FadeIn="0" Hold="16000" FadeOut="0" Note="Outro">86</Step>
    <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="25" Type="Scene" Name="Heads down" Path="ZZZ Heads Movement">
+  <Function ID="25" Type="Scene" Name="Heads down " Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,37,1,127,2,127,3,127</FixtureVal>
-   <FixtureVal ID="5">0,37,1,127,2,127,3,127</FixtureVal>
-   <FixtureVal ID="23">7,43,9,0</FixtureVal>
-   <FixtureVal ID="24">7,43,9,0</FixtureVal>
-   <FixtureVal ID="25">7,39,9,0</FixtureVal>
-   <FixtureVal ID="26">7,39,9,0</FixtureVal>
-  </Function>
-  <Function ID="26" Type="Collection" Name="Blinking Rainbow">
-   <Step Number="0">59</Step>
-   <Step Number="1">19</Step>
+   <FixtureVal ID="1">2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="5">2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="23">7,43,9,10</FixtureVal>
+   <FixtureVal ID="24">7,43,9,19</FixtureVal>
+   <FixtureVal ID="25">7,39,9,22</FixtureVal>
+   <FixtureVal ID="26">7,39,9,23</FixtureVal>
   </Function>
   <Function ID="27" Type="Collection" Name="fast balls">
    <Step Number="0">63</Step>
-   <Step Number="1">19</Step>
   </Function>
   <Function ID="28" Type="Collection" Name="fast balls color (only strips)">
    <Step Number="0">84</Step>
-   <Step Number="1">19</Step>
   </Function>
   <Function ID="29" Type="Collection" Name="red and green alternating">
    <Step Number="0">51</Step>
-   <Step Number="1">19</Step>
   </Function>
   <Function ID="30" Type="Chaser" Name="Lonely Boy" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -574,15 +523,12 @@
   </Function>
   <Function ID="32" Type="Collection" Name="static dark blue">
    <Step Number="0">4</Step>
-   <Step Number="1">19</Step>
   </Function>
   <Function ID="33" Type="Collection" Name="stripes from center">
    <Step Number="0">57</Step>
-   <Step Number="1">19</Step>
   </Function>
   <Function ID="34" Type="Collection" Name="strips twinkle">
    <Step Number="0">3</Step>
-   <Step Number="1">19</Step>
   </Function>
   <Function ID="35" Type="EFX" Name="left and right Martins">
    <Fixture>
@@ -621,7 +567,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="557"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -656,6 +602,7 @@
    <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="1">4,0,9,0</FixtureVal>
    <FixtureVal ID="5">4,0,9,0</FixtureVal>
+   <FixtureVal ID="3">0,0</FixtureVal>
   </Function>
   <Function ID="37" Type="Chaser" Name="Fog 10s √">
    <Speed FadeIn="0" FadeOut="0" Duration="10000"/>
@@ -745,6 +692,10 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,37,1,127,2,230,3,127</FixtureVal>
    <FixtureVal ID="5">0,37,1,127,2,230,3,127</FixtureVal>
+   <FixtureVal ID="23">7,30,9,70</FixtureVal>
+   <FixtureVal ID="24">7,30,9,70</FixtureVal>
+   <FixtureVal ID="25">7,30,9,70</FixtureVal>
+   <FixtureVal ID="26">7,30,9,70</FixtureVal>
   </Function>
   <Function ID="46" Type="Scene" Name="Heads cross" Path="ZZZ Heads Movement">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -765,15 +716,15 @@
    <FixtureVal ID="26">1,80,2,86</FixtureVal>
   </Function>
   <Function ID="48" Type="RGBMatrix" Name="Blue Starfield">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">3D Starfield</Algorithm>
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -821,15 +772,15 @@
    </Axis>
   </Function>
   <Function ID="51" Type="RGBMatrix" Name="red and green alternating">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
-   <FixtureGroup>4</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
+   <FixtureGroup>1</FixtureGroup>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins">
@@ -869,7 +820,7 @@
     <StartOffset>120</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -935,7 +886,7 @@
     <StartOffset>240</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -956,7 +907,7 @@
    </Axis>
   </Function>
   <Function ID="55" Type="RGBMatrix" Name="Backlights blinking">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -984,7 +935,7 @@
    <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0" Note="abruptes Ende">36</Step>
   </Function>
   <Function ID="57" Type="RGBMatrix" Name="Stripes from Center">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes From Center</Algorithm>
@@ -1009,7 +960,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -1019,7 +970,7 @@
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>45</Offset>
+    <Offset>110</Offset>
     <Frequency>9</Frequency>
     <Phase>90</Phase>
    </Axis>
@@ -1030,18 +981,18 @@
    </Axis>
   </Function>
   <Function ID="59" Type="RGBMatrix" Name="Blinking rainbow">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Random Pixel Per Row Multicolor</Algorithm>
    <MonoColor>4294966016</MonoColor>
    <EndColor>4278190080</EndColor>
    <ControlMode>RGB</ControlMode>
-   <FixtureGroup>4</FixtureGroup>
+   <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="60" Type="Scene" Name="Heads Rainbow blinking" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,180,6,0,8,157,9,255,11,0</FixtureVal>
+   <FixtureVal ID="1">5,180,6,0,8,180,9,255,11,0</FixtureVal>
    <FixtureVal ID="5">5,168,6,0,8,157,9,255,11,0</FixtureVal>
    <FixtureVal ID="22">0,90,1,80,2,235</FixtureVal>
    <FixtureVal ID="23">0,90,1,80,2,235</FixtureVal>
@@ -1122,7 +1073,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1143,21 +1094,21 @@
    </Axis>
   </Function>
   <Function ID="63" Type="RGBMatrix" Name="fast balls">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Balls (Colors)</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetCollision" Value="No"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetSize" Value="3"/>
-   <Property Name="presetNumber" Value="2"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="3"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetNumber" Value="2"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetCollision" Value="No"/>
    <Property Name="color1Index" Value="Dim Orange"/>
+   <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1213,7 +1164,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -1234,7 +1185,7 @@
    </Axis>
   </Function>
   <Function ID="66" Type="RGBMatrix" Name="White Strobe">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -1332,41 +1283,39 @@
    <Step Number="12" FadeIn="0" Hold="7000" FadeOut="0">71</Step>
    <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="74" Type="Collection" Name="03 walking 🚶">
+  <Function ID="74" Type="Collection" Name="03 walking 🚶(Tempo folgen)">
    <Step Number="0">52</Step>
    <Step Number="1">53</Step>
-   <Step Number="2">29</Step>
-   <Step Number="3">140</Step>
+   <Step Number="2">140</Step>
+   <Step Number="3">51</Step>
   </Function>
-  <Function ID="75" Type="Collection" Name="04 up'n'down ↕️">
+  <Function ID="75" Type="Collection" Name="04 up'n'down ↕️ (Alle Heads zu kleine Moves)">
    <Step Number="0">65</Step>
    <Step Number="1">53</Step>
    <Step Number="2">22</Step>
    <Step Number="3">139</Step>
   </Function>
-  <Function ID="76" Type="Collection" Name="05 left'n'right ↔️">
+  <Function ID="76" Type="Collection" Name="05 left'n'right ↔️ (alle Heads zu kleine Moves)">
    <Step Number="0">58</Step>
    <Step Number="1">53</Step>
    <Step Number="2">33</Step>
    <Step Number="3">35</Step>
   </Function>
   <Function ID="77" Type="Collection" Name="06 blinking 🔆">
-   <Step Number="0">61</Step>
-   <Step Number="1">60</Step>
-   <Step Number="2">26</Step>
-   <Step Number="3">142</Step>
+   <Step Number="0">60</Step>
+   <Step Number="1">59</Step>
+   <Step Number="2">45</Step>
   </Function>
-  <Function ID="78" Type="Collection" Name="07 round'n'round 🔄">
+  <Function ID="78" Type="Collection" Name="07 round'n'round 🔄 (Alle Heads zu kleine Moves)">
    <Step Number="0">53</Step>
    <Step Number="1">62</Step>
    <Step Number="2">27</Step>
    <Step Number="3">126</Step>
   </Function>
-  <Function ID="79" Type="Collection" Name="08 swimming 🏊🏻‍">
+  <Function ID="79" Type="Collection" Name="08 swimming 🏊🏻‍ (alle Heads falsch)">
    <Step Number="0">54</Step>
    <Step Number="1">53</Step>
-   <Step Number="2">26</Step>
-   <Step Number="3">138</Step>
+   <Step Number="2">138</Step>
   </Function>
   <Function ID="80" Type="Collection" Name="09 Alarm 🔔">
    <Step Number="0">63</Step>
@@ -1391,32 +1340,32 @@
    <Step Number="2">124</Step>
   </Function>
   <Function ID="84" Type="RGBMatrix" Name="fast balls color (only strips)">
-   <Speed FadeIn="0" FadeOut="0" Duration="467"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="463"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Balls (Colors)</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color1Index" Value="Orange"/>
+   <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="ZZZ Heads Colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,86,6,0,8,50,9,255</FixtureVal>
-   <FixtureVal ID="5">5,90,6,0,8,50,9,255</FixtureVal>
+   <FixtureVal ID="1">5,86,6,0,8,155,9,255</FixtureVal>
+   <FixtureVal ID="5">5,90,6,0,8,157,9,255</FixtureVal>
    <FixtureVal ID="23">0,27,1,80,2,98</FixtureVal>
    <FixtureVal ID="24">0,27,1,80,2,98</FixtureVal>
    <FixtureVal ID="25">0,27,1,80,2,98</FixtureVal>
    <FixtureVal ID="26">0,27,1,80,2,111</FixtureVal>
   </Function>
-  <Function ID="86" Type="Scene" Name="Spot auf Pete 🔵">
+  <Function ID="86" Type="Scene" Name="Spot auf Pete 🔵" Path="Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,130,1,0,2,255</FixtureVal>
    <FixtureVal ID="1">0,112,1,127,2,26,3,127,4,0,5,88,6,25,7,110,8,110,9,255,11,43</FixtureVal>
@@ -1539,7 +1488,7 @@
    <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0" Note="Ausklang 3:36">71</Step>
    <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="91" Type="Chaser" Name="Basket Case 🚫" Path="Pact Songs">
+  <Function ID="91" Type="Chaser" Name="Basket Case 🚫  ❗️" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -1573,7 +1522,7 @@
    <Step Number="20" FadeIn="0" Hold="5000" FadeOut="0" Note="2:50">71</Step>
    <Step Number="21" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="93" Type="Chaser" Name="Chelsea Dagger 🚫" Path="Pact Songs">
+  <Function ID="93" Type="Chaser" Name="Chelsea Dagger 🚫  ❗️" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -1772,11 +1721,37 @@
    <Step Number="21" FadeIn="0" Hold="9000" FadeOut="0">81</Step>
    <Step Number="22" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
-  <Function ID="100" Type="Chaser" Name="Rock'n'Roll Queen 🚫" Path="Pact Songs">
+  <Function ID="100" Type="Chaser" Name="Rock'n'Roll Queen" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="1" FadeIn="0" Hold="10" FadeOut="0">6</Step>
+   <Step Number="2" FadeIn="0" Hold="10000" FadeOut="0">37</Step>
+   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0">6</Step>
+   <Step Number="4" FadeIn="0" Hold="9000" FadeOut="0" Note="Verse 1">86</Step>
+   <Step Number="5" FadeIn="0" Hold="3200" FadeOut="0">36</Step>
+   <Step Number="6" FadeIn="0" Hold="26000" FadeOut="0" Note="Chorus 1">81</Step>
+   <Step Number="7" FadeIn="0" Hold="13000" FadeOut="0">168</Step>
+   <Step Number="8" FadeIn="0" Hold="9500" FadeOut="0" Note="Verse 2">79</Step>
+   <Step Number="9" FadeIn="0" Hold="3200" FadeOut="0">36</Step>
+   <Step Number="10" FadeIn="0" Hold="26000" FadeOut="0" Note="Chorus 2">81</Step>
+   <Step Number="11" FadeIn="0" Hold="26000" FadeOut="0" Note="Solo Axel">6</Step>
+   <Step Number="12" FadeIn="0" Hold="10" FadeOut="0">169</Step>
+   <Step Number="13" FadeIn="0" Hold="10000" FadeOut="0">37</Step>
+   <Step Number="14" FadeIn="0" Hold="16000" FadeOut="0">169</Step>
+   <Step Number="15" FadeIn="0" Hold="13000" FadeOut="0" Note="Interlude">83</Step>
+   <Step Number="16" FadeIn="0" Hold="9000" FadeOut="0">86</Step>
+   <Step Number="17" FadeIn="0" Hold="3200" FadeOut="0">36</Step>
+   <Step Number="18" FadeIn="0" Hold="6500" FadeOut="0" Note="Chorus 3">81</Step>
+   <Step Number="19" FadeIn="0" Hold="400" FadeOut="0" Note="Stops">43</Step>
+   <Step Number="20" FadeIn="0" Hold="1200" FadeOut="0">36</Step>
+   <Step Number="21" FadeIn="0" Hold="400" FadeOut="0">43</Step>
+   <Step Number="22" FadeIn="0" Hold="1200" FadeOut="0">36</Step>
+   <Step Number="23" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 4">80</Step>
+   <Step Number="24" FadeIn="0" Hold="6000" FadeOut="0" Note="Alarm am Ende">81</Step>
+   <Step Number="25" FadeIn="0" Hold="3000" FadeOut="0" Note="Abschlag">36</Step>
   </Function>
   <Function ID="101" Type="Chaser" Name="Run" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1895,13 +1870,13 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="106" Type="Chaser" Name="Song 2 🚫" Path="Pact Songs">
+  <Function ID="106" Type="Chaser" Name="Song 2 🚫  ❗️" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="107" Type="Chaser" Name="Teenage Dirtbag ❗️" Path="Pact Songs">
+  <Function ID="107" Type="Chaser" Name="Teenage Dirtbag" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
@@ -1916,36 +1891,40 @@
    <Step Number="7" FadeIn="0" Hold="900" FadeOut="0" Note="2:14">43</Step>
    <Step Number="8" FadeIn="0" Hold="1700" FadeOut="0" Note="2:15">80</Step>
    <Step Number="9" FadeIn="0" Hold="900" FadeOut="0" Note="2:16">43</Step>
-   <Step Number="10" FadeIn="0" Hold="2500" FadeOut="0" Note="2:17">80</Step>
-   <Step Number="11" FadeIn="0" Hold="3000" FadeOut="0" Note="2:20">77</Step>
+   <Step Number="10" FadeIn="0" Hold="2600" FadeOut="0" Note="2:17">80</Step>
+   <Step Number="11" FadeIn="0" Hold="2600" FadeOut="0" Note="2:20">77</Step>
    <Step Number="12" FadeIn="0" Hold="1700" FadeOut="0">80</Step>
    <Step Number="13" FadeIn="0" Hold="900" FadeOut="0">43</Step>
    <Step Number="14" FadeIn="0" Hold="1700" FadeOut="0">80</Step>
    <Step Number="15" FadeIn="0" Hold="900" FadeOut="0">43</Step>
-   <Step Number="16" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
-   <Step Number="17" FadeIn="0" Hold="2500" FadeOut="0">77</Step>
+   <Step Number="16" FadeIn="0" Hold="2600" FadeOut="0">80</Step>
+   <Step Number="17" FadeIn="0" Hold="2600" FadeOut="0">77</Step>
    <Step Number="18" FadeIn="0" Hold="36500" FadeOut="0" Note="Stop 2:34">86</Step>
    <Step Number="19" FadeIn="0" Hold="19500" FadeOut="0" Note="Chorgesang 3:11">70</Step>
-   <Step Number="20" FadeIn="0" Hold="2500" FadeOut="0" Note="2:20">77</Step>
+   <Step Number="20" FadeIn="0" Hold="2600" FadeOut="0" Note="2:20">77</Step>
    <Step Number="21" FadeIn="0" Hold="1700" FadeOut="0">80</Step>
    <Step Number="22" FadeIn="0" Hold="900" FadeOut="0">43</Step>
    <Step Number="23" FadeIn="0" Hold="1700" FadeOut="0">80</Step>
    <Step Number="24" FadeIn="0" Hold="900" FadeOut="0">43</Step>
-   <Step Number="25" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
-   <Step Number="26" FadeIn="0" Hold="2500" FadeOut="0">77</Step>
+   <Step Number="25" FadeIn="0" Hold="2600" FadeOut="0">80</Step>
+   <Step Number="26" FadeIn="0" Hold="2600" FadeOut="0">77</Step>
    <Step Number="27" FadeIn="0" Hold="1700" FadeOut="0">80</Step>
    <Step Number="28" FadeIn="0" Hold="900" FadeOut="0">43</Step>
    <Step Number="29" FadeIn="0" Hold="1700" FadeOut="0">80</Step>
    <Step Number="30" FadeIn="0" Hold="900" FadeOut="0">43</Step>
    <Step Number="31" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
-   <Step Number="32" FadeIn="0" Hold="3000" FadeOut="0">77</Step>
-   <Step Number="33" FadeIn="0" Hold="9000" FadeOut="0">75</Step>
-   <Step Number="34" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
-   <Step Number="35" FadeIn="0" Hold="3000" FadeOut="0">43</Step>
-   <Step Number="36" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
-   <Step Number="37" FadeIn="0" Hold="3000" FadeOut="0">43</Step>
-   <Step Number="38" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
-   <Step Number="39" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="32" FadeIn="0" Hold="2500" FadeOut="0">77</Step>
+   <Step Number="33" FadeIn="0" Hold="7500" FadeOut="0">75</Step>
+   <Step Number="34" FadeIn="0" Hold="700" FadeOut="0">43</Step>
+   <Step Number="35" FadeIn="0" Hold="700" FadeOut="0">71</Step>
+   <Step Number="36" FadeIn="0" Hold="800" FadeOut="0">43</Step>
+   <Step Number="37" FadeIn="0" Hold="800" FadeOut="0">71</Step>
+   <Step Number="38" FadeIn="0" Hold="800" FadeOut="0">43</Step>
+   <Step Number="39" FadeIn="0" Hold="800" FadeOut="0">71</Step>
+   <Step Number="40" FadeIn="0" Hold="900" FadeOut="0">43</Step>
+   <Step Number="41" FadeIn="0" Hold="1100" FadeOut="0">71</Step>
+   <Step Number="42" FadeIn="0" Hold="9000" FadeOut="0">80</Step>
+   <Step Number="43" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="108" Type="Chaser" Name="The boys of summer " Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2130,19 +2109,6 @@
    <FixtureVal ID="25">0,200,1,255,2,0,3,0,4,0,6,164</FixtureVal>
    <FixtureVal ID="26">0,200,1,255,2,99,3,0,4,0,5,117</FixtureVal>
   </Function>
-  <Function ID="125" Type="Scene" Name="All PAR dimmers on (Kopie)">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>3,255</ChannelGroupsVal>
-   <FixtureVal ID="0">0,255</FixtureVal>
-   <FixtureVal ID="9">0,255</FixtureVal>
-   <FixtureVal ID="2">3,255</FixtureVal>
-   <FixtureVal ID="6">0,255</FixtureVal>
-   <FixtureVal ID="7">0,255</FixtureVal>
-   <FixtureVal ID="12">3,255</FixtureVal>
-   <FixtureVal ID="8">0,255</FixtureVal>
-   <FixtureVal ID="10">0,255</FixtureVal>
-   <FixtureVal ID="4"/>
-  </Function>
   <Function ID="126" Type="EFX" Name="round and round Martins">
    <Fixture>
     <ID>22</ID>
@@ -2180,7 +2146,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -2321,7 +2287,7 @@
     <StartOffset>40</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -2357,17 +2323,17 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="18954"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
    <Width>0</Width>
-   <Height>50</Height>
+   <Height>20</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>100</Offset>
+    <Offset>120</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
@@ -2475,7 +2441,7 @@
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>60</Offset>
+    <Offset>110</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
@@ -2525,7 +2491,64 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="167" Type="Scene" Name="Spot auf Bibo 🟡">
+  <Function ID="145" Type="Scene" Name="Temp">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,82,2,17,4,0,5,0,8,38,9,85,11,55</FixtureVal>
+  </Function>
+  <Function ID="147" Type="Chaser" Name="Blinder test">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">36</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">43</Step>
+  </Function>
+  <Function ID="149" Type="Chaser" Name="up'n'down (neu)">
+   <Speed FadeIn="0" FadeOut="0" Duration="585"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">25</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">23</Step>
+  </Function>
+  <Function ID="152" Type="Collection" Name="up'n'down (ohne effects)">
+   <Step Number="0">149</Step>
+   <Step Number="1">53</Step>
+   <Step Number="2">155</Step>
+  </Function>
+  <Function ID="153" Type="Scene" Name="Heads left" Path="ZZZ Heads Movement">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,159</FixtureVal>
+   <FixtureVal ID="5">0,160</FixtureVal>
+   <FixtureVal ID="23">7,64</FixtureVal>
+   <FixtureVal ID="24">7,64</FixtureVal>
+   <FixtureVal ID="25">7,64</FixtureVal>
+   <FixtureVal ID="26">7,64</FixtureVal>
+  </Function>
+  <Function ID="154" Type="Scene" Name="Heads right" Path="ZZZ Heads Movement">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,202</FixtureVal>
+   <FixtureVal ID="5">0,202</FixtureVal>
+   <FixtureVal ID="23">7,24</FixtureVal>
+   <FixtureVal ID="24">7,24</FixtureVal>
+   <FixtureVal ID="25">7,24</FixtureVal>
+   <FixtureVal ID="26">7,24</FixtureVal>
+  </Function>
+  <Function ID="155" Type="Chaser" Name="left'n'right (neu)">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">154</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">156</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">153</Step>
+  </Function>
+  <Function ID="156" Type="Scene" Name="heads middle" Path="ZZZ Heads Movement">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,184</FixtureVal>
+   <FixtureVal ID="5">0,185</FixtureVal>
+  </Function>
+  <Function ID="167" Type="Scene" Name="Spot auf Bibo 🟡" Path="Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,126,1,128,2,34,3,127,4,0,5,73,6,27,7,155,8,110,9,255,11,55</FixtureVal>
    <FixtureVal ID="5">0,112,1,91,2,27,3,127,4,0,5,73,6,27,7,155,8,110,9,255,11,55</FixtureVal>
@@ -2536,7 +2559,7 @@
    <FixtureVal ID="26">0,20,1,166,2,25,3,40,4,20,6,0,7,190,9,65</FixtureVal>
    <FixtureVal ID="10">1,255</FixtureVal>
   </Function>
-  <Function ID="168" Type="Scene" Name="Spot auf Tim ⚪️">
+  <Function ID="168" Type="Scene" Name="Spot auf Tim ⚪️" Path="Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="9">0,255,1,255,2,255,3,255</FixtureVal>
@@ -2547,7 +2570,7 @@
    <FixtureVal ID="25">0,24,1,255,2,0,3,0,5,13,6,0,7,38,9,35</FixtureVal>
    <FixtureVal ID="26">0,0,1,0</FixtureVal>
   </Function>
-  <Function ID="169" Type="Scene" Name="Spot auf Axel 🟢 hot">
+  <Function ID="169" Type="Scene" Name="Spot auf Axel 🟢 hot" Path="Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>4,0</ChannelGroupsVal>
    <FixtureVal ID="1">0,34,1,109,2,230,3,127,4,0,5,64,6,27,7,155,8,93,9,255,11,55</FixtureVal>
@@ -2559,7 +2582,7 @@
    <FixtureVal ID="25">0,22,1,255,2,64,3,34,4,30,7,217,9,60</FixtureVal>
    <FixtureVal ID="26">0,28,1,255,2,58,3,46,4,44,7,119,9,198</FixtureVal>
   </Function>
-  <Function ID="170" Type="Scene" Name="Spot auf Tim ⚪️ hot">
+  <Function ID="170" Type="Scene" Name="Spot auf Tim ⚪️ hot" Path="Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="9">0,255,1,255,2,255,3,255</FixtureVal>
@@ -3028,6 +3051,44 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="5">5,0,8,150,9,255</FixtureVal>
   </Function>
+  <Function ID="188" Type="Scene" Name="Heads down  (Kopie)" Path="AAA Head positions with colors">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="5">2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="23">7,43,9,0</FixtureVal>
+   <FixtureVal ID="24">7,43,9,0</FixtureVal>
+   <FixtureVal ID="25">7,39,9,0</FixtureVal>
+   <FixtureVal ID="26">7,39,9,0</FixtureVal>
+  </Function>
+  <Function ID="189" Type="Scene" Name="Heads left (Kopie)" Path="AAA Head positions with colors">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,159</FixtureVal>
+   <FixtureVal ID="5">0,160</FixtureVal>
+  </Function>
+  <Function ID="190" Type="Scene" Name="heads middle (Kopie)" Path="AAA Head positions with colors">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,184</FixtureVal>
+   <FixtureVal ID="5">0,185</FixtureVal>
+  </Function>
+  <Function ID="191" Type="Scene" Name="Heads right (Kopie)" Path="ZZZ Heads Colors">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,202</FixtureVal>
+   <FixtureVal ID="5">0,202</FixtureVal>
+  </Function>
+  <Function ID="192" Type="Scene" Name="Heads up (Kopie)" Path="AAA Head positions with colors">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">2,255,3,127</FixtureVal>
+   <FixtureVal ID="5">2,255,3,127</FixtureVal>
+   <FixtureVal ID="23">7,41,9,96</FixtureVal>
+   <FixtureVal ID="24">7,41,9,101</FixtureVal>
+   <FixtureVal ID="25">7,41,9,99</FixtureVal>
+   <FixtureVal ID="26">7,41,9,109</FixtureVal>
+  </Function>
+  <Function ID="193" Type="Scene" Name="Neue Szene 193">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,0</FixtureVal>
+   <FixtureVal ID="12"/>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -3065,7 +3126,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="1010" Y="0" Width="910" Height="960"/>
+    <WindowState Visible="False" X="955" Y="0" Width="890" Height="940"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3074,7 +3135,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="🔄" ID="4" Icon="">
-     <WindowState Visible="False" X="350" Y="305" Width="100" Height="100"/>
+     <WindowState Visible="False" X="245" Y="305" Width="100" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3088,7 +3149,7 @@
      <Input Universe="0" Channel="138"/>
     </Button>
     <Button Caption="🎉" ID="1" Icon="">
-     <WindowState Visible="False" X="15" Y="175" Width="105" Height="100"/>
+     <WindowState Visible="False" X="15" Y="175" Width="80" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3116,7 +3177,7 @@
      <Input Universe="0" Channel="128"/>
     </Button>
     <Button Caption="↕️" ID="7" Icon="">
-     <WindowState Visible="False" X="130" Y="305" Width="100" Height="100"/>
+     <WindowState Visible="False" X="15" Y="305" Width="100" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3130,7 +3191,7 @@
      <Input Universe="0" Channel="136"/>
     </Button>
     <Button Caption="↔️" ID="8" Icon="">
-     <WindowState Visible="False" X="240" Y="305" Width="100" Height="100"/>
+     <WindowState Visible="False" X="130" Y="305" Width="100" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3144,7 +3205,7 @@
      <Input Universe="0" Channel="137"/>
     </Button>
     <Button Caption="🚶" ID="9" Icon="">
-     <WindowState Visible="False" X="130" Y="175" Width="100" Height="100"/>
+     <WindowState Visible="False" X="105" Y="175" Width="75" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3158,7 +3219,7 @@
      <Input Universe="0" Channel="131"/>
     </Button>
     <Button Caption="🏊🏻‍" ID="10" Icon="">
-     <WindowState Visible="False" X="350" Y="175" Width="100" Height="100"/>
+     <WindowState Visible="False" X="285" Y="175" Width="75" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3172,7 +3233,7 @@
      <Input Universe="0" Channel="133"/>
     </Button>
     <Button Caption="✳️" ID="11" Icon="">
-     <WindowState Visible="False" X="15" Y="435" Width="105" Height="100"/>
+     <WindowState Visible="False" X="135" Y="565" Width="105" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3186,7 +3247,7 @@
      <Input Universe="0" Channel="160"/>
     </Button>
     <Button Caption="Solo Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="False" X="490" Y="155" Width="290" Height="100"/>
+     <WindowState Visible="False" X="490" Y="155" Width="275" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3200,7 +3261,7 @@
      <Input Universe="0" Channel="149"/>
     </Button>
     <Button Caption="hot" ID="13" Icon="">
-     <WindowState Visible="False" X="790" Y="155" Width="100" Height="100"/>
+     <WindowState Visible="False" X="775" Y="155" Width="100" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3214,7 +3275,7 @@
      <Input Universe="0" Channel="152"/>
     </Button>
     <Button Caption="Solo Bibo 🟡" ID="14" Icon="">
-     <WindowState Visible="False" X="490" Y="265" Width="290" Height="100"/>
+     <WindowState Visible="False" X="490" Y="265" Width="275" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3228,7 +3289,7 @@
      <Input Universe="0" Channel="150"/>
     </Button>
     <Button Caption="Solo Tim ⚪️" ID="15" Icon="">
-     <WindowState Visible="False" X="490" Y="375" Width="290" Height="100"/>
+     <WindowState Visible="False" X="490" Y="375" Width="275" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3242,7 +3303,7 @@
      <Input Universe="0" Channel="151"/>
     </Button>
     <Button Caption="Solo Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="False" X="490" Y="45" Width="290" Height="100"/>
+     <WindowState Visible="False" X="490" Y="45" Width="275" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3270,7 +3331,7 @@
      <Input Universe="0" Channel="129"/>
     </Button>
     <Button Caption="🔔" ID="18" Icon="">
-     <WindowState Visible="False" X="15" Y="305" Width="105" Height="100"/>
+     <WindowState Visible="False" X="375" Y="175" Width="75" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3284,7 +3345,7 @@
      <Input Universe="0" Channel="134"/>
     </Button>
     <Button Caption="🛑" ID="19" Icon="">
-     <WindowState Visible="False" X="130" Y="835" Width="100" Height="95"/>
+     <WindowState Visible="False" X="360" Y="305" Width="90" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3298,7 +3359,7 @@
      <Input Universe="0" Channel="135"/>
     </Button>
     <Button Caption="" ID="28" Icon="">
-     <WindowState Visible="False" X="20" Y="835" Width="100" Height="95"/>
+     <WindowState Visible="False" X="15" Y="435" Width="100" Height="95"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3312,7 +3373,7 @@
      <Input Universe="0" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="False" X="130" Y="725" Width="100" Height="100"/>
+     <WindowState Visible="False" X="15" Y="695" Width="100" Height="240"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3326,7 +3387,7 @@
      <Input Universe="0" Channel="158"/>
     </Button>
     <Button Caption="🔆" ID="20" Icon="">
-     <WindowState Visible="False" X="240" Y="175" Width="100" Height="100"/>
+     <WindowState Visible="False" X="195" Y="175" Width="75" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3340,7 +3401,7 @@
      <Input Universe="0" Channel="132"/>
     </Button>
     <Button Caption="hot" ID="21" Icon="">
-     <WindowState Visible="False" X="790" Y="375" Width="100" Height="100"/>
+     <WindowState Visible="False" X="775" Y="375" Width="100" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3354,7 +3415,7 @@
      <Input Universe="0" Channel="153"/>
     </Button>
     <Button Caption="Fog" ID="36" Icon="">
-     <WindowState Visible="False" X="20" Y="725" Width="100" Height="100"/>
+     <WindowState Visible="False" X="15" Y="565" Width="100" Height="100"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3369,7 +3430,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="3">
-    <WindowState Visible="False" X="1500" Y="600" Width="400" Height="340"/>
+    <WindowState Visible="False" X="1095" Y="695" Width="660" Height="240"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3382,7 +3443,7 @@
     <Tap>
      <Input Universe="0" Channel="158"/>
     </Tap>
-    <Time>467</Time>
+    <Time>463</Time>
     <Function FadeIn="0" FadeOut="0" Duration="6">66</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">52</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">65</Function>
@@ -3447,15 +3508,15 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="0" Width="1015" Height="960"/>
+    <WindowState Visible="False" X="0" Y="0" Width="955" Height="945"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
+    <ShowEnableButton>True</ShowEnableButton>
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="25"/>
+    <Multipage PagesNum="60" CurrentPage="51"/>
     <Next>
      <Key>N</Key>
      <Input Universe="0" Channel="169"/>
@@ -3538,7 +3599,7 @@
     <Shortcut Page="59" Name="Seite: 60"/>
     <PagesLoop>False</PagesLoop>
     <CueList Caption="Cue-Liste" ID="22">
-     <WindowState Visible="False" X="0" Y="90" Width="1015" Height="870"/>
+     <WindowState Visible="False" X="0" Y="90" Width="955" Height="855"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3846,7 +3907,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Narcotic" ID="58" Page="26">
@@ -3856,7 +3917,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="untitled" ID="59" Page="27">
@@ -3906,7 +3967,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Self Esteem" ID="64" Page="32">
@@ -3916,7 +3977,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Seven Nation Army / Sweet Dreams" ID="65" Page="33">
@@ -3926,7 +3987,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Sex on Fire" ID="66" Page="34">
@@ -3936,7 +3997,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="She hates me" ID="67" Page="35">
@@ -3946,7 +4007,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Should I stay or should I go" ID="68" Page="36">
@@ -3956,7 +4017,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Song 2" ID="69" Page="37">
@@ -3966,7 +4027,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Spacelord" ID="70" Page="38">
@@ -3976,7 +4037,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="untitled" ID="71" Page="39">
@@ -4006,7 +4067,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="The boys of summer" ID="74" Page="42">
@@ -4016,7 +4077,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="The Middle" ID="75" Page="43">
@@ -4026,7 +4087,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="The Pretender" ID="76" Page="44">
@@ -4036,37 +4097,37 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="The Reason" ID="77" Page="45">
-     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="False" X="0" Y="35" Width="955" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Today" ID="78" Page="46">
-     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="False" X="0" Y="35" Width="955" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Torn" ID="79" Page="47">
-     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="False" X="0" Y="35" Width="955" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="untitled" ID="80" Page="48">
@@ -4100,23 +4161,23 @@
      </Appearance>
     </Label>
     <Label Caption="Word up" ID="83" Page="51">
-     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="False" X="0" Y="35" Width="955" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="Yellow" ID="84" Page="52">
-     <WindowState Visible="False" X="0" Y="55" Width="940" Height="45"/>
+     <WindowState Visible="False" X="0" Y="35" Width="955" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,75,0,0,0,0,0</Font>
      </Appearance>
     </Label>
     <Label Caption="untitled" ID="85" Page="53">
@@ -4530,7 +4591,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>41</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4578,7 +4639,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>98</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4602,7 +4663,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,26,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>99</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4626,7 +4687,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>100</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4650,7 +4711,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>101</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4674,7 +4735,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>102</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4698,7 +4759,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>103</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4722,7 +4783,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>104</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4746,7 +4807,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>171</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4770,7 +4831,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>105</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4794,7 +4855,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>106</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4818,7 +4879,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>172</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4842,7 +4903,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>107</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4866,7 +4927,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>56</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4890,7 +4951,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>108</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4914,7 +4975,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>73</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4938,7 +4999,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>173</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -5010,7 +5071,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>111</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -5034,7 +5095,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>72</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -5052,13 +5113,13 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="127" Page="51">
-     <WindowState Visible="False" X="0" Y="100" Width="940" Height="690"/>
+     <WindowState Visible="False" X="0" Y="100" Width="955" Height="730"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>112</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -5082,7 +5143,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
+      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>24</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
