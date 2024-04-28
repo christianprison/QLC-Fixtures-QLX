@@ -9,7 +9,7 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="None" Line="0"/>
+    <Input Plugin="MIDI" UID="Profiler" Line="0"/>
     <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
   </InputOutputMap>
@@ -18,7 +18,7 @@
    <Model>LED Pot 12x1W RGBW</Model>
    <Mode>4 channel</Mode>
    <ID>0</ID>
-   <Name>02 LED Pot Axel</Name>
+   <Name>02 LED Pot Axel 40°</Name>
    <Universe>0</Universe>
    <Address>45</Address>
    <Channels>4</Channels>
@@ -68,7 +68,7 @@
    <Model>LED Pot 12x1W RGBW</Model>
    <Mode>4 channel</Mode>
    <ID>6</ID>
-   <Name>07 LED Pot Backlight L</Name>
+   <Name>07 LED Pot Backlight L 40°</Name>
    <Universe>0</Universe>
    <Address>11</Address>
    <Channels>4</Channels>
@@ -78,7 +78,7 @@
    <Model>LED Pot 12x1W RGBW</Model>
    <Mode>4 channel</Mode>
    <ID>7</ID>
-   <Name>11 LED Pot Backlight R</Name>
+   <Name>11 LED Pot Backlight R 40°</Name>
    <Universe>0</Universe>
    <Address>17</Address>
    <Channels>4</Channels>
@@ -88,7 +88,7 @@
    <Model>LED Pot 12x1W RGBW</Model>
    <Mode>4 channel</Mode>
    <ID>8</ID>
-   <Name>15 LED Pot Tim</Name>
+   <Name>15 LED Pot Tim 15°</Name>
    <Universe>0</Universe>
    <Address>53</Address>
    <Channels>4</Channels>
@@ -98,7 +98,7 @@
    <Model>LED Pot 12x1W RGBW</Model>
    <Mode>4 channel</Mode>
    <ID>9</ID>
-   <Name>03 LED Pot Tim</Name>
+   <Name>03 LED Pot Tim 15°</Name>
    <Universe>0</Universe>
    <Address>49</Address>
    <Channels>4</Channels>
@@ -108,7 +108,7 @@
    <Model>LED Pot 12x1W RGBW</Model>
    <Mode>4 channel</Mode>
    <ID>10</ID>
-   <Name>16 LED Pot Bibo</Name>
+   <Name>16 LED Pot Bibo 40°</Name>
    <Universe>0</Universe>
    <Address>5</Address>
    <Channels>4</Channels>
@@ -735,8 +735,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
    <Property Name="StarsAmount" Value="50"/>
+   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1099,14 +1099,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetSize" Value="3"/>
    <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="presetNumber" Value="2"/>
+   <Property Name="presetSize" Value="3"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetNumber" Value="2"/>
    <Property Name="color5Index" Value="Orange"/>
-   <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetCollision" Value="No"/>
+   <Property Name="color2Index" Value="Red"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1346,14 +1346,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="2"/>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetSize" Value="2"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetNumber" Value="5"/>
    <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="color2Index" Value="Red"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1474,18 +1474,17 @@
    <Step Number="2" FadeIn="0" Hold="27000" FadeOut="0" Note="Verse 1 0:16">74</Step>
    <Step Number="3" FadeIn="0" Hold="3000" FadeOut="0" Note="Stop 0:43">71</Step>
    <Step Number="4" FadeIn="0" Hold="25000" FadeOut="0" Note="Chorus 1 0:46">80</Step>
-   <Step Number="5" FadeIn="0" Hold="25000" FadeOut="0" Note="1:11">81</Step>
-   <Step Number="6" FadeIn="0" Hold="26000" FadeOut="0" Note="Verse 2 1:12">74</Step>
-   <Step Number="7" FadeIn="0" Hold="22000" FadeOut="0" Note="Chorus 2 1:38">80</Step>
-   <Step Number="8" FadeIn="0" Hold="17000" FadeOut="0" Note="Interlude 2:00">70</Step>
-   <Step Number="9" FadeIn="0" Hold="13000" FadeOut="0" Note="Thema 2:17">79</Step>
-   <Step Number="10" FadeIn="0" Hold="5000" FadeOut="0" Note="Here we go again 2:30">74</Step>
-   <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0" Note="STOP 2:35">36</Step>
-   <Step Number="12" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 3 2:36">80</Step>
-   <Step Number="13" FadeIn="0" Hold="24000" FadeOut="0" Note="Guitar Solo 2:59">169</Step>
-   <Step Number="14" FadeIn="0" Hold="13000" FadeOut="0" Note="Chorus 4 3:23">80</Step>
-   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0" Note="Ausklang 3:36">71</Step>
-   <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="5" FadeIn="0" Hold="26000" FadeOut="0" Note="Verse 2 1:12">74</Step>
+   <Step Number="6" FadeIn="0" Hold="22000" FadeOut="0" Note="Chorus 2 1:38">80</Step>
+   <Step Number="7" FadeIn="0" Hold="17000" FadeOut="0" Note="Interlude 2:00">70</Step>
+   <Step Number="8" FadeIn="0" Hold="13000" FadeOut="0" Note="Thema 2:17">79</Step>
+   <Step Number="9" FadeIn="0" Hold="5000" FadeOut="0" Note="Here we go again 2:30">74</Step>
+   <Step Number="10" FadeIn="0" Hold="1000" FadeOut="0" Note="STOP 2:35">36</Step>
+   <Step Number="11" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 3 2:36">80</Step>
+   <Step Number="12" FadeIn="0" Hold="24000" FadeOut="0" Note="Guitar Solo 2:59">169</Step>
+   <Step Number="13" FadeIn="0" Hold="13000" FadeOut="0" Note="Chorus 4 3:23">80</Step>
+   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0" Note="Ausklang 3:36">71</Step>
+   <Step Number="15" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="91" Type="Chaser" Name="Basket Case" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
