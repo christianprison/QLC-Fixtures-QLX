@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
@@ -9,8 +9,10 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="Profiler" Line="0"/>
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Input Plugin="MIDI" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: 22a9695)" Line="0">
+     <PluginParameters UniverseChannels="196"/>
+    </Output>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -26,12 +28,12 @@
   <Fixture>
    <Manufacturer>Expolite</Manufacturer>
    <Model>TourSpot 50 Mini</Model>
-   <Mode>16b</Mode>
+   <Mode>8b</Mode>
    <ID>1</ID>
    <Name>19 TourSpot (58)</Name>
    <Universe>0</Universe>
    <Address>57</Address>
-   <Channels>13</Channels>
+   <Channels>10</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Eurolite</Manufacturer>
@@ -56,12 +58,12 @@
   <Fixture>
    <Manufacturer>Expolite</Manufacturer>
    <Model>TourSpot 50 Mini</Model>
-   <Mode>16b</Mode>
+   <Mode>8b</Mode>
    <ID>5</ID>
    <Name>20 TourSpot (91)</Name>
    <Universe>0</Universe>
    <Address>90</Address>
-   <Channels>13</Channels>
+   <Channels>10</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Fun-Generation</Manufacturer>
@@ -193,6 +195,12 @@
    <Address>183</Address>
    <Channels>13</Channels>
   </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Tour Spots</Name>
+   <Size X="2" Y="1"/>
+   <Head X="0" Y="0" Fixture="5">0</Head>
+   <Head X="1" Y="0" Fixture="1">0</Head>
+  </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>LED Pots</Name>
    <Size X="4" Y="4"/>
@@ -328,7 +336,7 @@
   </Function>
   <Function ID="2" Type="Scene" Name="Heads White" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,0,6,0,7,129,8,49,9,255,11,0</FixtureVal>
+   <FixtureVal ID="1">5,0,6,0,7,129,8,49,9,255</FixtureVal>
    <FixtureVal ID="5">5,0,6,0,7,129,8,45,9,255</FixtureVal>
    <FixtureVal ID="23">0,255,1,255,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="24">0,30,1,255,2,0,3,0,4,0,6,164</FixtureVal>
@@ -367,12 +375,12 @@
    <FixtureVal ID="8">0,0,1,0,2,0,3,0</FixtureVal>
    <FixtureVal ID="10">0,0,1,0,2,0,3,0</FixtureVal>
    <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0</FixtureVal>
-   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0</FixtureVal>
   </Function>
   <Function ID="6" Type="Scene" Name="Spot auf Axel 🟢" Path="Head positions with colors/Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,35,1,111,2,226,3,127,4,0,5,64,6,27,7,155,8,110,9,255,11,55</FixtureVal>
-   <FixtureVal ID="5">0,169,1,127,2,225,3,127,4,0,5,62,6,25,7,110,8,110,9,255,11,43</FixtureVal>
+   <FixtureVal ID="1">0,35,1,111,2,226,3,127,4,0,5,64,6,27,7,155,8,110,9,255</FixtureVal>
+   <FixtureVal ID="5">0,169,1,127,2,225,3,127,4,0,5,62,6,25,7,110,8,110,9,255</FixtureVal>
    <FixtureVal ID="2">1,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="23">0,23,1,255,2,61,3,88,4,15,7,147,9,206</FixtureVal>
    <FixtureVal ID="24">0,23,1,255,2,61,3,88,4,15,7,138,9,202</FixtureVal>
@@ -407,15 +415,15 @@
   </Function>
   <Function ID="10" Type="Scene" Name="Baum (Kopie)" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0</FixtureVal>
   </Function>
   <Function ID="11" Type="Scene" Name="Baum (Kopie)" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0</FixtureVal>
   </Function>
   <Function ID="12" Type="Scene" Name="Baum (Kopie)" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0</FixtureVal>
   </Function>
   <Function ID="13" Type="Scene" Name="06 Strip Axel" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -455,14 +463,8 @@
   <Function ID="22" Type="Collection" Name="Backlights Blinking">
    <Step Number="0">55</Step>
   </Function>
-  <Function ID="23" Type="Scene" Name="Heads center up" Path="Movement Heads/both Tilt&amp;Pan">
+  <Function ID="23" Type="Scene" Name="Neue Szene 23" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">2,255,3,127</FixtureVal>
-   <FixtureVal ID="5">2,255,3,127</FixtureVal>
-   <FixtureVal ID="23">7,41,9,96</FixtureVal>
-   <FixtureVal ID="24">7,41,9,101</FixtureVal>
-   <FixtureVal ID="25">7,41,9,99</FixtureVal>
-   <FixtureVal ID="26">7,41,9,109</FixtureVal>
   </Function>
   <Function ID="24" Type="Chaser" Name="Yellow" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -486,8 +488,8 @@
   </Function>
   <Function ID="25" Type="Scene" Name="Heads down " Path="Movement Heads/both Tilt&amp;Pan">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">2,127,3,127,4,0</FixtureVal>
-   <FixtureVal ID="5">2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="1">0,113,1,128,2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="5">0,113,1,128,2,127,3,127,4,0,5,0,6,255,7,0,8,0,9,0</FixtureVal>
    <FixtureVal ID="23">7,128,9,20</FixtureVal>
    <FixtureVal ID="24">7,128,9,20</FixtureVal>
    <FixtureVal ID="25">7,128,9,20</FixtureVal>
@@ -687,6 +689,8 @@
    <FixtureVal ID="24">0,25,1,255,2,0,3,5,6,8</FixtureVal>
    <FixtureVal ID="25">0,22,1,255,2,0,3,5,6,8</FixtureVal>
    <FixtureVal ID="26">0,22,1,255,2,0,3,5,6,8</FixtureVal>
+   <FixtureVal ID="1">0,128,1,25,2,225,3,0,4,0,5,0,6,255,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="5">0,128,1,25,2,225,3,0,4,0,5,0,6,255,7,0,8,0,9,0</FixtureVal>
   </Function>
   <Function ID="44" Type="Scene" Name="PAR rainbow static" Path="Colors PARs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -700,28 +704,24 @@
    <FixtureVal ID="10">0,255,1,0,2,147,3,255</FixtureVal>
    <FixtureVal ID="4">0,0,1,162,2,255,3,0,4,0</FixtureVal>
   </Function>
-  <Function ID="45" Type="Scene" Name="Heads Publikum" Path="Movement Heads/both Tilt&amp;Pan">
+  <Function ID="45" Type="Scene" Name="09 LED Bar" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,37,1,127,2,230,3,127</FixtureVal>
-   <FixtureVal ID="5">0,37,1,127,2,230,3,127</FixtureVal>
-   <FixtureVal ID="23">7,128,9,40</FixtureVal>
-   <FixtureVal ID="24">7,128,9,40</FixtureVal>
-   <FixtureVal ID="25">7,128,9,40</FixtureVal>
-   <FixtureVal ID="26">7,128,9,40</FixtureVal>
+   <ChannelGroupsVal>4,0</ChannelGroupsVal>
+   <FixtureVal ID="11">0,44,1,44,2,44,3,44,4,44,5,44,6,44,7,44,8,44,9,44,10,44,11,44,12,44,13,44,14,44,15,44,16,44,17,44,18,44,19,44,20,44,21,44,22,44,23,44</FixtureVal>
   </Function>
   <Function ID="46" Type="Scene" Name="Heads cross" Path="Movement Heads/both Tilt&amp;Pan">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">0,16,1,127,2,199,3,127</FixtureVal>
-   <FixtureVal ID="1">0,55,1,72,2,199,3,127</FixtureVal>
+   <FixtureVal ID="1">0,143,1,75,2,140,3,127,4,0,5,0,6,255,7,0,8,0,9,0</FixtureVal>
    <FixtureVal ID="23">7,91,9,90</FixtureVal>
    <FixtureVal ID="24">7,56,9,90</FixtureVal>
    <FixtureVal ID="25">7,22,9,90</FixtureVal>
    <FixtureVal ID="26">7,159,9,90</FixtureVal>
+   <FixtureVal ID="5">0,83,1,75,2,140,3,127</FixtureVal>
   </Function>
   <Function ID="47" Type="Scene" Name="Heads blue and red" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,16,6,0,7,129,9,255,11,0</FixtureVal>
-   <FixtureVal ID="5">5,37,6,0,7,129,9,255,11,0</FixtureVal>
+   <FixtureVal ID="1">5,16,6,0,7,129,9,255</FixtureVal>
+   <FixtureVal ID="5">5,37,6,0,7,129,9,255</FixtureVal>
    <FixtureVal ID="23">1,255,2,73</FixtureVal>
    <FixtureVal ID="24">1,255,2,83</FixtureVal>
    <FixtureVal ID="25">1,73,2,180</FixtureVal>
@@ -740,8 +740,8 @@
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
-   <FixtureVal ID="5">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
+   <FixtureVal ID="1">5,37,6,0,7,129,8,110,9,255</FixtureVal>
+   <FixtureVal ID="5">5,37,6,0,7,129,8,110,9,255</FixtureVal>
    <FixtureVal ID="23">0,20,1,95,2,73</FixtureVal>
    <FixtureVal ID="24">0,20,1,95,2,73</FixtureVal>
    <FixtureVal ID="25">0,20,1,95,2,73</FixtureVal>
@@ -792,8 +792,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Green"/>
+   <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -847,8 +847,8 @@
   </Function>
   <Function ID="53" Type="Scene" Name="Heads Rainbow static" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,116,8,45,9,255,11,0</FixtureVal>
-   <FixtureVal ID="5">5,39,8,45,9,255,11,0</FixtureVal>
+   <FixtureVal ID="1">5,116,8,45,9,255</FixtureVal>
+   <FixtureVal ID="5">5,39,8,45,9,255</FixtureVal>
    <FixtureVal ID="23">0,24,1,80,2,161,3,0</FixtureVal>
    <FixtureVal ID="24">0,24,1,83,2,177,3,0</FixtureVal>
    <FixtureVal ID="25">0,28,1,80,2,102,3,0</FixtureVal>
@@ -990,8 +990,8 @@
   </Function>
   <Function ID="60" Type="Scene" Name="Heads Rainbow blinking" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,180,6,0,8,180,9,255,11,0</FixtureVal>
-   <FixtureVal ID="5">5,168,6,0,8,157,9,255,11,0</FixtureVal>
+   <FixtureVal ID="1">5,180,6,0,8,180,9,255</FixtureVal>
+   <FixtureVal ID="5">5,168,6,0,8,157,9,255</FixtureVal>
    <FixtureVal ID="22">0,90,1,80,2,235</FixtureVal>
    <FixtureVal ID="23">0,90,1,80,2,235</FixtureVal>
    <FixtureVal ID="24">0,90,1,80,2,235</FixtureVal>
@@ -1100,13 +1100,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="presetSize" Value="3"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="color5Index" Value="Orange"/>
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="2"/>
-   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetSize" Value="3"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetCollision" Value="No"/>
-   <Property Name="color2Index" Value="Red"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1194,8 +1194,8 @@
   </Function>
   <Function ID="67" Type="Scene" Name="Heads white strobe" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,0,6,0,8,93,9,255,11,35</FixtureVal>
-   <FixtureVal ID="5">5,0,6,0,8,93,9,255,11,35</FixtureVal>
+   <FixtureVal ID="1">5,0,6,0,8,93,9,255</FixtureVal>
+   <FixtureVal ID="5">5,0,6,0,8,93,9,255</FixtureVal>
    <FixtureVal ID="22">0,55,1,255,2,0</FixtureVal>
    <FixtureVal ID="23">0,55,1,255,2,0</FixtureVal>
    <FixtureVal ID="24">0,55,1,255,2,0</FixtureVal>
@@ -1209,8 +1209,8 @@
   <Function ID="69" Type="Scene" Name="statisch bunt (heads+RGB)" Path="Colors all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>3,255</ChannelGroupsVal>
-   <FixtureVal ID="1">0,51,1,127,2,210,3,127,4,0,5,16,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
-   <FixtureVal ID="5">0,25,1,127,2,209,3,127,4,0,5,37,6,0,7,0,8,255,9,255,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="1">0,51,1,127,2,210,3,127,4,0,5,16,6,0,7,0,8,255,9,255</FixtureVal>
+   <FixtureVal ID="5">0,25,1,127,2,209,3,127,4,0,5,37,6,0,7,0,8,255,9,255</FixtureVal>
    <FixtureVal ID="0">0,255,1,0,2,255,3,124</FixtureVal>
    <FixtureVal ID="9">0,255,1,140,2,0,3,255</FixtureVal>
    <FixtureVal ID="2">0,255,1,0,2,130,3,255,4,0</FixtureVal>
@@ -1233,6 +1233,7 @@
    <Step Number="3">136</Step>
    <Step Number="4">144</Step>
    <Step Number="5">184</Step>
+   <Step Number="6">185</Step>
   </Function>
   <Function ID="71" Type="Collection" Name="01 statisch bunt 🎉">
    <Step Number="0">44</Step>
@@ -1303,7 +1304,6 @@
   <Function ID="77" Type="Collection" Name="06 blinking 🔆">
    <Step Number="0">60</Step>
    <Step Number="1">59</Step>
-   <Step Number="2">45</Step>
   </Function>
   <Function ID="78" Type="Collection" Name="07 round'n'round 🔄">
    <Step Number="0">53</Step>
@@ -1347,13 +1347,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="presetSize" Value="2"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="color5Index" Value="Yellow"/>
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="presetSize" Value="2"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="color2Index" Value="Red"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1367,8 +1367,8 @@
   <Function ID="86" Type="Scene" Name="Spot auf Pete 🔵" Path="Head positions with colors/Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,130,1,0,2,255</FixtureVal>
-   <FixtureVal ID="1">0,112,1,127,2,26,3,127,4,0,5,88,6,25,7,110,8,110,9,255,11,43</FixtureVal>
-   <FixtureVal ID="5">0,102,1,127,2,24,3,127,4,0,5,88,6,25,7,110,8,110,9,255,11,43</FixtureVal>
+   <FixtureVal ID="1">0,112,1,127,2,26,3,127,4,0,5,88,6,25,7,110,8,110,9,255</FixtureVal>
+   <FixtureVal ID="5">0,102,1,127,2,24,3,127,4,0,5,88,6,25,7,110,8,110,9,255</FixtureVal>
    <FixtureVal ID="12">0,127,1,0,2,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="23">0,20,1,50,2,106,3,53,4,6,5,51,6,0,7,176,9,194</FixtureVal>
    <FixtureVal ID="24">0,20,1,133,2,142,3,19,4,8,6,0,7,149,9,189</FixtureVal>
@@ -2126,19 +2126,19 @@
   </Function>
   <Function ID="114" Type="Scene" Name="24 Martin MAC250+" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="23">0,31,1,97,2,42,3,4,4,0,5,80,6,0</FixtureVal>
+   <FixtureVal ID="23">0,31,1,35,2,0,3,4,4,0,5,80,6,0,7,130,8,0,9,60,10,0,11,0,12,0</FixtureVal>
   </Function>
   <Function ID="115" Type="Scene" Name="25 Martin MAC250+" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="24">0,31,1,30,2,6,3,4,4,0,5,132,6,0</FixtureVal>
+   <FixtureVal ID="24">0,31,1,35,2,6,3,4,4,0,5,132,6,0,7,130,8,0,9,60,10,0,11,0,12,0</FixtureVal>
   </Function>
   <Function ID="116" Type="Scene" Name="26 Martin MAC250+" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="25">0,31,1,30,2,6,3,4,4,0,5,132,6,0</FixtureVal>
+   <FixtureVal ID="25">0,31,1,30,2,6,3,4,4,0,5,132,6,0,7,130,8,0,9,60,10,0,11,0,12,0</FixtureVal>
   </Function>
   <Function ID="117" Type="Scene" Name="27 Martin MAC250+" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="26">0,31,1,30,2,6,3,4,4,0,5,132,6,0</FixtureVal>
+   <FixtureVal ID="26">0,31,1,30,2,6,3,4,4,0,5,132,6,0,7,130,8,0,9,60,10,0,11,0,12,0</FixtureVal>
   </Function>
   <Function ID="118" Type="Scene" Name="02 LED Pot Axel" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2169,11 +2169,11 @@
    <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">120</Step>
    <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">68</Step>
    <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">179</Step>
-   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0">180</Step>
-   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">119</Step>
-   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">121</Step>
-   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">122</Step>
-   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">113</Step>
+   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">45</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">180</Step>
+   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">119</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">121</Step>
+   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">122</Step>
    <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0">114</Step>
    <Step Number="10" FadeIn="0" Hold="1000" FadeOut="0">115</Step>
    <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0">116</Step>
@@ -2181,7 +2181,7 @@
   </Function>
   <Function ID="124" Type="Scene" Name="Heads White on/off" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,0,6,0,7,129,8,128,9,255,11,0</FixtureVal>
+   <FixtureVal ID="1">5,0,6,0,7,129,8,128,9,255</FixtureVal>
    <FixtureVal ID="5">5,0,6,0,7,129,8,128,9,255</FixtureVal>
    <FixtureVal ID="23">0,202,1,255,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="24">0,200,1,255,2,0,3,0,4,0,6,164</FixtureVal>
@@ -2280,8 +2280,8 @@
    <FixtureVal ID="0">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="9">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="2">0,0,1,0,2,255</FixtureVal>
-   <FixtureVal ID="6">0,0,1,0,2,255</FixtureVal>
-   <FixtureVal ID="7">0,0,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,12</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,57</FixtureVal>
    <FixtureVal ID="12">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="8">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="10">0,0,1,0,2,255</FixtureVal>
@@ -2746,8 +2746,8 @@
   </Function>
   <Function ID="167" Type="Scene" Name="Spot auf Bibo 🟡" Path="Head positions with colors/Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,126,1,128,2,34,3,127,4,0,5,73,6,27,7,155,8,110,9,255,11,55</FixtureVal>
-   <FixtureVal ID="5">0,112,1,91,2,27,3,127,4,0,5,73,6,27,7,155,8,110,9,255,11,55</FixtureVal>
+   <FixtureVal ID="1">0,126,1,128,2,34,3,127,4,0,5,73,6,27,7,155,8,110,9,255</FixtureVal>
+   <FixtureVal ID="5">0,112,1,91,2,27,3,127,4,0,5,73,6,27,7,155,8,110,9,255</FixtureVal>
    <FixtureVal ID="23">0,20,1,166,2,25,3,0,4,55,6,0,7,116,9,197</FixtureVal>
    <FixtureVal ID="24">0,20,1,166,2,25,3,40,4,20,6,0,7,108,9,205</FixtureVal>
    <FixtureVal ID="25">0,20,1,166,2,25,3,40,4,20,6,0,7,106,9,189</FixtureVal>
@@ -2758,8 +2758,8 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="9">0,255,1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="1">0,129,1,127,2,80,3,127,4,0,5,0,6,27,7,155,8,106,9,255,11,55</FixtureVal>
-   <FixtureVal ID="5">0,89,1,145,2,70,3,127,4,0,5,0,6,28,7,155,8,106,9,255,11,55</FixtureVal>
+   <FixtureVal ID="1">0,129,1,127,2,80,3,127,4,0,5,0,6,27,7,155,8,106,9,255</FixtureVal>
+   <FixtureVal ID="5">0,89,1,145,2,70,3,127,4,0,5,0,6,28,7,155,8,106,9,255</FixtureVal>
    <FixtureVal ID="23">0,20,1,255,2,0,7,136,9,208</FixtureVal>
    <FixtureVal ID="24">0,46,1,255,2,0,3,0,6,0,7,131,9,207</FixtureVal>
    <FixtureVal ID="25">0,24,1,255,2,0,3,0,5,13,6,0,7,124,9,208</FixtureVal>
@@ -2768,8 +2768,8 @@
   <Function ID="169" Type="Scene" Name="Spot auf Axel 🟢 hot" Path="Head positions with colors/Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>4,0</ChannelGroupsVal>
-   <FixtureVal ID="1">0,34,1,109,2,230,3,127,4,0,5,64,6,27,7,155,8,93,9,255,11,55</FixtureVal>
-   <FixtureVal ID="5">0,170,1,127,2,233,3,100,4,0,5,62,6,25,7,110,8,93,9,255,11,43</FixtureVal>
+   <FixtureVal ID="1">0,34,1,109,2,230,3,127,4,0,5,64,6,27,7,155,8,93,9,255</FixtureVal>
+   <FixtureVal ID="5">0,170,1,127,2,233,3,100,4,0,5,62,6,25,7,110,8,93,9,255</FixtureVal>
    <FixtureVal ID="2">1,0,3,255,4,0</FixtureVal>
    <FixtureVal ID="23">0,20,1,255,2,161,3,69,5,29,7,147,9,206</FixtureVal>
    <FixtureVal ID="24">0,21,1,255,2,59,3,18,4,0,7,138,9,202</FixtureVal>
@@ -2780,8 +2780,8 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="9">0,255,1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="1">0,129,1,127,2,84,3,127,4,0,5,0,6,27,7,155,8,102,9,232,11,68</FixtureVal>
-   <FixtureVal ID="5">0,90,1,127,2,71,3,127,4,0,5,0,6,27,7,155,8,91,9,255,11,55</FixtureVal>
+   <FixtureVal ID="1">0,129,1,127,2,84,3,127,4,0,5,0,6,27,7,155,8,102,9,232</FixtureVal>
+   <FixtureVal ID="5">0,90,1,127,2,71,3,127,4,0,5,0,6,27,7,155,8,91,9,255</FixtureVal>
    <FixtureVal ID="23">0,56,1,255,2,125,3,89,4,0,7,136,9,208</FixtureVal>
    <FixtureVal ID="24">0,56,1,255,2,12,3,0,4,0,7,130,9,207</FixtureVal>
    <FixtureVal ID="25">0,56,1,255,2,12,3,0,4,0,7,124,9,208</FixtureVal>
@@ -3238,11 +3238,11 @@
   </Function>
   <Function ID="179" Type="Scene" Name="19 TourSpot" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,11,8,106,9,255,10,0</FixtureVal>
+   <FixtureVal ID="1">0,113,1,30,2,224,3,0,4,0,5,117,6,255,7,128,8,0,9,0</FixtureVal>
   </Function>
   <Function ID="180" Type="Scene" Name="20 TourSpot" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">5,0,8,150,9,255</FixtureVal>
+   <FixtureVal ID="5">0,107,1,26,2,225,3,0,4,0,5,0,6,255,7,151,8,0,9,0</FixtureVal>
   </Function>
   <Function ID="181" Type="Collection" Name="20 white Fan up">
    <Step Number="0">2</Step>
@@ -3254,8 +3254,8 @@
   </Function>
   <Function ID="183" Type="Scene" Name="Heads blue tunnel" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
-   <FixtureVal ID="5">5,37,6,0,7,129,8,110,9,255,11,154</FixtureVal>
+   <FixtureVal ID="1">5,37,6,0,7,129,8,110,9,255</FixtureVal>
+   <FixtureVal ID="5">5,37,6,0,7,129,8,110,9,255</FixtureVal>
    <FixtureVal ID="23">0,20,1,95,2,73</FixtureVal>
    <FixtureVal ID="24">0,20,1,95,2,73</FixtureVal>
    <FixtureVal ID="25">0,20,1,95,2,73</FixtureVal>
@@ -3268,34 +3268,57 @@
    <FixtureVal ID="25">3,10,4,3</FixtureVal>
    <FixtureVal ID="26">3,10,4,3</FixtureVal>
   </Function>
-  <Function ID="188" Type="Scene" Name="Heads down  (Kopie)" Path="Head positions with colors">
+  <Function ID="185" Type="Scene" Name="Matrices blue" Path="Colors Matrices">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">2,127,3,127,4,0</FixtureVal>
-   <FixtureVal ID="5">2,127,3,127,4,0</FixtureVal>
-   <FixtureVal ID="23">7,43,9,0</FixtureVal>
-   <FixtureVal ID="24">7,43,9,0</FixtureVal>
-   <FixtureVal ID="25">7,39,9,0</FixtureVal>
-   <FixtureVal ID="26">7,39,9,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,128,3,0,4,0,5,128,6,0,7,0,8,128,9,0,10,0,11,128,12,0,13,0,14,128,15,0,16,0,17,128,18,0,19,0,20,128,21,0,22,0,23,129</FixtureVal>
   </Function>
-  <Function ID="189" Type="Scene" Name="Heads left (Kopie)" Path="Head positions with colors">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,159</FixtureVal>
-   <FixtureVal ID="5">0,160</FixtureVal>
+  <Function ID="186" Type="Chaser" Name="@@@ Initial Setup @@@">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">40</Step>
+   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">132</Step>
+   <Step Number="2" FadeIn="0" Hold="4294967294" FadeOut="0">123</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">147</Step>
+   <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0">188</Step>
   </Function>
-  <Function ID="190" Type="Scene" Name="heads middle (Kopie)" Path="Head positions with colors">
+  <Function ID="187" Type="Scene" Name="Heads Center up" Path="Movement Heads/both Tilt&amp;Pan">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,184</FixtureVal>
-   <FixtureVal ID="5">0,185</FixtureVal>
+   <FixtureVal ID="1">0,113,1,18,2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="5">0,113,1,18,2,127,3,127,4,0,5,0,6,255,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="23">7,128,9,47</FixtureVal>
+   <FixtureVal ID="24">7,128,9,47</FixtureVal>
+   <FixtureVal ID="25">7,128,9,47</FixtureVal>
+   <FixtureVal ID="26">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,128,8,0,9,47,10,0</FixtureVal>
+  </Function>
+  <Function ID="188" Type="Scene" Name="Heads down" Path="Head positions with colors">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="23">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,128,8,0,9,0,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="24">7,128,9,0</FixtureVal>
+   <FixtureVal ID="25">7,128,9,0</FixtureVal>
+   <FixtureVal ID="26">7,128,9,0</FixtureVal>
+   <FixtureVal ID="1">0,113,1,129</FixtureVal>
+   <FixtureVal ID="5">0,113,1,128</FixtureVal>
+  </Function>
+  <Function ID="189" Type="Scene" Name="Heads Publikum" Path="Movement Heads/both Tilt&amp;Pan">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,113,1,45,2,127,3,127,4,0</FixtureVal>
+   <FixtureVal ID="5">0,113,1,45,2,127,3,129,4,0,5,0,6,255,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="23">7,128,9,32</FixtureVal>
+   <FixtureVal ID="24">7,128,9,32</FixtureVal>
+   <FixtureVal ID="25">7,128,9,32</FixtureVal>
+   <FixtureVal ID="26">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,128,8,0,9,32,10,0,11,0,12,0</FixtureVal>
   </Function>
   <Function ID="191" Type="Scene" Name="Heads right (Kopie)" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,202</FixtureVal>
    <FixtureVal ID="5">0,202</FixtureVal>
   </Function>
-  <Function ID="192" Type="Scene" Name="Heads up (Kopie)" Path="Head positions with colors">
+  <Function ID="192" Type="Scene" Name="Heads up" Path="Head positions with colors">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">2,255,3,127</FixtureVal>
-   <FixtureVal ID="5">2,255,3,127</FixtureVal>
+   <FixtureVal ID="1">0,113,1,20,2,255,3,127</FixtureVal>
+   <FixtureVal ID="5">0,113,1,20,2,255,3,127,4,0,5,0,6,255,7,0,8,0,9,0</FixtureVal>
    <FixtureVal ID="23">7,41,9,96</FixtureVal>
    <FixtureVal ID="24">7,41,9,101</FixtureVal>
    <FixtureVal ID="25">7,41,9,99</FixtureVal>
