@@ -336,7 +336,7 @@
   </Function>
   <Function ID="2" Type="Scene" Name="Heads White" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,0,6,0,7,129,8,49,9,255</FixtureVal>
+   <FixtureVal ID="1">3,0,5,0,6,255</FixtureVal>
    <FixtureVal ID="5">5,0,6,0,7,129,8,45,9,255</FixtureVal>
    <FixtureVal ID="23">0,255,1,255,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="24">0,30,1,255,2,0,3,0,4,0,6,164</FixtureVal>
@@ -409,9 +409,9 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="76">0:0,255:1:0,111,1,48,2,51,3,34,5,68,6,43,7,106,8,255,9,63,10,125:11:21,250:12:3,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="76">0:1,255:2:0,255:4:0,255:6:1,255:7:1,255:8:0,255,1,255:9:0,255,1,255:10:1,255:11:15,255:12:0,255</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="76">0:1,255:2:0,255,3,255:4:0,255:6:1,255:7:1,255:8:1,255:9:1,255:10:0,255,1,255:11:6,255:12:0,255</Step>
-   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="76">0:0,255,1,255:1:0,111,1,48,2,51,3,34,5,68,6,43,7,106,8,255,9,63,10,125:2:0,255:4:0,255:6:0,255,1,255:7:1,255:8:1,255:9:1,255:10:0,255,1,255:11:0,255:12:0,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="73">0:1,255:2:0,255:4:0,255:6:1,255:7:1,255:8:0,255,1,255:9:0,255,1,255:10:1,255:11:15,255:12:0,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="73">0:1,255:2:0,255,3,255:4:0,255:6:1,255:7:1,255:8:1,255:9:1,255:10:0,255,1,255:11:6,255:12:0,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="85">0:0,255,1,255:1:0,111,1,48,2,51,3,34,5,68,6,43,7,106,8,255,9,63,10,125:2:0,255:4:0,255:6:0,255,1,255:7:1,255:8:1,255:9:1,255:10:0,255,1,255:11:0,255:12:0,255</Step>
   </Function>
   <Function ID="10" Type="Scene" Name="Baum (Kopie)" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -735,8 +735,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -792,8 +792,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -1100,12 +1100,12 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetNumber" Value="2"/>
-   <Property Name="presetSize" Value="3"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="presetSize" Value="3"/>
+   <Property Name="presetNumber" Value="2"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="presetCollision" Value="No"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
@@ -1347,12 +1347,12 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="presetSize" Value="2"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="presetCollision" Value="Yes"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
@@ -3281,7 +3281,8 @@
    <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">132</Step>
    <Step Number="2" FadeIn="0" Hold="4294967294" FadeOut="0">123</Step>
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">147</Step>
-   <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0">188</Step>
+   <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0">2</Step>
+   <Step Number="5" FadeIn="0" Hold="4294967294" FadeOut="0">188</Step>
   </Function>
   <Function ID="187" Type="Scene" Name="Heads Center up" Path="Movement Heads/both Tilt&amp;Pan">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>

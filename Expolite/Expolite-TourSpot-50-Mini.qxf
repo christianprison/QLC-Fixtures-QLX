@@ -98,18 +98,19 @@
   <Channel Number="0">Pan</Channel>
   <Channel Number="1">Tilt</Channel>
   <Channel Number="2">Speed pan/tilt</Channel>
-  <Channel Number="3">Gobo wheel</Channel>
-  <Channel Number="4">Gobo rotation</Channel>
-  <Channel Number="5">Shutter</Channel>
-  <Channel Number="6">Dimmer</Channel>
-  <Channel Number="7">Focus</Channel>
-  <Channel Number="8">Prism &amp; Rotating</Channel>
-  <Channel Number="9">Special Function</Channel>
+  <Channel Number="3">Color Wheel</Channel>
+  <Channel Number="4">Gobo wheel</Channel>
+  <Channel Number="5">Gobo rotation</Channel>
+  <Channel Number="6">Shutter</Channel>
+  <Channel Number="7">Dimmer</Channel>
+  <Channel Number="8">Focus</Channel>
+  <Channel Number="9">Prism &amp; Rotating</Channel>
+  <Channel Number="10">Special Function</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
   <Dimensions Weight="7.6" Width="270" Height="366" Depth="155"/>
-  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Lens Name="Other" DegreesMin="11.9" DegreesMax="11.9"/>
   <Focus Type="Fixed" PanMax="630" TiltMax="270"/>
   <Technical PowerConsumption="50" DmxConnector="3-pin"/>
  </Physical>
