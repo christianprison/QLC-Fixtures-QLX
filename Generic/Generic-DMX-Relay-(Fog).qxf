@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.7</Version>
+  <Version>4.13.0</Version>
   <Author>Christian Prison</Author>
  </Creator>
  <Manufacturer>Generic</Manufacturer>
@@ -28,6 +28,6 @@
   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
-  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
  </Physical>
 </FixtureDefinition>
