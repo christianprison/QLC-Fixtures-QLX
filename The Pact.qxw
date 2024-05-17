@@ -3957,15 +3957,33 @@
     <Shortcut Page="40" Name="Teenage dirtbag">
      <Input Universe="1" Channel="178"/>
     </Shortcut>
-    <Shortcut Page="41" Name="Tension"/>
-    <Shortcut Page="42" Name="The boys of summer"/>
-    <Shortcut Page="43" Name="The Middle"/>
-    <Shortcut Page="44" Name="The Pretender"/>
-    <Shortcut Page="45" Name="The Reason"/>
-    <Shortcut Page="46" Name="Today"/>
-    <Shortcut Page="47" Name="Torn"/>
-    <Shortcut Page="48" Name="Seite: 49"/>
-    <Shortcut Page="49" Name="Seite: 50"/>
+    <Shortcut Page="41" Name="Tension">
+     <Input Universe="2" Channel="426"/>
+    </Shortcut>
+    <Shortcut Page="42" Name="The boys of summer">
+     <Input Universe="2" Channel="427"/>
+    </Shortcut>
+    <Shortcut Page="43" Name="The Middle">
+     <Input Universe="2" Channel="428"/>
+    </Shortcut>
+    <Shortcut Page="44" Name="The Pretender">
+     <Input Universe="2" Channel="429"/>
+    </Shortcut>
+    <Shortcut Page="45" Name="The Reason">
+     <Input Universe="2" Channel="430"/>
+    </Shortcut>
+    <Shortcut Page="46" Name="Today">
+     <Input Universe="2" Channel="431"/>
+    </Shortcut>
+    <Shortcut Page="47" Name="Torn">
+     <Input Universe="2" Channel="432"/>
+    </Shortcut>
+    <Shortcut Page="48" Name="Seite: 49">
+     <Input Universe="2" Channel="433"/>
+    </Shortcut>
+    <Shortcut Page="49" Name="Seite: 50">
+     <Input Universe="2" Channel="434"/>
+    </Shortcut>
     <Shortcut Page="50" Name="Valerie">
      <Input Universe="1" Channel="179"/>
     </Shortcut>
