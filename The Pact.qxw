@@ -3927,15 +3927,33 @@
     <Shortcut Page="30" Name="Rock'n'Roll Queen">
      <Input Universe="1" Channel="177"/>
     </Shortcut>
-    <Shortcut Page="31" Name="Run"/>
-    <Shortcut Page="32" Name="Self Esteem"/>
-    <Shortcut Page="33" Name="Seven Nation Army / Sweet Dreams"/>
-    <Shortcut Page="34" Name="Sex on fire"/>
-    <Shortcut Page="35" Name="She hates me"/>
-    <Shortcut Page="36" Name="Should I stay or should I go"/>
-    <Shortcut Page="37" Name="Song 2"/>
-    <Shortcut Page="38" Name="Space Lord"/>
-    <Shortcut Page="39" Name="Seite: 40"/>
+    <Shortcut Page="31" Name="Run">
+     <Input Universe="2" Channel="416"/>
+    </Shortcut>
+    <Shortcut Page="32" Name="Self Esteem">
+     <Input Universe="2" Channel="417"/>
+    </Shortcut>
+    <Shortcut Page="33" Name="Seven Nation Army / Sweet Dreams">
+     <Input Universe="2" Channel="418"/>
+    </Shortcut>
+    <Shortcut Page="34" Name="Sex on fire">
+     <Input Universe="2" Channel="419"/>
+    </Shortcut>
+    <Shortcut Page="35" Name="She hates me">
+     <Input Universe="2" Channel="420"/>
+    </Shortcut>
+    <Shortcut Page="36" Name="Should I stay or should I go">
+     <Input Universe="2" Channel="421"/>
+    </Shortcut>
+    <Shortcut Page="37" Name="Song 2">
+     <Input Universe="2" Channel="422"/>
+    </Shortcut>
+    <Shortcut Page="38" Name="Space Lord">
+     <Input Universe="2" Channel="423"/>
+    </Shortcut>
+    <Shortcut Page="39" Name="Seite: 40">
+     <Input Universe="2" Channel="424"/>
+    </Shortcut>
     <Shortcut Page="40" Name="Teenage dirtbag">
      <Input Universe="1" Channel="178"/>
     </Shortcut>
