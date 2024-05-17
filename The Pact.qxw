@@ -3987,15 +3987,33 @@
     <Shortcut Page="50" Name="Valerie">
      <Input Universe="1" Channel="179"/>
     </Shortcut>
-    <Shortcut Page="51" Name="Word up"/>
-    <Shortcut Page="52" Name="Yellow"/>
-    <Shortcut Page="53" Name="Seite: 54"/>
-    <Shortcut Page="54" Name="Seite: 55"/>
-    <Shortcut Page="55" Name="Seite: 56"/>
-    <Shortcut Page="56" Name="Seite: 57"/>
-    <Shortcut Page="57" Name="Seite: 58"/>
-    <Shortcut Page="58" Name="Seite: 59"/>
-    <Shortcut Page="59" Name="Seite: 60"/>
+    <Shortcut Page="51" Name="Word up">
+     <Input Universe="2" Channel="436"/>
+    </Shortcut>
+    <Shortcut Page="52" Name="Yellow">
+     <Input Universe="2" Channel="437"/>
+    </Shortcut>
+    <Shortcut Page="53" Name="Seite: 54">
+     <Input Universe="2" Channel="438"/>
+    </Shortcut>
+    <Shortcut Page="54" Name="Seite: 55">
+     <Input Universe="2" Channel="439"/>
+    </Shortcut>
+    <Shortcut Page="55" Name="Seite: 56">
+     <Input Universe="2" Channel="440"/>
+    </Shortcut>
+    <Shortcut Page="56" Name="Seite: 57">
+     <Input Universe="2" Channel="441"/>
+    </Shortcut>
+    <Shortcut Page="57" Name="Seite: 58">
+     <Input Universe="2" Channel="442"/>
+    </Shortcut>
+    <Shortcut Page="58" Name="Seite: 59">
+     <Input Universe="2" Channel="443"/>
+    </Shortcut>
+    <Shortcut Page="59" Name="Seite: 60">
+     <Input Universe="2" Channel="444"/>
+    </Shortcut>
     <PagesLoop>False</PagesLoop>
     <CueList Caption="Cue-Liste" ID="22">
      <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
