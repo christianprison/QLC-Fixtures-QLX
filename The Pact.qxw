@@ -10,17 +10,11 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: EN429695)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
-   <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="PACER" Line="0" Profile="Nektar Pacer"/>
-   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" UID="rptMIDI" Line="2" Profile="Arlomedia Bandhelper">
-     <PluginParameters MIDISendNoteOff="true"/>
-    </Input>
+    <Input Plugin="MIDI" UID="rptMIDI" Line="0" Profile="Arlomedia Bandhelper"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -483,6 +477,7 @@
   </Function>
   <Function ID="20" Type="Show" Name="Pyramidenmarkt 203">
    <TimeDivision Type="Time" BPM="120"/>
+   <Track ID="0" Name="Spur 1" isMute="0"/>
   </Function>
   <Function ID="21" Type="Collection" Name="Blue Starfield !">
    <Step Number="0">48</Step>
@@ -758,8 +753,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
    <Property Name="StarsAmount" Value="50"/>
+   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -814,9 +809,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Green"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -1122,14 +1117,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetNumber" Value="2"/>
    <Property Name="presetCollision" Value="No"/>
-   <Property Name="presetSize" Value="3"/>
-   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetNumber" Value="2"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color1Index" Value="Dim Orange"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetSize" Value="3"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1379,14 +1374,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color1Index" Value="Orange"/>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="presetSize" Value="2"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3444,10 +3439,10 @@
   </Function>
   <Function ID="203" Type="Scene" Name="Martin Shutter open" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="23">0,20</FixtureVal>
-   <FixtureVal ID="24">0,20</FixtureVal>
-   <FixtureVal ID="25">0,20</FixtureVal>
-   <FixtureVal ID="26">0,20</FixtureVal>
+   <FixtureVal ID="23">0,20,3,0,4,0</FixtureVal>
+   <FixtureVal ID="24">0,20,3,0,4,0</FixtureVal>
+   <FixtureVal ID="25">0,20,3,0,4,0</FixtureVal>
+   <FixtureVal ID="26">0,20,3,0,4,0</FixtureVal>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -3607,7 +3602,7 @@
      <Input Universe="1" Channel="160"/>
     </Button>
     <Button Caption="Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="True" X="170" Y="165" Width="70" Height="70"/>
+     <WindowState Visible="True" X="170" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3621,7 +3616,7 @@
      <Input Universe="1" Channel="149"/>
     </Button>
     <Button Caption="hot" ID="13" Icon="">
-     <WindowState Visible="True" X="170" Y="90" Width="70" Height="70"/>
+     <WindowState Visible="True" X="170" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3635,7 +3630,7 @@
      <Input Universe="1" Channel="152"/>
     </Button>
     <Button Caption="Chris 🟡" ID="14" Icon="">
-     <WindowState Visible="True" X="245" Y="165" Width="70" Height="70"/>
+     <WindowState Visible="True" X="245" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3649,7 +3644,7 @@
      <Input Universe="1" Channel="150"/>
     </Button>
     <Button Caption="Tim   ⚪️" ID="15" Icon="">
-     <WindowState Visible="True" X="320" Y="165" Width="70" Height="70"/>
+     <WindowState Visible="True" X="320" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3663,7 +3658,7 @@
      <Input Universe="1" Channel="151"/>
     </Button>
     <Button Caption="Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="True" X="95" Y="90" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3705,7 +3700,7 @@
      <Input Universe="1" Channel="134"/>
     </Button>
     <Button Caption="🛑" ID="19" Icon="">
-     <WindowState Visible="True" X="395" Y="500" Width="75" Height="70"/>
+     <WindowState Visible="True" X="170" Y="275" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3716,7 +3711,7 @@
      <Function ID="82"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="1" Channel="158"/>
+     <Input Universe="1" Channel="138"/>
     </Button>
     <Button Caption="" ID="28" Icon="">
      <WindowState Visible="True" X="245" Y="500" Width="70" Height="70"/>
@@ -3733,7 +3728,7 @@
      <Input Universe="1" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="True" X="170" Y="270" Width="75" Height="70"/>
+     <WindowState Visible="True" X="395" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3744,7 +3739,7 @@
      <Function ID="43"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="1" Channel="138"/>
+     <Input Universe="1" Channel="158"/>
     </Button>
     <Button Caption="🔆 blinking" ID="20" Icon="">
      <WindowState Visible="True" X="95" Y="275" Width="70" Height="70"/>
@@ -3761,7 +3756,7 @@
      <Input Universe="1" Channel="133"/>
     </Button>
     <Button Caption="hot" ID="21" Icon="">
-     <WindowState Visible="True" X="320" Y="90" Width="70" Height="70"/>
+     <WindowState Visible="True" X="320" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3810,7 +3805,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="True" X="685" Y="750" Width="185" Height="25"/>
+    <WindowState Visible="True" X="715" Y="750" Width="185" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3820,7 +3815,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Offset Heads in Effects anpassen (kleine/große s separat)" ID="35">
-    <WindowState Visible="True" X="685" Y="720" Width="435" Height="25"/>
+    <WindowState Visible="True" X="715" Y="720" Width="435" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3844,8 +3839,8 @@
     <ShowEnableButton>True</ShowEnableButton>
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="32"/>
+    <Disabled>True</Disabled>
+    <Multipage PagesNum="60" CurrentPage="41"/>
     <Next>
      <Key>N</Key>
      <Input Universe="1" Channel="173"/>
@@ -3855,7 +3850,7 @@
      <Input Universe="1" Channel="172"/>
     </Previous>
     <Shortcut Page="0" Name="All the small things">
-     <Input Universe="1" Channel="174"/>
+     <Input Universe="2" Channel="385"/>
     </Shortcut>
     <Shortcut Page="1" Name="Along comes Mary">
      <Input Universe="2" Channel="386"/>
@@ -3885,7 +3880,7 @@
      <Input Universe="2" Channel="394"/>
     </Shortcut>
     <Shortcut Page="10" Name="Chalsea Dagger">
-     <Input Universe="1" Channel="175"/>
+     <Input Universe="2" Channel="395"/>
     </Shortcut>
     <Shortcut Page="11" Name="Creep">
      <Input Universe="2" Channel="396"/>
@@ -3915,7 +3910,7 @@
      <Input Universe="2" Channel="404"/>
     </Shortcut>
     <Shortcut Page="20" Name="Hail to the freaks">
-     <Input Universe="1" Channel="176"/>
+     <Input Universe="2" Channel="405"/>
     </Shortcut>
     <Shortcut Page="21" Name="Inside">
      <Input Universe="2" Channel="406"/>
@@ -3945,7 +3940,7 @@
      <Input Universe="2" Channel="414"/>
     </Shortcut>
     <Shortcut Page="30" Name="Rock'n'Roll Queen">
-     <Input Universe="1" Channel="177"/>
+     <Input Universe="2" Channel="415"/>
     </Shortcut>
     <Shortcut Page="31" Name="Run">
      <Input Universe="2" Channel="416"/>
@@ -3975,7 +3970,7 @@
      <Input Universe="2" Channel="424"/>
     </Shortcut>
     <Shortcut Page="40" Name="Teenage dirtbag">
-     <Input Universe="1" Channel="178"/>
+     <Input Universe="2" Channel="425"/>
     </Shortcut>
     <Shortcut Page="41" Name="Tension">
      <Input Universe="2" Channel="426"/>
@@ -4005,7 +4000,7 @@
      <Input Universe="2" Channel="434"/>
     </Shortcut>
     <Shortcut Page="50" Name="Valerie">
-     <Input Universe="1" Channel="179"/>
+     <Input Universe="2" Channel="435"/>
     </Shortcut>
     <Shortcut Page="51" Name="Word up">
      <Input Universe="2" Channel="436"/>
@@ -4058,7 +4053,6 @@
      <Stop>
       <Input Universe="1" Channel="170"/>
      </Stop>
-     <SlidersMode>Steps</SlidersMode>
     </CueList>
     <CueList Caption="Cue-Liste" ID="23" Page="1">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
@@ -4067,21 +4061,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>89</Chaser>
      <NextPrevBehavior>3</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="65709"/>
+      <Input Universe="1" Channel="65709"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="65708"/>
+      <Input Universe="1" Channel="65708"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="65707"/>
+      <Input Universe="1" Channel="65707"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="65706"/>
+      <Input Universe="1" Channel="65706"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="25" Page="2">
@@ -4091,21 +4085,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>64</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="131245"/>
+      <Input Universe="1" Channel="131245"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="131244"/>
+      <Input Universe="1" Channel="131244"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="131243"/>
+      <Input Universe="1" Channel="131243"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="131242"/>
+      <Input Universe="1" Channel="131242"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="92" Page="4">
@@ -4115,21 +4109,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>175</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="262317"/>
+      <Input Universe="1" Channel="262317"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="262316"/>
+      <Input Universe="1" Channel="262316"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="262315"/>
+      <Input Universe="1" Channel="262315"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="262314"/>
+      <Input Universe="1" Channel="262314"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="93" Page="11">
@@ -4139,21 +4133,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>176</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="721069"/>
+      <Input Universe="1" Channel="721069"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="721068"/>
+      <Input Universe="1" Channel="721068"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="721067"/>
+      <Input Universe="1" Channel="721067"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="721066"/>
+      <Input Universe="1" Channel="721066"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="94" Page="12">
@@ -4163,21 +4157,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>177</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="786605"/>
+      <Input Universe="1" Channel="786605"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="786604"/>
+      <Input Universe="1" Channel="786604"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="786603"/>
+      <Input Universe="1" Channel="786603"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="786602"/>
+      <Input Universe="1" Channel="786602"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="95" Page="20">
@@ -4187,21 +4181,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>174</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1310893"/>
+      <Input Universe="1" Channel="1310893"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1310892"/>
+      <Input Universe="1" Channel="1310892"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1310891"/>
+      <Input Universe="1" Channel="1310891"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1310890"/>
+      <Input Universe="1" Channel="1310890"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="96" Page="3">
@@ -4211,21 +4205,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>90</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="196781"/>
+      <Input Universe="1" Channel="196781"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="196780"/>
+      <Input Universe="1" Channel="196780"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="196779"/>
+      <Input Universe="1" Channel="196779"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="196778"/>
+      <Input Universe="1" Channel="196778"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="97" Page="5">
@@ -4235,19 +4229,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>91</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="327853"/>
+      <Input Universe="1" Channel="327853"/>
      </Next>
-     <Previous/>
+     <Previous>
+      <Input Universe="1" Channel="327852"/>
+     </Previous>
      <Playback>
-      <Input Universe="0" Channel="327851"/>
+      <Input Universe="1" Channel="327851"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="327850"/>
+      <Input Universe="1" Channel="327850"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="98" Page="6">
@@ -4257,21 +4253,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>92</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="393389"/>
+      <Input Universe="1" Channel="393389"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="393388"/>
+      <Input Universe="1" Channel="393388"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="393387"/>
+      <Input Universe="1" Channel="393387"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="393386"/>
+      <Input Universe="1" Channel="393386"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="99" Page="10">
@@ -4281,21 +4277,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>93</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="655533"/>
+      <Input Universe="1" Channel="655533"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="655532"/>
+      <Input Universe="1" Channel="655532"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="655531"/>
+      <Input Universe="1" Channel="655531"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="655530"/>
+      <Input Universe="1" Channel="655530"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="46" Page="13">
@@ -4305,21 +4301,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>94</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="852141"/>
+      <Input Universe="1" Channel="852141"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="852140"/>
+      <Input Universe="1" Channel="852140"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="852139"/>
+      <Input Universe="1" Channel="852139"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="852138"/>
+      <Input Universe="1" Channel="852138"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="100" Page="14">
@@ -4329,21 +4325,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>95</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="917677"/>
+      <Input Universe="1" Channel="917677"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="917676"/>
+      <Input Universe="1" Channel="917676"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="917675"/>
+      <Input Universe="1" Channel="917675"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="917674"/>
+      <Input Universe="1" Channel="917674"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="101" Page="15">
@@ -4353,21 +4349,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>96</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="983213"/>
+      <Input Universe="1" Channel="983213"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="983212"/>
+      <Input Universe="1" Channel="983212"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="983211"/>
+      <Input Universe="1" Channel="983211"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="983210"/>
+      <Input Universe="1" Channel="983210"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="102" Page="16">
@@ -4377,15 +4373,15 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>97</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1048749"/>
+      <Input Universe="1" Channel="1048749"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1048748"/>
+      <Input Universe="1" Channel="1048748"/>
      </Previous>
      <Playback>
       <Input Universe="0" Channel="1048747"/>
@@ -4406,16 +4402,16 @@
      <Chaser>87</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1376429"/>
+      <Input Universe="1" Channel="1376429"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1376428"/>
+      <Input Universe="1" Channel="1376428"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1376427"/>
+      <Input Universe="1" Channel="1376427"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1376426"/>
+      <Input Universe="1" Channel="1376426"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="104" Page="22">
@@ -4425,21 +4421,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>178</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1441965"/>
+      <Input Universe="1" Channel="1441965"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1441964"/>
+      <Input Universe="1" Channel="1441964"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1441963"/>
+      <Input Universe="1" Channel="1441963"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1441962"/>
+      <Input Universe="1" Channel="1441962"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="105" Page="23">
@@ -4449,21 +4445,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>41</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1507501"/>
+      <Input Universe="1" Channel="1507501"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1507500"/>
+      <Input Universe="1" Channel="1507500"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1507499"/>
+      <Input Universe="1" Channel="1507499"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1507498"/>
+      <Input Universe="1" Channel="1507498"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="106" Page="24">
@@ -4473,21 +4469,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>30</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1573037"/>
+      <Input Universe="1" Channel="1573037"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1573036"/>
+      <Input Universe="1" Channel="1573036"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1573035"/>
+      <Input Universe="1" Channel="1573035"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1573034"/>
+      <Input Universe="1" Channel="1573034"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="107" Page="25">
@@ -4497,21 +4493,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>98</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1638573"/>
+      <Input Universe="1" Channel="1638573"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1638572"/>
+      <Input Universe="1" Channel="1638572"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1638571"/>
+      <Input Universe="1" Channel="1638571"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1638570"/>
+      <Input Universe="1" Channel="1638570"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="108" Page="26">
@@ -4521,21 +4517,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,26,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>99</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="131241"/>
+      <Input Universe="1" Channel="1704109"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="131240"/>
+      <Input Universe="1" Channel="1704108"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1704107"/>
+      <Input Universe="1" Channel="1704107"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1704106"/>
+      <Input Universe="1" Channel="1704106"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="109" Page="30">
@@ -4545,21 +4541,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>100</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="1966253"/>
+      <Input Universe="1" Channel="1966253"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="1966252"/>
+      <Input Universe="1" Channel="1966252"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="1966251"/>
+      <Input Universe="1" Channel="1966251"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="1966250"/>
+      <Input Universe="1" Channel="1966250"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="110" Page="31">
@@ -4580,34 +4576,34 @@
       <Input Universe="0" Channel="2031788"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2031787"/>
+      <Input Universe="1" Channel="2031787"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2031786"/>
+      <Input Universe="1" Channel="2031786"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="111" Page="32">
-     <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>102</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2097325"/>
+      <Input Universe="1" Channel="2097325"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2097324"/>
+      <Input Universe="1" Channel="2097324"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2097323"/>
+      <Input Universe="1" Channel="2097323"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2097322"/>
+      <Input Universe="1" Channel="2097322"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="112" Page="33">
@@ -4617,21 +4613,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>103</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2162861"/>
+      <Input Universe="1" Channel="2162861"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2162860"/>
+      <Input Universe="1" Channel="2162860"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2162859"/>
+      <Input Universe="1" Channel="2162859"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2162858"/>
+      <Input Universe="1" Channel="2162858"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="113" Page="34">
@@ -4641,21 +4637,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>104</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2228397"/>
+      <Input Universe="1" Channel="2228397"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2228396"/>
+      <Input Universe="1" Channel="2228396"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2228395"/>
+      <Input Universe="1" Channel="2228395"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2228394"/>
+      <Input Universe="1" Channel="2228394"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="114" Page="35">
@@ -4665,21 +4661,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>171</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2293933"/>
+      <Input Universe="1" Channel="2293933"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2293932"/>
+      <Input Universe="1" Channel="2293932"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2293931"/>
+      <Input Universe="1" Channel="2293931"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2293930"/>
+      <Input Universe="1" Channel="2293930"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="115" Page="36">
@@ -4689,21 +4685,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>105</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2359469"/>
+      <Input Universe="1" Channel="2359469"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2359468"/>
+      <Input Universe="1" Channel="2359468"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2359467"/>
+      <Input Universe="1" Channel="2359467"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2359466"/>
+      <Input Universe="1" Channel="2359466"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="116" Page="37">
@@ -4713,21 +4709,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>106</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2425005"/>
+      <Input Universe="1" Channel="2425005"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2425004"/>
+      <Input Universe="1" Channel="2425004"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2425003"/>
+      <Input Universe="1" Channel="2425003"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2425002"/>
+      <Input Universe="1" Channel="2425002"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="117" Page="38">
@@ -4737,21 +4733,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>172</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2490541"/>
+      <Input Universe="1" Channel="2490541"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2490540"/>
+      <Input Universe="1" Channel="2490540"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2490539"/>
+      <Input Universe="1" Channel="2490539"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2490538"/>
+      <Input Universe="1" Channel="2490538"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="118" Page="40">
@@ -4761,45 +4757,45 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>107</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2621613"/>
+      <Input Universe="1" Channel="2621613"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2621612"/>
+      <Input Universe="1" Channel="2621612"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2621611"/>
+      <Input Universe="1" Channel="2621611"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2621610"/>
+      <Input Universe="1" Channel="2621610"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="119" Page="41">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>56</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2687149"/>
+      <Input Universe="1" Channel="2687149"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2687148"/>
+      <Input Universe="1" Channel="2687148"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2687147"/>
+      <Input Universe="1" Channel="2687147"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2687146"/>
+      <Input Universe="1" Channel="2687146"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="120" Page="42">
@@ -4809,21 +4805,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>108</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2752685"/>
+      <Input Universe="1" Channel="2752685"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2752684"/>
+      <Input Universe="1" Channel="2752684"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2752683"/>
+      <Input Universe="1" Channel="2752683"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2752682"/>
+      <Input Universe="1" Channel="2752682"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="121" Page="43">
@@ -4833,21 +4829,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>73</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2818221"/>
+      <Input Universe="1" Channel="2818221"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2818220"/>
+      <Input Universe="1" Channel="2818220"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2818219"/>
+      <Input Universe="1" Channel="2818219"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2818218"/>
+      <Input Universe="1" Channel="2818218"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="122" Page="44">
@@ -4857,21 +4853,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>173</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2883757"/>
+      <Input Universe="1" Channel="2883757"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2883756"/>
+      <Input Universe="1" Channel="2883756"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2883755"/>
+      <Input Universe="1" Channel="2883755"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2883754"/>
+      <Input Universe="1" Channel="2883754"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="123" Page="45">
@@ -4881,21 +4877,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>109</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="2949293"/>
+      <Input Universe="1" Channel="2949293"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="2949292"/>
+      <Input Universe="1" Channel="2949292"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="2949291"/>
+      <Input Universe="1" Channel="2949291"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="2949290"/>
+      <Input Universe="1" Channel="2949290"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="124" Page="46">
@@ -4905,7 +4901,7 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>110</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -4916,10 +4912,10 @@
       <Input Universe="0" Channel="3014828"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="3014827"/>
+      <Input Universe="1" Channel="3014827"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="3014826"/>
+      <Input Universe="1" Channel="3014828"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="125" Page="47">
@@ -4929,21 +4925,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>111</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="3080365"/>
+      <Input Universe="1" Channel="3080365"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="3080364"/>
+      <Input Universe="1" Channel="3080364"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="3080363"/>
+      <Input Universe="1" Channel="3080363"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="3080362"/>
+      <Input Universe="1" Channel="3080362"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="126" Page="50">
@@ -4953,21 +4949,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>72</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="3276973"/>
+      <Input Universe="1" Channel="3276973"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="3276972"/>
+      <Input Universe="1" Channel="3276972"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="3276971"/>
+      <Input Universe="1" Channel="3276971"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="3276970"/>
+      <Input Universe="1" Channel="3276970"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="127" Page="51">
@@ -4977,21 +4973,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>112</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="3342509"/>
+      <Input Universe="1" Channel="3342509"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="3342508"/>
+      <Input Universe="1" Channel="3342508"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="3342507"/>
+      <Input Universe="1" Channel="3342507"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="3342506"/>
+      <Input Universe="1" Channel="3342506"/>
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="128" Page="52">
@@ -5001,21 +4997,21 @@
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0</Font>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>24</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="0" Channel="3408045"/>
+      <Input Universe="1" Channel="3408045"/>
      </Next>
      <Previous>
-      <Input Universe="0" Channel="3408044"/>
+      <Input Universe="1" Channel="3408044"/>
      </Previous>
      <Playback>
-      <Input Universe="0" Channel="3408043"/>
+      <Input Universe="1" Channel="3408043"/>
      </Playback>
      <Stop>
-      <Input Universe="0" Channel="3408042"/>
+      <Input Universe="1" Channel="3408042"/>
      </Stop>
     </CueList>
    </SoloFrame>
