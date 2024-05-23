@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.0</Version>
@@ -12,7 +12,11 @@
    <Universe Name="Universe 1" ID="0">
     <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
-   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 2" ID="1">
+    <Input Plugin="MIDI" UID="rptMIDI" Line="0" Profile="Nektar Pacer">
+     <PluginParameters MIDISendNoteOff="true"/>
+    </Input>
+   </Universe>
    <Universe Name="Universe 3" ID="2">
     <Input Plugin="MIDI" UID="rptMIDI" Line="0" Profile="Arlomedia Bandhelper"/>
    </Universe>
@@ -683,8 +687,9 @@
    <Step Number="10" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 3">74</Step>
    <Step Number="11" FadeIn="0" Hold="4000" FadeOut="0" Note="STOP">71</Step>
    <Step Number="12" FadeIn="0" Hold="23000" FadeOut="0" Note="Verse 3">70</Step>
-   <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">71</Step>
-   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+   <Step Number="13" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 4">74</Step>
+   <Step Number="14" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">71</Step>
+   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="42" Type="Scene" Name="PAR White all except backlight" Path="Colors PARs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -753,8 +758,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -809,9 +814,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -1117,14 +1122,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetCollision" Value="No"/>
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="color2Index" Value="Red"/>
-   <Property Name="presetNumber" Value="2"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="color5Index" Value="Orange"/>
    <Property Name="presetSize" Value="3"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="color1Index" Value="Dim Orange"/>
+   <Property Name="presetNumber" Value="2"/>
+   <Property Name="presetCollision" Value="No"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1142,13 +1147,15 @@
    <Step Number="8" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 2">80</Step>
    <Step Number="9" FadeIn="0" Hold="23000" FadeOut="0" Note="Solo Axel">6</Step>
    <Step Number="10" FadeIn="0" Hold="11000" FadeOut="0" Note="Interlude 1">77</Step>
-   <Step Number="11" FadeIn="0" Hold="4000" FadeOut="0" Note="Interlude 2 (stop)">71</Step>
-   <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0">36</Step>
-   <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
-   <Step Number="14" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 3">80</Step>
-   <Step Number="15" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 4">81</Step>
-   <Step Number="16" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
-   <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="11" FadeIn="0" Hold="3000" FadeOut="0" Note="Interlude 2 (stop)">71</Step>
+   <Step Number="12" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
+   <Step Number="14" FadeIn="0" Hold="1500" FadeOut="0">36</Step>
+   <Step Number="15" FadeIn="0" Hold="1500" FadeOut="0" Note="&quot;eventually&quot;">81</Step>
+   <Step Number="16" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 3">80</Step>
+   <Step Number="17" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 4">81</Step>
+   <Step Number="18" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
+   <Step Number="19" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="65" Type="EFX" Name="up and down Martins">
    <Fixture>
@@ -1253,12 +1260,13 @@
    <Step Number="4">136</Step>
    <Step Number="5">144</Step>
    <Step Number="6">184</Step>
+   <Step Number="7">203</Step>
   </Function>
   <Function ID="71" Type="Collection" Name="01 statisch bunt 🎉">
-   <Step Number="0">199</Step>
-   <Step Number="1">44</Step>
-   <Step Number="2">53</Step>
-   <Step Number="3">46</Step>
+   <Step Number="0">44</Step>
+   <Step Number="1">53</Step>
+   <Step Number="2">46</Step>
+   <Step Number="3">203</Step>
   </Function>
   <Function ID="72" Type="Chaser" Name="Valerie" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1271,17 +1279,18 @@
    <Step Number="3" FadeIn="0" Hold="20000" FadeOut="0" Note="Bridge 1">70</Step>
    <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
    <Step Number="5" FadeIn="0" Hold="11000" FadeOut="0" Note="Chorus 1">75</Step>
-   <Step Number="6" FadeIn="0" Hold="43000" FadeOut="0" Note="Verse 2">74</Step>
-   <Step Number="7" FadeIn="0" Hold="20000" FadeOut="0" Note="Bridge 2">70</Step>
-   <Step Number="8" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
-   <Step Number="9" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 2">75</Step>
-   <Step Number="10" FadeIn="0" Hold="16000" FadeOut="0" Note="Verse 3a (A Capella)">86</Step>
-   <Step Number="11" FadeIn="0" Hold="6000" FadeOut="0" Note="Verse 3b">74</Step>
-   <Step Number="12" FadeIn="0" Hold="19000" FadeOut="0" Note="Bridge 3">70</Step>
-   <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
-   <Step Number="14" FadeIn="0" Hold="22000" FadeOut="0" Note="Chorus 3">75</Step>
-   <Step Number="15" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
-   <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+   <Step Number="6" FadeIn="0" Hold="21500" FadeOut="0" Note="Verse 2a">74</Step>
+   <Step Number="7" FadeIn="0" Hold="21500" FadeOut="0">209</Step>
+   <Step Number="8" FadeIn="0" Hold="20000" FadeOut="0" Note="Bridge 2">70</Step>
+   <Step Number="9" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+   <Step Number="10" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 2">75</Step>
+   <Step Number="11" FadeIn="0" Hold="16000" FadeOut="0" Note="Verse 3a (a capella)">208</Step>
+   <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0" Note="Verse 3b">74</Step>
+   <Step Number="13" FadeIn="0" Hold="19000" FadeOut="0" Note="Bridge 3">70</Step>
+   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+   <Step Number="15" FadeIn="0" Hold="22000" FadeOut="0" Note="Chorus 3">75</Step>
+   <Step Number="16" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
+   <Step Number="17" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="73" Type="Chaser" Name="The Middle" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
@@ -1308,18 +1317,21 @@
    <Step Number="1">196</Step>
    <Step Number="2">197</Step>
    <Step Number="3">140</Step>
+   <Step Number="4">203</Step>
   </Function>
   <Function ID="75" Type="Collection" Name="04 up'n'down ↕">
    <Step Number="0">53</Step>
    <Step Number="1">22</Step>
    <Step Number="2">139</Step>
    <Step Number="3">149</Step>
+   <Step Number="4">203</Step>
   </Function>
   <Function ID="76" Type="Collection" Name="05 left'n'right ↔️ ">
    <Step Number="0">58</Step>
    <Step Number="1">33</Step>
    <Step Number="2">197</Step>
    <Step Number="3">196</Step>
+   <Step Number="4">203</Step>
   </Function>
   <Function ID="77" Type="Collection" Name="06 blinking 🔆">
    <Step Number="0">53</Step>
@@ -1327,17 +1339,18 @@
    <Step Number="2">59</Step>
   </Function>
   <Function ID="78" Type="Collection" Name="07 round'n'round 🔄">
-   <Step Number="0">199</Step>
-   <Step Number="1">27</Step>
-   <Step Number="2">62</Step>
-   <Step Number="3">197</Step>
-   <Step Number="4">196</Step>
+   <Step Number="0">27</Step>
+   <Step Number="1">62</Step>
+   <Step Number="2">197</Step>
+   <Step Number="3">196</Step>
+   <Step Number="4">203</Step>
   </Function>
   <Function ID="79" Type="Collection" Name="08 swimming 🏊🏻‍">
    <Step Number="0">138</Step>
    <Step Number="1">197</Step>
    <Step Number="2">196</Step>
    <Step Number="3">198</Step>
+   <Step Number="4">203</Step>
   </Function>
   <Function ID="80" Type="Collection" Name="09 Alarm 🔔">
    <Step Number="0">61</Step>
@@ -1357,8 +1370,8 @@
    <Step Number="0">39</Step>
    <Step Number="1">2</Step>
    <Step Number="2">46</Step>
-   <Step Number="3">199</Step>
-   <Step Number="4">203</Step>
+   <Step Number="3">203</Step>
+   <Step Number="4">199</Step>
   </Function>
   <Function ID="83" Type="Collection" Name="16 Searchlight 🔦">
    <Step Number="0">0</Step>
@@ -1374,14 +1387,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="color2Index" Value="Red"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color5Index" Value="Yellow"/>
    <Property Name="presetSize" Value="2"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="color1Index" Value="Orange"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetCollision" Value="Yes"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3383,10 +3396,10 @@
   </Function>
   <Function ID="196" Type="Scene" Name="Martins off" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="23">0,0,1,0</FixtureVal>
-   <FixtureVal ID="24">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
-   <FixtureVal ID="25">0,0,1,0</FixtureVal>
-   <FixtureVal ID="26">0,0,1,0</FixtureVal>
+   <FixtureVal ID="23">1,0</FixtureVal>
+   <FixtureVal ID="24">1,0</FixtureVal>
+   <FixtureVal ID="25">1,0</FixtureVal>
+   <FixtureVal ID="26">1,0</FixtureVal>
   </Function>
   <Function ID="197" Type="Scene" Name="TourSpots Rainbow" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3405,7 +3418,7 @@
    <FixtureVal ID="10">0,0,1,13,2,0,3,73</FixtureVal>
    <FixtureVal ID="4">1,123,2,255,3,146</FixtureVal>
   </Function>
-  <Function ID="199" Type="Scene" Name="reset TourSpots">
+  <Function ID="199" Type="Scene" Name="reset TourSpots" Path="ZZZ Showvorbereitung">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,132,1,131,2,0,3,0,4,0,5,0,6,32,7,255,8,156,9,0,10,0</FixtureVal>
    <FixtureVal ID="5">0,127,1,129,2,0,3,0,4,0,5,0,6,32,7,255,8,128,9,0,10,0</FixtureVal>
@@ -3437,12 +3450,113 @@
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Note="off" Values="61"/>
    <Step Number="1" FadeIn="0" Hold="50" FadeOut="0" Note="on" Values="61">0:0,255,1,255,2,255,3,255:4:1,255,2,255,3,255:6:0,255,1,255,2,255,3,255:7:0,255,1,255,2,255,3,255:8:0,255,1,255,2,255,3,255:9:0,255,1,255,2,255,3,255:10:0,255,1,255,2,255,3,255:11:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</Step>
   </Function>
-  <Function ID="203" Type="Scene" Name="Martin Shutter open" Path="Shutter FX">
+  <Function ID="203" Type="Scene" Name="Heads Shutter open" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="23">0,20,3,0,4,0</FixtureVal>
    <FixtureVal ID="24">0,20,3,0,4,0</FixtureVal>
    <FixtureVal ID="25">0,20,3,0,4,0</FixtureVal>
    <FixtureVal ID="26">0,20,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">6,32</FixtureVal>
+   <FixtureVal ID="5">6,32</FixtureVal>
+  </Function>
+  <Function ID="204" Type="Chaser" Name="Valerie Verse 2b Axel Bibo">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="698" FadeOut="0">206</Step>
+   <Step Number="1" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="2" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="3" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="4" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="5" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="6" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="7" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="8" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="9" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="10" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="11" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="12" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="13" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="14" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="15" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="16" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="17" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="18" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="19" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="20" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="21" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="22" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="23" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="24" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="25" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="26" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="27" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="28" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="29" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="30" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="31" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="32" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+  </Function>
+  <Function ID="205" Type="Scene" Name="Axel Bibo green" Path="Colors PARs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,255</FixtureVal>
+   <FixtureVal ID="10">1,255</FixtureVal>
+  </Function>
+  <Function ID="206" Type="Scene" Name="Axel Bibo off" Path="Colors PARs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="207" Type="Chaser" Name="Valerie Verse a capella Axel  Bibo">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="698" FadeOut="0">206</Step>
+   <Step Number="1" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="2" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="3" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="4" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="5" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="6" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="7" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="8" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="9" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="10" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="11" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="12" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="13" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="14" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="15" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="16" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="17" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="18" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="19" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="20" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="21" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="22" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="23" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="24" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="25" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="26" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="27" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="28" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+   <Step Number="29" FadeIn="0" Hold="174" FadeOut="0" Note="Hu-">205</Step>
+   <Step Number="30" FadeIn="0" Hold="349" FadeOut="0">206</Step>
+   <Step Number="31" FadeIn="0" Hold="523" FadeOut="0" Note="Huuuh">205</Step>
+   <Step Number="32" FadeIn="0" Hold="1570" FadeOut="0">206</Step>
+  </Function>
+  <Function ID="208" Type="Collection" Name="Valerie Verse 3a (a capella)">
+   <Step Number="0">207</Step>
+   <Step Number="1">86</Step>
+  </Function>
+  <Function ID="209" Type="Collection" Name="Valerie Verse 2b">
+   <Step Number="0">196</Step>
+   <Step Number="1">197</Step>
+   <Step Number="2">140</Step>
+   <Step Number="3">203</Step>
+   <Step Number="4">204</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -3481,7 +3595,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="705" Y="10" Width="485" Height="775"/>
+    <WindowState Visible="False" X="705" Y="10" Width="485" Height="775"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -3490,7 +3604,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="🔄 round'n'round" ID="4" Icon="">
-     <WindowState Visible="True" X="170" Y="425" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="425" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3504,7 +3618,7 @@
      <Input Universe="1" Channel="136"/>
     </Button>
     <Button Caption="🎉 bunt" ID="1" Icon="">
-     <WindowState Visible="True" X="170" Y="350" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="350" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3518,7 +3632,7 @@
      <Input Universe="1" Channel="137"/>
     </Button>
     <Button Caption="🔵 slow blue" ID="6" Icon="">
-     <WindowState Visible="True" X="15" Y="500" Width="75" Height="70"/>
+     <WindowState Visible="False" X="15" Y="500" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3532,7 +3646,7 @@
      <Input Universe="1" Channel="128"/>
     </Button>
     <Button Caption="↕️ up'n'down" ID="7" Icon="">
-     <WindowState Visible="True" X="95" Y="425" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="425" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3546,7 +3660,7 @@
      <Input Universe="1" Channel="131"/>
     </Button>
     <Button Caption="↔️ left'n'right" ID="8" Icon="">
-     <WindowState Visible="True" X="95" Y="350" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="350" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3560,7 +3674,7 @@
      <Input Universe="1" Channel="132"/>
     </Button>
     <Button Caption="🚶walking" ID="9" Icon="">
-     <WindowState Visible="True" X="95" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3574,7 +3688,7 @@
      <Input Universe="1" Channel="130"/>
     </Button>
     <Button Caption="🏊🏻‍ swimming" ID="10" Icon="">
-     <WindowState Visible="True" X="170" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3588,7 +3702,7 @@
      <Input Universe="1" Channel="135"/>
     </Button>
     <Button Caption="✳️Strobe" ID="11" Icon="">
-     <WindowState Visible="True" X="320" Y="420" Width="70" Height="75"/>
+     <WindowState Visible="False" X="320" Y="420" Width="70" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3602,7 +3716,7 @@
      <Input Universe="1" Channel="160"/>
     </Button>
     <Button Caption="Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="True" X="170" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3616,7 +3730,7 @@
      <Input Universe="1" Channel="149"/>
     </Button>
     <Button Caption="hot" ID="13" Icon="">
-     <WindowState Visible="True" X="170" Y="10" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3630,7 +3744,7 @@
      <Input Universe="1" Channel="152"/>
     </Button>
     <Button Caption="Chris 🟡" ID="14" Icon="">
-     <WindowState Visible="True" X="245" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="245" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3644,7 +3758,7 @@
      <Input Universe="1" Channel="150"/>
     </Button>
     <Button Caption="Tim   ⚪️" ID="15" Icon="">
-     <WindowState Visible="True" X="320" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="320" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3658,7 +3772,7 @@
      <Input Universe="1" Channel="151"/>
     </Button>
     <Button Caption="Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="True" X="95" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3672,7 +3786,7 @@
      <Input Universe="1" Channel="146"/>
     </Button>
     <Button Caption="🔦 Search-light" ID="17" Icon="">
-     <WindowState Visible="True" X="15" Y="425" Width="75" Height="70"/>
+     <WindowState Visible="False" X="15" Y="425" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3686,7 +3800,7 @@
      <Input Universe="1" Channel="129"/>
     </Button>
     <Button Caption="🔔 Alarm" ID="18" Icon="">
-     <WindowState Visible="True" X="95" Y="200" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="200" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3700,7 +3814,7 @@
      <Input Universe="1" Channel="134"/>
     </Button>
     <Button Caption="🛑" ID="19" Icon="">
-     <WindowState Visible="True" X="170" Y="275" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="275" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3714,7 +3828,7 @@
      <Input Universe="1" Channel="138"/>
     </Button>
     <Button Caption="" ID="28" Icon="">
-     <WindowState Visible="True" X="245" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="245" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3728,7 +3842,7 @@
      <Input Universe="1" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="True" X="395" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="395" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3742,7 +3856,7 @@
      <Input Universe="1" Channel="158"/>
     </Button>
     <Button Caption="🔆 blinking" ID="20" Icon="">
-     <WindowState Visible="True" X="95" Y="275" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="275" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3756,7 +3870,7 @@
      <Input Universe="1" Channel="133"/>
     </Button>
     <Button Caption="hot" ID="21" Icon="">
-     <WindowState Visible="True" X="320" Y="10" Width="70" Height="70"/>
+     <WindowState Visible="False" X="320" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3770,7 +3884,7 @@
      <Input Universe="1" Channel="153"/>
     </Button>
     <Button Caption="Fog" ID="36" Icon="">
-     <WindowState Visible="True" X="320" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="320" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3785,7 +3899,7 @@
     </Button>
    </SoloFrame>
    <Label Caption="- Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="True" X="715" Y="695" Width="235" Height="20"/>
+    <WindowState Visible="False" X="715" Y="695" Width="235" Height="20"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3795,7 +3909,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Fixtures identifizieren" ID="33">
-    <WindowState Visible="True" X="715" Y="650" Width="170" Height="20"/>
+    <WindowState Visible="False" X="715" Y="650" Width="170" Height="20"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3805,7 +3919,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="True" X="715" Y="750" Width="185" Height="25"/>
+    <WindowState Visible="False" X="715" Y="750" Width="185" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3815,7 +3929,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Offset Heads in Effects anpassen (kleine/große s separat)" ID="35">
-    <WindowState Visible="True" X="715" Y="720" Width="435" Height="25"/>
+    <WindowState Visible="False" X="715" Y="720" Width="435" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3832,22 +3946,22 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="10" Y="10" Width="650" Height="780"/>
+    <WindowState Visible="False" X="10" Y="10" Width="650" Height="780"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
-    <Disabled>True</Disabled>
-    <Multipage PagesNum="60" CurrentPage="41"/>
+    <Disabled>False</Disabled>
+    <Multipage PagesNum="60" CurrentPage="2"/>
     <Next>
      <Key>N</Key>
-     <Input Universe="1" Channel="173"/>
+     <Input Universe="1" Channel="169"/>
     </Next>
     <Previous>
      <Key>P</Key>
-     <Input Universe="1" Channel="172"/>
+     <Input Universe="1" Channel="168"/>
     </Previous>
     <Shortcut Page="0" Name="All the small things">
      <Input Universe="2" Channel="385"/>
@@ -4775,7 +4889,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="119" Page="41">
-     <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5015,6 +5129,25 @@
      </Stop>
     </CueList>
    </SoloFrame>
+   <SpeedDial Caption="Dauer" ID="0">
+    <WindowState Visible="False" X="965" Y="190" Width="200" Height="175"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>127</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Time>486</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">79</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">78</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">77</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">76</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">75</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">74</Function>
+   </SpeedDial>
   </Frame>
   <Properties>
    <Size Width="1200" Height="800"/>
