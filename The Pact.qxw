@@ -10,7 +10,9 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: EN429695)" Line="0">
+     <PluginParameters UniverseChannels="196"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1">
     <Input Plugin="MIDI" UID="PACER" Line="0" Profile="Nektar Pacer">
@@ -503,7 +505,7 @@
    <Step Number="3" FadeIn="0" Hold="58000" FadeOut="0" Note="Verse 1">74</Step>
    <Step Number="4" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 1">70</Step>
    <Step Number="5" FadeIn="0" Hold="5000" FadeOut="0">82</Step>
-   <Step Number="6" FadeIn="0" Hold="22000" FadeOut="0" Note="Interlude">78</Step>
+   <Step Number="6" FadeIn="0" Hold="23000" FadeOut="0" Note="Interlude">78</Step>
    <Step Number="7" FadeIn="0" Hold="41000" FadeOut="0" Note="Verse 2">74</Step>
    <Step Number="8" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 2">70</Step>
    <Step Number="9" FadeIn="0" Hold="5000" FadeOut="0">82</Step>
@@ -758,8 +760,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -814,8 +816,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
@@ -1014,7 +1016,7 @@
   <Function ID="60" Type="Scene" Name="Heads blinking" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,192</FixtureVal>
-   <FixtureVal ID="5">6,143</FixtureVal>
+   <FixtureVal ID="5">6,195</FixtureVal>
    <FixtureVal ID="22">0,90</FixtureVal>
    <FixtureVal ID="23">0,90</FixtureVal>
    <FixtureVal ID="24">0,90</FixtureVal>
@@ -1122,14 +1124,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
+   <Property Name="presetSize" Value="3"/>
+   <Property Name="color1Index" Value="Dim Orange"/>
    <Property Name="color5Index" Value="Orange"/>
    <Property Name="color3Index" Value="Green"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="presetNumber" Value="2"/>
-   <Property Name="presetSize" Value="3"/>
    <Property Name="presetCollision" Value="No"/>
+   <Property Name="presetNumber" Value="2"/>
    <Property Name="color2Index" Value="Red"/>
+   <Property Name="color4Index" Value="Blue"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1387,14 +1389,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color1Index" Value="Orange"/>
    <Property Name="color5Index" Value="Yellow"/>
    <Property Name="color3Index" Value="Green"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color1Index" Value="Orange"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="presetSize" Value="2"/>
    <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="presetNumber" Value="5"/>
    <Property Name="color2Index" Value="Red"/>
+   <Property Name="color4Index" Value="Blue"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3954,7 +3956,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="2"/>
+    <Multipage PagesNum="60" CurrentPage="24"/>
     <Next>
      <Key>N</Key>
      <Input Universe="1" Channel="169"/>
@@ -4193,7 +4195,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="25" Page="2">
-     <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4577,7 +4579,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="106" Page="24">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
