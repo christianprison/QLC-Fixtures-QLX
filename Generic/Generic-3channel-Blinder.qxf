@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.0</Version>
+  <Author>Christian Prison</Author>
+ </Creator>
+ <Manufacturer>Generic</Manufacturer>
+ <Model>3channel Blinder</Model>
+ <Type>Dimmer</Type>
+ <Channel Name="oben" Preset="IntensityWhite"/>
+ <Channel Name="mitte" Preset="IntensityWhite"/>
+ <Channel Name="unten" Preset="IntensityWhite"/>
+ <Mode Name="3ch">
+  <Channel Number="0">oben</Channel>
+  <Channel Number="1">mitte</Channel>
+  <Channel Number="2">unten</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="8960" ColourTemperature="3000"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="64" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
