@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.0</Version>
   <Author>User</Author>
  </Creator>
- <Engine>
+ <Engine Autostart="82">
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: EN429695)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="PACER" Line="0" Profile="Nektar Pacer">
+    <Input Plugin="MIDI" UID="rptMIDI" Line="0" Profile="Nektar Pacer">
      <PluginParameters MIDISendNoteOff="true"/>
     </Input>
    </Universe>
    <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" UID="rptMIDI" Line="2" Profile="Arlomedia Bandhelper"/>
+    <Input Plugin="MIDI" UID="rptMIDI" Line="0" Profile="Arlomedia Bandhelper"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -52,6 +50,16 @@
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>3ch Blinder</Model>
+   <Mode>3ch</Mode>
+   <ID>3</ID>
+   <Name>08 Blinder</Name>
+   <Universe>0</Universe>
+   <Address>68</Address>
+   <Channels>3</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Stairville</Manufacturer>
@@ -302,6 +310,31 @@
    <Size X="2" Y="2"/>
    <Head X="0" Y="0" Fixture="10">0</Head>
   </FixtureGroup>
+  <FixtureGroup ID="11">
+   <Name>all except blinder</Name>
+   <Size X="12" Y="2"/>
+   <Head X="0" Y="0" Fixture="6">0</Head>
+   <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="2" Y="0" Fixture="11">0</Head>
+   <Head X="3" Y="0" Fixture="11">1</Head>
+   <Head X="4" Y="0" Fixture="11">2</Head>
+   <Head X="5" Y="0" Fixture="11">3</Head>
+   <Head X="6" Y="0" Fixture="11">4</Head>
+   <Head X="7" Y="0" Fixture="11">5</Head>
+   <Head X="8" Y="0" Fixture="11">6</Head>
+   <Head X="9" Y="0" Fixture="11">7</Head>
+   <Head X="10" Y="0" Fixture="5">0</Head>
+   <Head X="11" Y="0" Fixture="7">0</Head>
+   <Head X="0" Y="1" Fixture="9">0</Head>
+   <Head X="1" Y="1" Fixture="0">0</Head>
+   <Head X="2" Y="1" Fixture="26">0</Head>
+   <Head X="4" Y="1" Fixture="25">0</Head>
+   <Head X="5" Y="1" Fixture="4">0</Head>
+   <Head X="7" Y="1" Fixture="24">0</Head>
+   <Head X="9" Y="1" Fixture="23">0</Head>
+   <Head X="10" Y="1" Fixture="10">0</Head>
+   <Head X="11" Y="1" Fixture="8">0</Head>
+  </FixtureGroup>
   <ChannelsGroup ID="0" Name="All Red" Value="0">0,1,2,0,4,0,6,1,7,1,8,1,9,1,10,1,11,0,11,3,11,6,11,9,11,12,11,15,11,18,11,21,12,0</ChannelsGroup>
   <ChannelsGroup ID="1" Name="All Blue" Value="0">0,3,2,2,4,2,6,3,7,3,8,3,9,3,10,3,11,2,11,5,11,8,11,11,11,14,11,17,11,20,11,23,12,2</ChannelsGroup>
   <ChannelsGroup ID="2" Name="All Green" Value="0">0,2,2,1,4,1,6,2,7,2,8,2,9,2,10,2,11,1,11,4,11,7,11,10,11,13,11,16,11,19,11,22,12,1</ChannelsGroup>
@@ -532,6 +565,8 @@
   </Function>
   <Function ID="27" Type="Collection" Name="fast balls">
    <Step Number="0">63</Step>
+   <Step Number="1">46</Step>
+   <Step Number="2">203</Step>
   </Function>
   <Function ID="28" Type="Collection" Name="fast balls color (only strips) !">
    <Step Number="0">84</Step>
@@ -716,6 +751,7 @@
    <FixtureVal ID="26">0,22,1,255,2,0</FixtureVal>
    <FixtureVal ID="1">3,4,6,32,7,255</FixtureVal>
    <FixtureVal ID="5">3,4,6,32,7,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="44" Type="Scene" Name="PAR rainbow" Path="Colors PARs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -760,8 +796,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
    <Property Name="StarsAmount" Value="50"/>
+   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -816,8 +852,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
@@ -1116,22 +1152,22 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="63" Type="RGBMatrix" Name="fast balls">
-   <Speed FadeIn="0" FadeOut="0" Duration="510"/>
+  <Function ID="63" Type="RGBMatrix" Name="fast balls" BlendMode="Additive">
+   <Speed FadeIn="0" FadeOut="0" Duration="100"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Balls (Colors)</Algorithm>
-   <MonoColor>4294901760</MonoColor>
+   <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
-   <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetSize" Value="3"/>
-   <Property Name="color1Index" Value="Dim Orange"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetCollision" Value="No"/>
-   <Property Name="presetNumber" Value="2"/>
-   <Property Name="color2Index" Value="Red"/>
+   <FixtureGroup>11</FixtureGroup>
+   <Property Name="color1Index" Value="Dim Yellow"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetCollision" Value="No"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="presetSize" Value="2"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1279,17 +1315,17 @@
    <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0" Note="Intro">6</Step>
    <Step Number="2" FadeIn="0" Hold="22000" FadeOut="0" Note="Verse 1">74</Step>
    <Step Number="3" FadeIn="0" Hold="20000" FadeOut="0" Note="Bridge 1">70</Step>
-   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+   <Step Number="4" FadeIn="0" Hold="2300" FadeOut="0">81</Step>
    <Step Number="5" FadeIn="0" Hold="11000" FadeOut="0" Note="Chorus 1">75</Step>
    <Step Number="6" FadeIn="0" Hold="21500" FadeOut="0" Note="Verse 2a">74</Step>
-   <Step Number="7" FadeIn="0" Hold="21500" FadeOut="0">209</Step>
+   <Step Number="7" FadeIn="0" Hold="21500" FadeOut="0" Note="Verse 2b (huh-huuuh)">209</Step>
    <Step Number="8" FadeIn="0" Hold="20000" FadeOut="0" Note="Bridge 2">70</Step>
-   <Step Number="9" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+   <Step Number="9" FadeIn="0" Hold="2300" FadeOut="0">81</Step>
    <Step Number="10" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 2">75</Step>
    <Step Number="11" FadeIn="0" Hold="16000" FadeOut="0" Note="Verse 3a (a capella)">208</Step>
    <Step Number="12" FadeIn="0" Hold="6000" FadeOut="0" Note="Verse 3b">74</Step>
    <Step Number="13" FadeIn="0" Hold="19000" FadeOut="0" Note="Bridge 3">70</Step>
-   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+   <Step Number="14" FadeIn="0" Hold="2300" FadeOut="0">81</Step>
    <Step Number="15" FadeIn="0" Hold="22000" FadeOut="0" Note="Chorus 3">75</Step>
    <Step Number="16" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
    <Step Number="17" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
@@ -1355,11 +1391,7 @@
    <Step Number="4">203</Step>
   </Function>
   <Function ID="80" Type="Collection" Name="09 Alarm 🔔">
-   <Step Number="0">61</Step>
-   <Step Number="1">60</Step>
-   <Step Number="2">142</Step>
-   <Step Number="3">59</Step>
-   <Step Number="4">53</Step>
+   <Step Number="0">27</Step>
   </Function>
   <Function ID="81" Type="Collection" Name="10 Strobe ✳️">
    <Step Number="0">61</Step>
@@ -1370,10 +1402,11 @@
   </Function>
   <Function ID="82" Type="Collection" Name="11 Stop 🛑">
    <Step Number="0">39</Step>
-   <Step Number="1">2</Step>
-   <Step Number="2">46</Step>
-   <Step Number="3">203</Step>
-   <Step Number="4">199</Step>
+   <Step Number="1">199</Step>
+   <Step Number="2">2</Step>
+   <Step Number="3">46</Step>
+   <Step Number="4">203</Step>
+   <Step Number="5">211</Step>
   </Function>
   <Function ID="83" Type="Collection" Name="16 Searchlight 🔦">
    <Step Number="0">0</Step>
@@ -1389,14 +1422,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="2"/>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="color5Index" Value="Yellow"/>
    <Property Name="presetCollision" Value="Yes"/>
    <Property Name="presetNumber" Value="5"/>
    <Property Name="color2Index" Value="Red"/>
-   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="2"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1424,19 +1457,19 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="INSIDE">82</Step>
-   <Step Number="1" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro">75</Step>
+   <Step Number="1" FadeIn="0" Hold="24000" FadeOut="0" Note="Intro">75</Step>
    <Step Number="2" FadeIn="0" Hold="28000" FadeOut="0" Note="Verse 1">74</Step>
-   <Step Number="3" FadeIn="0" Hold="24000" FadeOut="0" Note="Bridge 1">81</Step>
+   <Step Number="3" FadeIn="0" Hold="28000" FadeOut="0" Note="Bridge 1">81</Step>
    <Step Number="4" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 1">75</Step>
    <Step Number="5" FadeIn="0" Hold="26000" FadeOut="0" Note="Verse 2">74</Step>
-   <Step Number="6" FadeIn="0" Hold="23000" FadeOut="0" Note="Bridge 2">81</Step>
+   <Step Number="6" FadeIn="0" Hold="22000" FadeOut="0" Note="Bridge 2">81</Step>
    <Step Number="7" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 2">75</Step>
    <Step Number="8" FadeIn="0" Hold="12000" FadeOut="0" Note="Solo Axel">6</Step>
-   <Step Number="9" FadeIn="0" Hold="11000" FadeOut="0" Note="Intro">169</Step>
+   <Step Number="9" FadeIn="0" Hold="10000" FadeOut="0" Note="Intro">169</Step>
    <Step Number="10" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">70</Step>
    <Step Number="11" FadeIn="0" Hold="6000" FadeOut="0" Note="Basssolo">167</Step>
    <Step Number="12" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 3">75</Step>
-   <Step Number="13" FadeIn="0" Hold="29000" FadeOut="0" Note="Chorus 4">80</Step>
+   <Step Number="13" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 4">80</Step>
    <Step Number="14" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
    <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
@@ -2155,13 +2188,32 @@
    <Step Number="6" FadeIn="0" Hold="8000" FadeOut="0" Note="Chorus 2 (short)">80</Step>
    <Step Number="7" FadeIn="0" Hold="17000" FadeOut="0" Note="Interlude">78</Step>
    <Step Number="8" FadeIn="0" Hold="32000" FadeOut="0" Note="Solo Axel">6</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">81</Step>
-   <Step Number="10" FadeIn="0" Hold="5000" FadeOut="0" Note="W-O-R-D-up!">40</Step>
-   <Step Number="11" FadeIn="0" Hold="11000" FadeOut="0">81</Step>
-   <Step Number="12" FadeIn="0" Hold="32000" FadeOut="0" Note="Verse 3">80</Step>
-   <Step Number="13" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 3">81</Step>
-   <Step Number="14" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">43</Step>
-   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+   <Step Number="9" FadeIn="0" Hold="10" FadeOut="0">255</Step>
+   <Step Number="10" FadeIn="0" Hold="750" FadeOut="0" Note="W">257</Step>
+   <Step Number="11" FadeIn="0" Hold="750" FadeOut="0" Note="O">133</Step>
+   <Step Number="12" FadeIn="0" Hold="500" FadeOut="0" Note="R">257</Step>
+   <Step Number="13" FadeIn="0" Hold="750" FadeOut="0" Note="D">133</Step>
+   <Step Number="14" FadeIn="0" Hold="1250" FadeOut="0" Note="up!">257</Step>
+   <Step Number="15" FadeIn="0" Hold="10" FadeOut="0">256</Step>
+   <Step Number="16" FadeIn="0" Hold="750" FadeOut="0" Note="W">133</Step>
+   <Step Number="17" FadeIn="0" Hold="750" FadeOut="0" Note="O">257</Step>
+   <Step Number="18" FadeIn="0" Hold="500" FadeOut="0" Note="R">133</Step>
+   <Step Number="19" FadeIn="0" Hold="750" FadeOut="0" Note="D">257</Step>
+   <Step Number="20" FadeIn="0" Hold="1250" FadeOut="0" Note="up!">133</Step>
+   <Step Number="21" FadeIn="0" Hold="750" FadeOut="0" Note="W">257</Step>
+   <Step Number="22" FadeIn="0" Hold="750" FadeOut="0" Note="O">133</Step>
+   <Step Number="23" FadeIn="0" Hold="500" FadeOut="0" Note="R">257</Step>
+   <Step Number="24" FadeIn="0" Hold="750" FadeOut="0" Note="D">133</Step>
+   <Step Number="25" FadeIn="0" Hold="1250" FadeOut="0" Note="up!">257</Step>
+   <Step Number="26" FadeIn="0" Hold="750" FadeOut="0" Note="W">133</Step>
+   <Step Number="27" FadeIn="0" Hold="750" FadeOut="0" Note="O">257</Step>
+   <Step Number="28" FadeIn="0" Hold="500" FadeOut="0" Note="R">133</Step>
+   <Step Number="29" FadeIn="0" Hold="750" FadeOut="0" Note="D">257</Step>
+   <Step Number="30" FadeIn="0" Hold="1250" FadeOut="0" Note="up">133</Step>
+   <Step Number="31" FadeIn="0" Hold="32000" FadeOut="0" Note="Verse 3">80</Step>
+   <Step Number="32" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 3">81</Step>
+   <Step Number="33" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">43</Step>
+   <Step Number="34" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="113" Type="Scene" Name="23 Martin MAC250+" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2212,15 +2264,16 @@
    <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">120</Step>
    <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">68</Step>
    <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">179</Step>
-   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">45</Step>
-   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">180</Step>
-   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">119</Step>
-   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">121</Step>
-   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">122</Step>
-   <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0">114</Step>
-   <Step Number="10" FadeIn="0" Hold="1000" FadeOut="0">115</Step>
-   <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0">116</Step>
-   <Step Number="12" FadeIn="0" Hold="1000" FadeOut="0">117</Step>
+   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">210</Step>
+   <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">45</Step>
+   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">180</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">119</Step>
+   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">121</Step>
+   <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0">122</Step>
+   <Step Number="10" FadeIn="0" Hold="1000" FadeOut="0">114</Step>
+   <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0">115</Step>
+   <Step Number="12" FadeIn="0" Hold="1000" FadeOut="0">116</Step>
+   <Step Number="13" FadeIn="0" Hold="1000" FadeOut="0">117</Step>
   </Function>
   <Function ID="124" Type="Scene" Name="Heads on/off" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2843,47 +2896,46 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="SPACE LORD">82</Step>
-   <Step Number="1" FadeIn="0" Hold="22000" FadeOut="0">167</Step>
-   <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0">83</Step>
-   <Step Number="3" FadeIn="0" Hold="32000" FadeOut="0">74</Step>
-   <Step Number="4" FadeIn="0" Hold="11000" FadeOut="0">70</Step>
-   <Step Number="5" FadeIn="0" Hold="11000" FadeOut="0">74</Step>
-   <Step Number="6" FadeIn="0" Hold="21000" FadeOut="0">80</Step>
-   <Step Number="7" FadeIn="0" Hold="10000" FadeOut="0">83</Step>
-   <Step Number="8" FadeIn="0" Hold="11000" FadeOut="0">74</Step>
-   <Step Number="9" FadeIn="0" Hold="11000" FadeOut="0">70</Step>
+   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">167</Step>
+   <Step Number="2" FadeIn="0" Hold="16000" FadeOut="0" Note="Verse 1a (nur Pete)">83</Step>
+   <Step Number="3" FadeIn="0" Hold="32000" FadeOut="0" Note="Instrumental + Verse 1b">74</Step>
+   <Step Number="4" FadeIn="0" Hold="11000" FadeOut="0" Note="Chorus 1">70</Step>
+   <Step Number="5" FadeIn="0" Hold="11000" FadeOut="0" Note="Verse 2a">74</Step>
+   <Step Number="6" FadeIn="0" Hold="21000" FadeOut="0" Note="Verse 2b">80</Step>
+   <Step Number="7" FadeIn="0" Hold="10000" FadeOut="0" Note="Interlude">83</Step>
+   <Step Number="8" FadeIn="0" Hold="11000" FadeOut="0" Note="Verse 2c">74</Step>
+   <Step Number="9" FadeIn="0" Hold="11000" FadeOut="0" Note="Chorus">70</Step>
    <Step Number="10" FadeIn="0" Hold="11000" FadeOut="0">74</Step>
    <Step Number="11" FadeIn="0" Hold="21000" FadeOut="0">80</Step>
-   <Step Number="12" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">80</Step>
-   <Step Number="14" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">80</Step>
-   <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0">80</Step>
-   <Step Number="18" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
-   <Step Number="19" FadeIn="0" Hold="3000" FadeOut="0">80</Step>
+   <Step Number="12" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="13" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="14" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="15" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="16" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="17" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="18" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="19" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
    <Step Number="20" FadeIn="0" Hold="10000" FadeOut="0">83</Step>
    <Step Number="21" FadeIn="0" Hold="11000" FadeOut="0">167</Step>
    <Step Number="22" FadeIn="0" Hold="19000" FadeOut="0">86</Step>
-   <Step Number="23" FadeIn="0" Hold="21000" FadeOut="0">80</Step>
-   <Step Number="24" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="25" FadeIn="0" Hold="2000" FadeOut="0">80</Step>
-   <Step Number="26" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="27" FadeIn="0" Hold="2000" FadeOut="0">80</Step>
-   <Step Number="28" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="29" FadeIn="0" Hold="3000" FadeOut="0">80</Step>
-   <Step Number="30" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
-   <Step Number="31" FadeIn="0" Hold="3000" FadeOut="0">80</Step>
-   <Step Number="32" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="33" FadeIn="0" Hold="2000" FadeOut="0">80</Step>
-   <Step Number="34" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="35" FadeIn="0" Hold="2000" FadeOut="0">80</Step>
-   <Step Number="36" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="37" FadeIn="0" Hold="3000" FadeOut="0">80</Step>
-   <Step Number="38" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
-   <Step Number="39" FadeIn="0" Hold="3000" FadeOut="0">80</Step>
-   <Step Number="40" FadeIn="0" Hold="8000" FadeOut="0">43</Step>
-   <Step Number="41" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+   <Step Number="23" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="24" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="25" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="26" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="27" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="28" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="29" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="30" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="31" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="32" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="33" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="34" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="35" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="36" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="37" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
+   <Step Number="38" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
+   <Step Number="39" FadeIn="0" Hold="8000" FadeOut="0">43</Step>
+   <Step Number="40" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="173" Type="Chaser" Name="The Pretender" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2891,155 +2943,128 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="THE PRETENDER">82</Step>
-   <Step Number="1" FadeIn="0" Hold="3000" FadeOut="0">83</Step>
-   <Step Number="2" FadeIn="0" Hold="22" FadeOut="0">86</Step>
-   <Step Number="3" FadeIn="0" Hold="7" FadeOut="0">168</Step>
-   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="5" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="6" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="7" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="8" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="9" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="10" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="11" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="12" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="13" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="14" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="15" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="16" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="17" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="18" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="19" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="20" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="21" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="22" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="23" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="24" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="25" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="26" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="27" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="28" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="29" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="30" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="31" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="32" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="33" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="34" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="35" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="36" FadeIn="0" Hold="10000" FadeOut="0">78</Step>
-   <Step Number="37" FadeIn="0" Hold="11000" FadeOut="0">80</Step>
-   <Step Number="38" FadeIn="0" Hold="2000" FadeOut="0">83</Step>
-   <Step Number="39" FadeIn="0" Hold="22000" FadeOut="0">81</Step>
-   <Step Number="40" FadeIn="0" Hold="24000" FadeOut="0">80</Step>
-   <Step Number="41" FadeIn="0" Hold="2000" FadeOut="0">83</Step>
-   <Step Number="42" FadeIn="0" Hold="24000" FadeOut="0">81</Step>
-   <Step Number="43" FadeIn="0" Hold="11000" FadeOut="0">6</Step>
-   <Step Number="44" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="45" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="46" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="47" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="48" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="49" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="50" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="51" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="52" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="53" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="54" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="55" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="56" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="57" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="58" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="59" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="60" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="61" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="62" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="63" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="64" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="65" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="66" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="67" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="68" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="69" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="70" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="71" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="72" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="73" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="74" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="75" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="76" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="77" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="78" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="79" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="80" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="81" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="82" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="83" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="84" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="85" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="86" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="87" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="88" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="89" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="90" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="91" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="92" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="93" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="94" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="95" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="96" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="97" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="98" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="99" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="100" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="101" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="102" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="103" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="104" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="105" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="106" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="107" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="108" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="109" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="110" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="111" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="112" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="113" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="114" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="115" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="116" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="117" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="118" FadeIn="0" Hold="12000" FadeOut="0">86</Step>
-   <Step Number="119" FadeIn="0" Hold="21000" FadeOut="0">81</Step>
-   <Step Number="120" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="121" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="122" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="123" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="124" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="125" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="126" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="127" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="128" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="129" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="130" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="131" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="132" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="133" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="134" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="135" FadeIn="0" Hold="3000" FadeOut="0">81</Step>
-   <Step Number="136" FadeIn="0" Hold="2000" FadeOut="0">83</Step>
-   <Step Number="137" FadeIn="0" Hold="6000" FadeOut="0">81</Step>
-   <Step Number="138" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="139" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="140" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="141" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="142" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="143" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="144" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="145" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="146" FadeIn="0" Hold="500" FadeOut="0">43</Step>
-   <Step Number="147" FadeIn="0" Hold="500" FadeOut="0">81</Step>
-   <Step Number="148" FadeIn="0" Hold="1000" FadeOut="0">43</Step>
-   <Step Number="149" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+   <Step Number="1" FadeIn="0" Hold="22000" FadeOut="0" Note="Guitar Intro">6</Step>
+   <Step Number="2" FadeIn="0" Hold="22000" FadeOut="0" Note="Keep you in the dark (slow)">86</Step>
+   <Step Number="3" FadeIn="0" Hold="8000" FadeOut="0" Note="Drum Solo">168</Step>
+   <Step Number="4" FadeIn="0" Hold="335" FadeOut="0" Note="Verse 1">43</Step>
+   <Step Number="5" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="6" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="7" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="8" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="9" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="10" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="11" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="12" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="13" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="14" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="15" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="16" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="17" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="18" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="19" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="20" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="21" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="22" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="23" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="24" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="25" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="26" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="27" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="28" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="29" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="30" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="31" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="32" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="33" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="34" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="35" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="36" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="37" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="38" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="39" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="40" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="41" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="42" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="43" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="44" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="45" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="46" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="47" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="48" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="49" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="50" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="51" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="52" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="53" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="54" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="55" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="56" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="57" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="58" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="59" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="60" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="61" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="62" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="63" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="64" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="65" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="66" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="67" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="68" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="69" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="70" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="71" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="72" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="73" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="74" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="75" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="76" FadeIn="0" Hold="11000" FadeOut="0">78</Step>
+   <Step Number="77" FadeIn="0" Hold="2364" FadeOut="0">81</Step>
+   <Step Number="78" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 1">80</Step>
+   <Step Number="79" FadeIn="0" Hold="3000" FadeOut="0">77</Step>
+   <Step Number="80" FadeIn="0" Hold="335" FadeOut="0" Note="Verse 2">43</Step>
+   <Step Number="81" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="82" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="83" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="84" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="85" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="86" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="87" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="88" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="89" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="90" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="91" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="92" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="93" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="94" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="95" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="96" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="97" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="98" FadeIn="0" Hold="335" FadeOut="0">43</Step>
+   <Step Number="99" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="100" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="101" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="102" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="103" FadeIn="0" Hold="1182" FadeOut="0">36</Step>
+   <Step Number="104" FadeIn="0" Hold="11000" FadeOut="0">78</Step>
+   <Step Number="105" FadeIn="0" Hold="2364" FadeOut="0">81</Step>
+   <Step Number="106" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 2">80</Step>
+   <Step Number="107" FadeIn="0" Hold="5500" FadeOut="0" Note="Interlude">6</Step>
+   <Step Number="108" FadeIn="0" Hold="11000" FadeOut="0">86</Step>
+   <Step Number="109" FadeIn="0" Hold="11000" FadeOut="0">70</Step>
+   <Step Number="110" FadeIn="0" Hold="5500" FadeOut="0">78</Step>
+   <Step Number="111" FadeIn="0" Hold="5500" FadeOut="0">81</Step>
+   <Step Number="112" FadeIn="0" Hold="11000" FadeOut="0" Note="Keep me in the dark (Stop)">86</Step>
+   <Step Number="113" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 3">80</Step>
+   <Step Number="114" FadeIn="0" Hold="21000" FadeOut="0" Note="Chorus 4">78</Step>
+   <Step Number="115" FadeIn="0" Hold="8250" FadeOut="0" Note="Übergang">80</Step>
+   <Step Number="116" FadeIn="0" Hold="2750" FadeOut="0">81</Step>
+   <Step Number="117" FadeIn="0" Hold="335" FadeOut="0" Note="Ende">43</Step>
+   <Step Number="118" FadeIn="0" Hold="670" FadeOut="0">36</Step>
+   <Step Number="119" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="120" FadeIn="0" Hold="177" FadeOut="0">36</Step>
+   <Step Number="121" FadeIn="0" Hold="177" FadeOut="0">43</Step>
+   <Step Number="122" FadeIn="0" Hold="5000" FadeOut="0">36</Step>
   </Function>
   <Function ID="174" Type="Chaser" Name="Hail to the Freaks" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3560,7 +3585,255 @@
    <Step Number="3">203</Step>
    <Step Number="4">204</Step>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="1">
+  <Function ID="210" Type="Scene" Name="08 Blinder" Path="ZZZ identify fixtures">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,1,1,1,2,1</FixtureVal>
+  </Function>
+  <Function ID="211" Type="Scene" Name="Matrices dim white" Path="Colors Matrices">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,2,1,0,2,2</FixtureVal>
+  </Function>
+  <Function ID="212" Type="Collection" Name="blind">
+   <Step Number="0">43</Step>
+   <Step Number="1">189</Step>
+  </Function>
+  <Function ID="213" Type="Audio" Name="20200819 All the Small things.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="156000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20200819 All the Small things.mp3</Source>
+  </Function>
+  <Function ID="214" Type="Audio" Name="20230622 Along comes Mary.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="148000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Along comes Mary.mp3</Source>
+  </Function>
+  <Function ID="215" Type="Audio" Name="20230622 Always where I need to be.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="170000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Always where I need to be.mp3</Source>
+  </Function>
+  <Function ID="216" Type="Audio" Name="20230622 Animal.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="176000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Animal.mp3</Source>
+  </Function>
+  <Function ID="217" Type="Audio" Name="20230622 Are you gonna be my girl.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="160000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Are you gonna be my girl.mp3</Source>
+  </Function>
+  <Function ID="218" Type="Audio" Name="20230622 Basket Case.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="200000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Basket Case.mp3</Source>
+  </Function>
+  <Function ID="219" Type="Audio" Name="20230622 Boys dont cry.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="182000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Boys dont cry.mp3</Source>
+  </Function>
+  <Function ID="220" Type="Audio" Name="20230622 Chalsea Dagger.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="220000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Chalsea Dagger.mp3</Source>
+  </Function>
+  <Function ID="221" Type="Audio" Name="20230622 Creep.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="228000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Creep.mp3</Source>
+  </Function>
+  <Function ID="222" Type="Audio" Name="20230622 dont say maybe.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="18178"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 dont say maybe.mp3</Source>
+  </Function>
+  <Function ID="223" Type="Audio" Name="20230622 Down in the Past.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="316000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Down in the Past.mp3</Source>
+  </Function>
+  <Function ID="224" Type="Audio" Name="20230622 Every Me Every You.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="200000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Every Me Every You.mp3</Source>
+  </Function>
+  <Function ID="225" Type="Audio" Name="20230622 Fluerscent Adolescent.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="176000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Fluerscent Adolescent.mp3</Source>
+  </Function>
+  <Function ID="226" Type="Audio" Name="20230622 Gr├Âlen.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="22070"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Gr├Âlen.mp3</Source>
+  </Function>
+  <Function ID="227" Type="Audio" Name="20230622 Hail to the Freaks.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="204000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Hail to the Freaks.mp3</Source>
+  </Function>
+  <Function ID="228" Type="Audio" Name="20230622 Last Nite.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="240000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Last Nite.mp3</Source>
+  </Function>
+  <Function ID="229" Type="Audio" Name="20230622 Lonely Boy.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="262000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Lonely Boy.mp3</Source>
+  </Function>
+  <Function ID="230" Type="Audio" Name="20230622 Mr. Brightside.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="222000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Mr. Brightside.mp3</Source>
+  </Function>
+  <Function ID="231" Type="Audio" Name="20230622 Narcotic.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="218000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Narcotic.mp3</Source>
+  </Function>
+  <Function ID="232" Type="Audio" Name="20230622 Rock'n'Roll Queen.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="218000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Rock'n'Roll Queen.mp3</Source>
+  </Function>
+  <Function ID="233" Type="Audio" Name="20230622 Run.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="395254"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Run.mp3</Source>
+  </Function>
+  <Function ID="234" Type="Audio" Name="20230622 Self Esteem.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="246000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Self Esteem.mp3</Source>
+  </Function>
+  <Function ID="235" Type="Audio" Name="20230622 Seven Nation Army + Sweet Dreams.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="316000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Seven Nation Army + Sweet Dreams.mp3</Source>
+  </Function>
+  <Function ID="236" Type="Audio" Name="20230622 Sex on Fire.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="226000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Sex on Fire.mp3</Source>
+  </Function>
+  <Function ID="237" Type="Audio" Name="20230622 She hates me.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="182000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 She hates me.mp3</Source>
+  </Function>
+  <Function ID="238" Type="Audio" Name="20230622 Should I stay or should I go.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="166000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Should I stay or should I go.mp3</Source>
+  </Function>
+  <Function ID="239" Type="Audio" Name="20230622 Song 2.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="202000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Song 2.mp3</Source>
+  </Function>
+  <Function ID="240" Type="Audio" Name="20230622 Space Lord.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="291000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Space Lord.mp3</Source>
+  </Function>
+  <Function ID="241" Type="Audio" Name="20230622 Teenage Dirtbag.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="258000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Teenage Dirtbag.mp3</Source>
+  </Function>
+  <Function ID="242" Type="Audio" Name="20230622 Tension.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="224000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Tension.mp3</Source>
+  </Function>
+  <Function ID="243" Type="Audio" Name="20230622 The Boys of Summer.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="220000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 The Boys of Summer.mp3</Source>
+  </Function>
+  <Function ID="244" Type="Audio" Name="20230622 The Middle.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="176000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 The Middle.mp3</Source>
+  </Function>
+  <Function ID="245" Type="Audio" Name="20230622 The Pretender.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="280000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 The Pretender.mp3</Source>
+  </Function>
+  <Function ID="246" Type="Audio" Name="20230622 Today.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="198000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Today.mp3</Source>
+  </Function>
+  <Function ID="247" Type="Audio" Name="20230622 Torn.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="258000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Torn.mp3</Source>
+  </Function>
+  <Function ID="248" Type="Audio" Name="20230622 Valerie.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="222000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source Device="Lautsprecher/Kopfhörer (Realtek High Definition Audio)">C:/Users/User/Music/20230622 Valerie.mp3</Source>
+  </Function>
+  <Function ID="249" Type="Audio" Name="20230622 Word Up.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="242000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Word Up.mp3</Source>
+  </Function>
+  <Function ID="250" Type="Audio" Name="20230622 Yellow.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="276000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20230622 Yellow.mp3</Source>
+  </Function>
+  <Function ID="251" Type="Audio" Name="20231116 Dancing with myself.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="202000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20231116 Dancing with myself.mp3</Source>
+  </Function>
+  <Function ID="252" Type="Audio" Name="20231116 Fight for your right.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="238000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20231116 Fight for your right.mp3</Source>
+  </Function>
+  <Function ID="253" Type="Audio" Name="20231116 Inside.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="267500"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20231116 Inside.mp3</Source>
+  </Function>
+  <Function ID="254" Type="Audio" Name="20231116 Join me.mp3">
+   <Speed FadeIn="0" FadeOut="0" Duration="241000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>C:/Users/User/Music/20231116 Join me.mp3</Source>
+  </Function>
+  <Function ID="255" Type="Script" Name="Fog on (Script)">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>setfixture%3A21%20ch%3A0%20val%3A255%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%231</Command>
+   <Command>setfixture%3A21%20ch%3A1%20val%3A255%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%232</Command>
+  </Function>
+  <Function ID="256" Type="Script" Name="Fog off (Script)">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>setfixture%3A21%20ch%3A0%20val%3A0%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%231</Command>
+   <Command>setfixture%3A21%20ch%3A1%20val%3A0%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%232</Command>
+  </Function>
+  <Function ID="257" Type="Scene" Name="PAR green" Path="Colors PARs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,67,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,68,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="4">1,0,2,255,3,0</FixtureVal>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -3597,7 +3870,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="705" Y="10" Width="485" Height="775"/>
+    <WindowState Visible="False" X="705" Y="10" Width="485" Height="775"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -3606,7 +3879,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="🔄 round'n'round" ID="4" Icon="">
-     <WindowState Visible="True" X="170" Y="425" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="425" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3620,7 +3893,7 @@
      <Input Universe="1" Channel="136"/>
     </Button>
     <Button Caption="🎉 bunt" ID="1" Icon="">
-     <WindowState Visible="True" X="170" Y="350" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="350" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3634,7 +3907,7 @@
      <Input Universe="1" Channel="137"/>
     </Button>
     <Button Caption="🔵 slow blue" ID="6" Icon="">
-     <WindowState Visible="True" X="15" Y="500" Width="75" Height="70"/>
+     <WindowState Visible="False" X="15" Y="500" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3648,7 +3921,7 @@
      <Input Universe="1" Channel="128"/>
     </Button>
     <Button Caption="↕️ up'n'down" ID="7" Icon="">
-     <WindowState Visible="True" X="95" Y="425" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="425" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3662,7 +3935,7 @@
      <Input Universe="1" Channel="131"/>
     </Button>
     <Button Caption="↔️ left'n'right" ID="8" Icon="">
-     <WindowState Visible="True" X="95" Y="350" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="350" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3676,7 +3949,7 @@
      <Input Universe="1" Channel="132"/>
     </Button>
     <Button Caption="🚶walking" ID="9" Icon="">
-     <WindowState Visible="True" X="95" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3690,7 +3963,7 @@
      <Input Universe="1" Channel="130"/>
     </Button>
     <Button Caption="🏊🏻‍ swimming" ID="10" Icon="">
-     <WindowState Visible="True" X="170" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3704,7 +3977,7 @@
      <Input Universe="1" Channel="135"/>
     </Button>
     <Button Caption="✳️Strobe" ID="11" Icon="">
-     <WindowState Visible="True" X="320" Y="420" Width="70" Height="75"/>
+     <WindowState Visible="False" X="320" Y="420" Width="70" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3718,7 +3991,7 @@
      <Input Universe="1" Channel="160"/>
     </Button>
     <Button Caption="Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="True" X="170" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3732,7 +4005,7 @@
      <Input Universe="1" Channel="149"/>
     </Button>
     <Button Caption="hot" ID="13" Icon="">
-     <WindowState Visible="True" X="170" Y="10" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3746,7 +4019,7 @@
      <Input Universe="1" Channel="152"/>
     </Button>
     <Button Caption="Chris 🟡" ID="14" Icon="">
-     <WindowState Visible="True" X="245" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="245" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3760,7 +4033,7 @@
      <Input Universe="1" Channel="150"/>
     </Button>
     <Button Caption="Tim   ⚪️" ID="15" Icon="">
-     <WindowState Visible="True" X="320" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="320" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3774,7 +4047,7 @@
      <Input Universe="1" Channel="151"/>
     </Button>
     <Button Caption="Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="True" X="95" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3788,7 +4061,7 @@
      <Input Universe="1" Channel="146"/>
     </Button>
     <Button Caption="🔦 Search-light" ID="17" Icon="">
-     <WindowState Visible="True" X="15" Y="425" Width="75" Height="70"/>
+     <WindowState Visible="False" X="15" Y="425" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3802,7 +4075,7 @@
      <Input Universe="1" Channel="129"/>
     </Button>
     <Button Caption="🔔 Alarm" ID="18" Icon="">
-     <WindowState Visible="True" X="95" Y="200" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="200" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3816,7 +4089,7 @@
      <Input Universe="1" Channel="134"/>
     </Button>
     <Button Caption="🛑" ID="19" Icon="">
-     <WindowState Visible="True" X="170" Y="275" Width="70" Height="70"/>
+     <WindowState Visible="False" X="170" Y="275" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3830,7 +4103,7 @@
      <Input Universe="1" Channel="138"/>
     </Button>
     <Button Caption="" ID="28" Icon="">
-     <WindowState Visible="True" X="245" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="245" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3844,7 +4117,7 @@
      <Input Universe="1" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="True" X="395" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="395" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3858,7 +4131,7 @@
      <Input Universe="1" Channel="158"/>
     </Button>
     <Button Caption="🔆 blinking" ID="20" Icon="">
-     <WindowState Visible="True" X="95" Y="275" Width="70" Height="70"/>
+     <WindowState Visible="False" X="95" Y="275" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3872,7 +4145,7 @@
      <Input Universe="1" Channel="133"/>
     </Button>
     <Button Caption="hot" ID="21" Icon="">
-     <WindowState Visible="True" X="320" Y="10" Width="70" Height="70"/>
+     <WindowState Visible="False" X="320" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3886,7 +4159,7 @@
      <Input Universe="1" Channel="153"/>
     </Button>
     <Button Caption="Fog" ID="36" Icon="">
-     <WindowState Visible="True" X="320" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="False" X="320" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -3894,14 +4167,14 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
-     <Function ID="40"/>
+     <Function ID="255"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="159"/>
     </Button>
    </SoloFrame>
    <Label Caption="- Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="True" X="715" Y="695" Width="235" Height="20"/>
+    <WindowState Visible="False" X="715" Y="695" Width="235" Height="20"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3911,7 +4184,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Fixtures identifizieren" ID="33">
-    <WindowState Visible="True" X="715" Y="650" Width="170" Height="20"/>
+    <WindowState Visible="False" X="715" Y="650" Width="170" Height="20"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3921,7 +4194,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="True" X="715" Y="750" Width="185" Height="25"/>
+    <WindowState Visible="False" X="715" Y="750" Width="185" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3931,7 +4204,7 @@
     </Appearance>
    </Label>
    <Label Caption="- Offset Heads in Effects anpassen (kleine/große s separat)" ID="35">
-    <WindowState Visible="True" X="715" Y="720" Width="435" Height="25"/>
+    <WindowState Visible="False" X="715" Y="720" Width="435" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3948,7 +4221,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="10" Y="10" Width="650" Height="780"/>
+    <WindowState Visible="False" X="10" Y="10" Width="650" Height="780"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3956,7 +4229,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="24"/>
+    <Multipage PagesNum="60" CurrentPage="35"/>
     <Next>
      <Key>N</Key>
      <Input Universe="1" Channel="169"/>
@@ -4579,7 +4852,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="106" Page="24">
-     <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5132,7 +5405,7 @@
     </CueList>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="0">
-    <WindowState Visible="True" X="965" Y="190" Width="200" Height="175"/>
+    <WindowState Visible="False" X="965" Y="190" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -5140,9 +5413,9 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Visibility>127</Visibility>
+    <Visibility>131172</Visibility>
     <AbsoluteValue Minimum="0" Maximum="10000"/>
-    <Time>486</Time>
+    <Time>817</Time>
     <Function FadeIn="0" FadeOut="0" Duration="6">79</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">78</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">77</Function>
