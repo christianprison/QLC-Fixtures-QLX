@@ -4,23 +4,19 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.0</Version>
-  <Author>User</Author>
+  <Author>Christian Prison</Author>
  </Creator>
  <Engine Autostart="82">
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: EN429695)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="PACER" Line="0" Profile="Nektar Pacer">
-     <PluginParameters MIDISendNoteOff="true"/>
-    </Input>
+    <Input Plugin="MIDI" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" UID="rptMIDI" Line="2" Profile="Arlomedia Bandhelper"/>
+    <Input Plugin="MIDI" UID="None" Line="2"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -55,8 +51,8 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>3ch Blinder</Model>
-   <Mode>3ch</Mode>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>3</ID>
    <Name>08 Blinder</Name>
    <Universe>0</Universe>
@@ -565,6 +561,20 @@
    <FixtureVal ID="25">1,255,7,128,9,20</FixtureVal>
    <FixtureVal ID="26">1,0,7,128,9,80</FixtureVal>
   </Function>
+  <Function ID="27" Type="Scene" Name="Alarm off" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+  </Function>
   <Function ID="28" Type="Collection" Name="fast balls color (only strips) !">
    <Step Number="0">84</Step>
   </Function>
@@ -850,8 +860,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
@@ -1161,13 +1171,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
    <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
-   <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetCollision" Value="No"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1427,13 +1437,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3961,6 +3971,70 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,113,1,45,4,0</FixtureVal>
    <FixtureVal ID="5">0,113,1,45</FixtureVal>
+  </Function>
+  <Function ID="271" Type="Scene" Name="Alarm 2+7+15" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+   <FixtureVal ID="6">1,255</FixtureVal>
+   <FixtureVal ID="8">2,255</FixtureVal>
+  </Function>
+  <Function ID="272" Type="Scene" Name="Alarm 3+9+16" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="11">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,255,13,0,14,0,15,255,16,0,17,0,18,255,19,0,20,0,21,255,22,0,23,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,255</FixtureVal>
+  </Function>
+  <Function ID="273" Type="Scene" Name="Alarm 2+8+11" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,255</FixtureVal>
+  </Function>
+  <Function ID="274" Type="Scene" Name="Alarm 3+7+11" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,0,3,62</FixtureVal>
+  </Function>
+  <Function ID="275" Type="Scene" Name="Alarm 9+15+16" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="11">1,255,4,255,7,255,10,255,13,255,16,255,19,255,22,255</FixtureVal>
+   <FixtureVal ID="8"/>
+   <FixtureVal ID="10"/>
+  </Function>
+  <Function ID="276" Type="Scene" Name="Alarm 7+8+9+11" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">1,255</FixtureVal>
+   <FixtureVal ID="3">1,255</FixtureVal>
+   <FixtureVal ID="7">0,255,2,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,0,3,255,4,130,5,0,6,255,7,255,8,0,9,127,10,255,11,0,12,0,13,255,14,148,15,0,16,255,17,255,18,0,19,255,20,255,21,0,22,130,23,0</FixtureVal>
+  </Function>
+  <Function ID="277" Type="Scene" Name="Alarm 3+8+15" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">2,255</FixtureVal>
+   <FixtureVal ID="9">1,255,2,255</FixtureVal>
+   <FixtureVal ID="8">0,255,1,255</FixtureVal>
+  </Function>
+  <Function ID="278" Type="Scene" Name="Alarm 2+8+16" Path="Colors PARs/subscenes for Alarm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">2,255</FixtureVal>
+   <FixtureVal ID="10">0,255</FixtureVal>
+   <FixtureVal ID="3">0,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="279" Type="Chaser" Name="Alarm neu">
+   <Speed FadeIn="0" FadeOut="0" Duration="100"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="100" FadeOut="0">271</Step>
+   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0">273</Step>
+   <Step Number="2" FadeIn="0" Hold="100" FadeOut="0">274</Step>
+   <Step Number="3" FadeIn="0" Hold="100" FadeOut="0">277</Step>
+   <Step Number="4" FadeIn="0" Hold="100" FadeOut="0">272</Step>
+   <Step Number="5" FadeIn="0" Hold="100" FadeOut="0">276</Step>
+   <Step Number="6" FadeIn="0" Hold="100" FadeOut="0">275</Step>
+   <Step Number="7" FadeIn="0" Hold="100" FadeOut="0">278</Step>
+   <Step Number="8" FadeIn="0" Hold="100" FadeOut="0">27</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
