@@ -4,19 +4,21 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.0</Version>
-  <Author>Christian Prison</Author>
+  <Author>User</Author>
  </Creator>
  <Engine Autostart="82">
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: EN429695)" Line="0">
+     <PluginParameters UniverseChannels="196"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="None" Line="0"/>
+    <Input Plugin="MIDI" UID="PACER" Line="0"/>
    </Universe>
    <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" UID="None" Line="2"/>
+    <Input Plugin="MIDI" UID="rptMIDI" Line="2"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -148,6 +150,16 @@
    <Universe>0</Universe>
    <Address>85</Address>
    <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED PAR 56 RGB DMX</Model>
+   <Mode>3 Channels</Mode>
+   <ID>13</ID>
+   <Name>18 LED PAR 56 Pete 21°</Name>
+   <Universe>0</Universe>
+   <Address>71</Address>
+   <Channels>3</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -804,8 +816,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
    <Property Name="StarsAmount" Value="50"/>
+   <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1170,13 +1182,13 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
+   <Property Name="presetSize" Value="2"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
    <Property Name="color5Index" Value="Orange"/>
    <Property Name="presetCollision" Value="No"/>
-   <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
-   <Property Name="presetSize" Value="2"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
@@ -1436,13 +1448,13 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetSize" Value="2"/>
    <Property Name="color1Index" Value="Orange"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="color5Index" Value="Yellow"/>
    <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="presetSize" Value="2"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
@@ -2286,10 +2298,11 @@
    <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">119</Step>
    <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">121</Step>
    <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0">122</Step>
-   <Step Number="10" FadeIn="0" Hold="1000" FadeOut="0">114</Step>
-   <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0">115</Step>
-   <Step Number="12" FadeIn="0" Hold="1000" FadeOut="0">116</Step>
-   <Step Number="13" FadeIn="0" Hold="1000" FadeOut="0">117</Step>
+   <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">280</Step>
+   <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0">114</Step>
+   <Step Number="12" FadeIn="0" Hold="1000" FadeOut="0">115</Step>
+   <Step Number="13" FadeIn="0" Hold="1000" FadeOut="0">116</Step>
+   <Step Number="14" FadeIn="0" Hold="1000" FadeOut="0">117</Step>
   </Function>
   <Function ID="124" Type="Scene" Name="Heads on/off" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -4036,7 +4049,11 @@
    <Step Number="7" FadeIn="0" Hold="100" FadeOut="0">278</Step>
    <Step Number="8" FadeIn="0" Hold="100" FadeOut="0">27</Step>
   </Function>
-  <Monitor DisplayMode="1" ShowLabels="1">
+  <Function ID="280" Type="Scene" Name="18 LED PAR Pete" Path="ZZZ identify fixtures">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="13">0,64,1,65,2,6</FixtureVal>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
