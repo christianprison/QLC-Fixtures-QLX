@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FIXANDFUNC">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.0</Version>
-  <Author>User</Author>
+  <Version>5.0.0 Beta 3</Version>
+  <Author>Christian Prison</Author>
  </Creator>
  <Engine Autostart="82">
   <InputOutputMap>
-   <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: EN429695)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="PACER" Line="0"/>
+    <Input Plugin="MIDI" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" UID="rptMIDI" Line="2"/>
+    <Input Plugin="MIDI" UID="None" Line="2"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -32,9 +29,9 @@
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Expolite</Manufacturer>
-   <Model>TourSpot 50 Mini</Model>
-   <Mode>11 Channel 8bit</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>11 Channel</Mode>
    <ID>1</ID>
    <Name>19 TourSpot (58)</Name>
    <Universe>0</Universe>
@@ -72,9 +69,9 @@
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Expolite</Manufacturer>
-   <Model>TourSpot 50 Mini</Model>
-   <Mode>11 Channel 8bit</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>11 Channel</Mode>
    <ID>5</ID>
    <Name>20 TourSpot (91)</Name>
    <Universe>0</Universe>
@@ -816,8 +813,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -832,14 +829,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>50</StartOffset>
    </Fixture>
@@ -872,9 +869,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="blockSize" Value="2"/>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -1027,14 +1024,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
@@ -1068,8 +1065,8 @@
    <EndColor>4278190080</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="60" Type="Scene" Name="Heads blinking" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="619"/>
@@ -1142,14 +1139,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
@@ -1183,13 +1180,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
    <Property Name="presetSize" Value="2"/>
-   <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetCollision" Value="No"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="presetNumber" Value="5"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="presetCollision" Value="No"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="color1Index" Value="Dim Yellow"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1449,13 +1446,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="presetSize" Value="2"/>
-   <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color5Index" Value="Yellow"/>
-   <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetNumber" Value="5"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="color1Index" Value="Orange"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2288,21 +2285,21 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">118</Step>
-   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">120</Step>
-   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">68</Step>
-   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">179</Step>
+   <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">118</Step>
+   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">120</Step>
+   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0">68</Step>
+   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">179</Step>
    <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">210</Step>
    <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">45</Step>
-   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">180</Step>
-   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">119</Step>
-   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">121</Step>
-   <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0">122</Step>
+   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0">180</Step>
+   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0">119</Step>
+   <Step Number="8" FadeIn="0" Hold="2000" FadeOut="0">121</Step>
+   <Step Number="9" FadeIn="0" Hold="2000" FadeOut="0">122</Step>
    <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">280</Step>
-   <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0">114</Step>
-   <Step Number="12" FadeIn="0" Hold="1000" FadeOut="0">115</Step>
-   <Step Number="13" FadeIn="0" Hold="1000" FadeOut="0">116</Step>
-   <Step Number="14" FadeIn="0" Hold="1000" FadeOut="0">117</Step>
+   <Step Number="11" FadeIn="0" Hold="2000" FadeOut="0">114</Step>
+   <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0">115</Step>
+   <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">116</Step>
+   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">117</Step>
   </Function>
   <Function ID="124" Type="Scene" Name="Heads on/off" Path="Shutter FX">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2477,14 +2474,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>40</StartOffset>
    </Fixture>
@@ -2513,14 +2510,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
@@ -2549,14 +2546,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>20</StartOffset>
    </Fixture>
@@ -2585,14 +2582,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>50</StartOffset>
    </Fixture>
@@ -2621,14 +2618,14 @@
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>0</StartOffset>
    </Fixture>
    <Fixture>
     <ID>5</ID>
     <Head>0</Head>
-    <Mode>0</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>50</StartOffset>
    </Fixture>
@@ -3837,19 +3834,19 @@
    <RunOrder>SingleShot</RunOrder>
    <Source>C:/Users/User/Music/20231116 Join me.mp3</Source>
   </Function>
-  <Function ID="255" Type="Script" Name="Fog on (Script)">
+  <Function ID="255" Type="Script" Name="Fog on (Script)" Version="2">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Command>setfixture%3A21%20ch%3A0%20val%3A255%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%231</Command>
-   <Command>setfixture%3A21%20ch%3A1%20val%3A255%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%232</Command>
+   <Command>Engine.setFixture%2821%2C0%2C255%29%3B%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%231</Command>
+   <Command>Engine.setFixture%2821%2C1%2C255%29%3B%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%232</Command>
   </Function>
-  <Function ID="256" Type="Script" Name="Fog off (Script)">
+  <Function ID="256" Type="Script" Name="Fog off (Script)" Version="2">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Command>setfixture%3A21%20ch%3A0%20val%3A0%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%231</Command>
-   <Command>setfixture%3A21%20ch%3A1%20val%3A0%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%232</Command>
+   <Command>Engine.setFixture%2821%2C0%2C0%29%3B%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%231</Command>
+   <Command>Engine.setFixture%2821%2C1%2C0%29%3B%20%2F%2F%2021%20DMX%20Relay%20%2878%2F79%29%2C%20Dimmer%20%232</Command>
   </Function>
   <Function ID="257" Type="Scene" Name="PAR green" Path="Colors PARs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -4057,406 +4054,267 @@
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
-   <Grid Width="5" Height="3" Depth="5" Units="0"/>
-   <FxItem ID="0" XPos="1296.3" YPos="3990.74"/>
-   <FxItem ID="1" XPos="1445.64" YPos="22.1027"/>
-   <FxItem ID="2" XPos="64.8148" YPos="2435.19"/>
-   <FxItem ID="4" XPos="3064.81" YPos="3611.11"/>
-   <FxItem ID="5" XPos="3274.19" YPos="16.129"/>
-   <FxItem ID="6" XPos="990.741" YPos="46.2963"/>
-   <FxItem ID="7" XPos="3750" YPos="55.5556"/>
-   <FxItem ID="8" XPos="3814.81" YPos="4009.26"/>
-   <FxItem ID="9" XPos="1037.04" YPos="3990.74"/>
-   <FxItem ID="10" XPos="3555.56" YPos="4000"/>
-   <FxItem ID="11" XPos="1953.7" YPos="138.889"/>
-   <FxItem ID="12" XPos="4795.4" YPos="2393.97"/>
-   <FxItem ID="21" XPos="2694.44" YPos="-296.296"/>
+   <Grid Width="5" Height="3" Depth="5" Units="0" POV="1"/>
+   <StageItem>0</StageItem>
+   <FxItem ID="0" XPos="1368.12" YPos="1896.25" ZPos="4347.99"/>
+   <FxItem ID="1" XPos="1580.64" YPos="1526.61" ZPos="1001.64" XRot="75"/>
+   <FxItem ID="2" XPos="64.8148" YPos="1283.41" ZPos="1346.26"/>
+   <FxItem ID="3" XPos="4452.6" YPos="-269.526" ZPos="1050.35"/>
+   <FxItem ID="3" Head="1" XPos="3998.53" YPos="0" ZPos="1073.9"/>
+   <FxItem ID="3" Head="2" XPos="4242.29" YPos="-438.014" ZPos="1442.51"/>
+   <FxItem ID="4" XPos="2417.92" YPos="24.635" ZPos="4053.39" XRot="-135"/>
+   <FxItem ID="5" XPos="3274.19" YPos="1522.32" ZPos="988.018" XRot="75"/>
+   <FxItem ID="6" XPos="1155.47" YPos="1555.44" ZPos="1008.8" XRot="90"/>
+   <FxItem ID="7" XPos="3774.34" YPos="1581.42" ZPos="1001.24"/>
+   <FxItem ID="8" XPos="3761.23" YPos="1598.34" ZPos="4369.76"/>
+   <FxItem ID="9" XPos="844.768" YPos="1811.58" ZPos="4373.5" XRot="-70" YRot="20"/>
+   <FxItem ID="10" XPos="3418.76" YPos="1582.2" ZPos="4369.38"/>
+   <FxItem ID="11" XPos="1953.7" YPos="1597.38" ZPos="999.118" XRot="-90"/>
+   <FxItem ID="12" XPos="5345.94" YPos="1469.09" ZPos="1269.04"/>
+   <FxItem ID="13" XPos="2444.77" YPos="1337.66" ZPos="4612.32"/>
+   <FxItem ID="21" XPos="2365.32" YPos="1233.8" ZPos="695.622" XRot="85"/>
+   <FxItem ID="22" XPos="-683.083" YPos="350.46" ZPos="2053.09"/>
+   <FxItem ID="23" XPos="4410.52" YPos="130.557" ZPos="4480.2" XRot="180"/>
+   <FxItem ID="24" XPos="3259.93" YPos="112.762" ZPos="4481.01" XRot="180"/>
+   <FxItem ID="25" XPos="1820.52" YPos="95.5192" ZPos="4434.62" XRot="180" YRot="180"/>
+   <FxItem ID="26" XPos="412.225" YPos="81.1443" ZPos="4440.91" XRot="180" YRot="180"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
-  <Frame Caption="">
+  <Frame Caption="Seite 1" ID="0">
    <Appearance>
-    <FrameStyle>None</FrameStyle>
-    <ForegroundColor>Default</ForegroundColor>
-    <BackgroundColor>Default</BackgroundColor>
-    <BackgroundImage>None</BackgroundImage>
-    <Font>Default</Font>
+    <Font>Roboto Condensed,16,-1,5,50,0,0,0,0,0</Font>
    </Appearance>
-   <SoloFrame Caption="" ID="5">
+   <WindowState Visible="True" X="0" Y="0" Width="1200" Height="800"/>
+   <AllowResize>False</AllowResize>
+   <ShowHeader>False</ShowHeader>
+   <ShowEnableButton>True</ShowEnableButton>
+   <Collapsed>False</Collapsed>
+   <Disabled>False</Disabled>
+   <Label Caption="- Nebeldauer Chaser anpassen" ID="32">
+    <WindowState Visible="True" X="715" Y="695" Width="235" Height="20"/>
+   </Label>
+   <Label Caption="- Fixtures identifizieren" ID="33">
+    <WindowState Visible="True" X="715" Y="650" Width="170" Height="20"/>
+   </Label>
+   <Label Caption="- Solo-Szenen anpassen" ID="34">
+    <WindowState Visible="True" X="715" Y="750" Width="185" Height="25"/>
+   </Label>
+   <Label Caption="- Offset Heads in Effects anpassen (kleine/große s separat)" ID="35">
+    <WindowState Visible="True" X="715" Y="720" Width="435" Height="25"/>
     <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
+     <Font>MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
-    <WindowState Visible="False" X="705" Y="10" Width="485" Height="775"/>
-    <AllowChildren>True</AllowChildren>
+   </Label>
+   <SoloFrame Caption="" ID="5">
+    <WindowState Visible="True" X="705" Y="10" Width="485" Height="775"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="🔄 round'n'round" ID="4" Icon="">
-     <WindowState Visible="False" X="170" Y="425" Width="70" Height="70"/>
+    <Button Caption="🔄 round'n'round" ID="4">
+     <WindowState Visible="True" X="170" Y="425" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="78"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="136"/>
     </Button>
-    <Button Caption="🎉 bunt" ID="1" Icon="">
-     <WindowState Visible="False" X="170" Y="350" Width="70" Height="70"/>
+    <Button Caption="🎉 bunt" ID="1">
+     <WindowState Visible="True" X="170" Y="350" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="71"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="137"/>
     </Button>
-    <Button Caption="🔵 slow blue" ID="6" Icon="">
-     <WindowState Visible="False" X="15" Y="500" Width="75" Height="70"/>
+    <Button Caption="🔵 slow blue" ID="6">
+     <WindowState Visible="True" X="15" Y="500" Width="75" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="70"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="128"/>
     </Button>
-    <Button Caption="↕️ up'n'down" ID="7" Icon="">
-     <WindowState Visible="False" X="95" Y="425" Width="70" Height="70"/>
+    <Button Caption="↕️ up'n'down" ID="7">
+     <WindowState Visible="True" X="95" Y="425" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="75"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="131"/>
     </Button>
-    <Button Caption="↔️ left'n'right" ID="8" Icon="">
-     <WindowState Visible="False" X="95" Y="350" Width="70" Height="70"/>
+    <Button Caption="↔️ left'n'right" ID="8">
+     <WindowState Visible="True" X="95" Y="350" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="76"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="132"/>
     </Button>
-    <Button Caption="🚶walking" ID="9" Icon="">
-     <WindowState Visible="False" X="95" Y="500" Width="70" Height="70"/>
+    <Button Caption="🚶walking" ID="9">
+     <WindowState Visible="True" X="95" Y="500" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="74"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="130"/>
     </Button>
-    <Button Caption="🏊🏻‍ swimming" ID="10" Icon="">
-     <WindowState Visible="False" X="170" Y="500" Width="70" Height="70"/>
+    <Button Caption="🏊🏻‍ swimming" ID="10">
+     <WindowState Visible="True" X="170" Y="500" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="79"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="135"/>
     </Button>
-    <Button Caption="✳️Strobe" ID="11" Icon="">
-     <WindowState Visible="False" X="320" Y="420" Width="70" Height="75"/>
+    <Button Caption="✳️Strobe" ID="11">
+     <WindowState Visible="True" X="320" Y="420" Width="70" Height="75"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="81"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="160"/>
     </Button>
-    <Button Caption="Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="False" X="170" Y="85" Width="70" Height="70"/>
+    <Button Caption="Axel 🟢" ID="12">
+     <WindowState Visible="True" X="170" Y="85" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="6"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="149"/>
     </Button>
-    <Button Caption="hot" ID="13" Icon="">
-     <WindowState Visible="False" X="170" Y="10" Width="70" Height="70"/>
+    <Button Caption="hot" ID="13">
+     <WindowState Visible="True" X="170" Y="10" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="169"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="152"/>
     </Button>
-    <Button Caption="Chris 🟡" ID="14" Icon="">
-     <WindowState Visible="False" X="245" Y="85" Width="70" Height="70"/>
+    <Button Caption="Chris 🟡" ID="14">
+     <WindowState Visible="True" X="245" Y="85" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="167"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="150"/>
     </Button>
-    <Button Caption="Tim   ⚪️" ID="15" Icon="">
-     <WindowState Visible="False" X="320" Y="85" Width="70" Height="70"/>
+    <Button Caption="Tim   ⚪️" ID="15">
+     <WindowState Visible="True" X="320" Y="85" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="168"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="151"/>
     </Button>
-    <Button Caption="Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="False" X="95" Y="85" Width="70" Height="70"/>
+    <Button Caption="Pete 🔵" ID="16">
+     <WindowState Visible="True" X="95" Y="85" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="86"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="146"/>
     </Button>
-    <Button Caption="🔦 Search-light" ID="17" Icon="">
-     <WindowState Visible="False" X="15" Y="425" Width="75" Height="70"/>
+    <Button Caption="🔦 Search-light" ID="17">
+     <WindowState Visible="True" X="15" Y="425" Width="75" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="83"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="129"/>
     </Button>
-    <Button Caption="🔔 Alarm" ID="18" Icon="">
-     <WindowState Visible="False" X="95" Y="200" Width="70" Height="70"/>
+    <Button Caption="🔔 Alarm" ID="18">
+     <WindowState Visible="True" X="95" Y="200" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="80"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="134"/>
     </Button>
-    <Button Caption="🛑" ID="19" Icon="">
-     <WindowState Visible="False" X="170" Y="275" Width="70" Height="70"/>
+    <Button Caption="🛑" ID="19">
+     <WindowState Visible="True" X="170" Y="275" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="82"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="138"/>
     </Button>
-    <Button Caption="" ID="28" Icon="">
-     <WindowState Visible="False" X="245" Y="500" Width="70" Height="70"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
+    <Button Caption="" ID="28">
+     <WindowState Visible="True" X="245" Y="500" Width="70" Height="70"/>
      <Function ID="36"/>
      <Action>Blackout</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="139"/>
     </Button>
-    <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="False" X="395" Y="500" Width="70" Height="70"/>
+    <Button Caption="blind" ID="31">
+     <WindowState Visible="True" X="395" Y="500" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="43"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="158"/>
     </Button>
-    <Button Caption="🔆 blinking" ID="20" Icon="">
-     <WindowState Visible="False" X="95" Y="275" Width="70" Height="70"/>
+    <Button Caption="🔆 blinking" ID="20">
+     <WindowState Visible="True" X="95" Y="275" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="77"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="133"/>
     </Button>
-    <Button Caption="hot" ID="21" Icon="">
-     <WindowState Visible="False" X="320" Y="10" Width="70" Height="70"/>
+    <Button Caption="hot" ID="21">
+     <WindowState Visible="True" X="320" Y="10" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="261"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="153"/>
     </Button>
-    <Button Caption="Fog" ID="36" Icon="">
-     <WindowState Visible="False" X="320" Y="500" Width="70" Height="70"/>
+    <Button Caption="Fog" ID="36">
+     <WindowState Visible="True" X="320" Y="500" Width="70" Height="70"/>
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="38"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
-     <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="159"/>
     </Button>
    </SoloFrame>
-   <Label Caption="- Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="False" X="715" Y="695" Width="235" Height="20"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-   </Label>
-   <Label Caption="- Fixtures identifizieren" ID="33">
-    <WindowState Visible="False" X="715" Y="650" Width="170" Height="20"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-   </Label>
-   <Label Caption="- Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="False" X="715" Y="750" Width="185" Height="25"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-   </Label>
-   <Label Caption="- Offset Heads in Effects anpassen (kleine/große s separat)" ID="35">
-    <WindowState Visible="False" X="715" Y="720" Width="435" Height="25"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0</Font>
-    </Appearance>
-   </Label>
    <SoloFrame Caption="The Pact" ID="2">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="False" X="0" Y="20" Width="650" Height="780"/>
-    <AllowChildren>True</AllowChildren>
+    <WindowState Visible="True" X="0" Y="20" Width="650" Height="780"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Multipage PagesNum="60" CurrentPage="51"/>
     <Next>
-     <Key>N</Key>
      <Input Universe="1" Channel="169"/>
+     <Key>N</Key>
     </Next>
     <Previous>
-     <Key>P</Key>
      <Input Universe="1" Channel="168"/>
+     <Key>P</Key>
     </Previous>
     <Shortcut Page="0" Name="All the small things">
      <Input Universe="1" Channel="396"/>
@@ -4636,14 +4494,28 @@
     <Shortcut Page="59" Name="Seite: 60">
      <Input Universe="2" Channel="444"/>
     </Shortcut>
-    <PagesLoop>False</PagesLoop>
+    <CueList Caption="Cue-Liste" ID="100" Page="14">
+     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <Appearance>
+      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
+     </Appearance>
+     <Chaser>95</Chaser>
+     <Next>
+      <Input Universe="1" Channel="917677"/>
+     </Next>
+     <Previous>
+      <Input Universe="1" Channel="917676"/>
+     </Previous>
+     <Playback>
+      <Input Universe="1" Channel="917675"/>
+     </Playback>
+     <Stop>
+      <Input Universe="1" Channel="917674"/>
+     </Stop>
+    </CueList>
     <CueList Caption="Cue-Liste" ID="22">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>88</Chaser>
@@ -4664,10 +4536,6 @@
     <CueList Caption="Cue-Liste" ID="23" Page="1">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>89</Chaser>
@@ -4688,14 +4556,9 @@
     <CueList Caption="Cue-Liste" ID="25" Page="2">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>64</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="131245"/>
      </Next>
@@ -4712,14 +4575,9 @@
     <CueList Caption="Cue-Liste" ID="92" Page="4">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>175</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="262317"/>
      </Next>
@@ -4736,14 +4594,9 @@
     <CueList Caption="Cue-Liste" ID="93" Page="11">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>176</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="721069"/>
      </Next>
@@ -4760,14 +4613,9 @@
     <CueList Caption="Cue-Liste" ID="94" Page="12">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>177</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="786605"/>
      </Next>
@@ -4784,14 +4632,9 @@
     <CueList Caption="Cue-Liste" ID="95" Page="20">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>174</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1310893"/>
      </Next>
@@ -4808,14 +4651,9 @@
     <CueList Caption="Cue-Liste" ID="96" Page="3">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>90</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="196781"/>
      </Next>
@@ -4832,14 +4670,9 @@
     <CueList Caption="Cue-Liste" ID="97" Page="5">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>91</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="327853"/>
      </Next>
@@ -4856,14 +4689,9 @@
     <CueList Caption="Cue-Liste" ID="98" Page="6">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>92</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="393389"/>
      </Next>
@@ -4880,14 +4708,9 @@
     <CueList Caption="Cue-Liste" ID="99" Page="10">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="730"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>93</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="655533"/>
      </Next>
@@ -4904,14 +4727,9 @@
     <CueList Caption="Cue-Liste" ID="46" Page="13">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>94</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="852141"/>
      </Next>
@@ -4925,41 +4743,12 @@
       <Input Universe="1" Channel="852138"/>
      </Stop>
     </CueList>
-    <CueList Caption="Cue-Liste" ID="100" Page="14">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
-     </Appearance>
-     <Chaser>95</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
-     <Next>
-      <Input Universe="1" Channel="917677"/>
-     </Next>
-     <Previous>
-      <Input Universe="1" Channel="917676"/>
-     </Previous>
-     <Playback>
-      <Input Universe="1" Channel="917675"/>
-     </Playback>
-     <Stop>
-      <Input Universe="1" Channel="917674"/>
-     </Stop>
-    </CueList>
     <CueList Caption="Cue-Liste" ID="101" Page="15">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>96</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="983213"/>
      </Next>
@@ -4976,14 +4765,9 @@
     <CueList Caption="Cue-Liste" ID="102" Page="16">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>97</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1048749"/>
      </Next>
@@ -5000,14 +4784,9 @@
     <CueList Caption="Cue-Liste" ID="103" Page="21">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>87</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1376429"/>
      </Next>
@@ -5024,14 +4803,9 @@
     <CueList Caption="Cue-Liste" ID="104" Page="22">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>178</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1441965"/>
      </Next>
@@ -5048,14 +4822,9 @@
     <CueList Caption="Cue-Liste" ID="105" Page="23">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>41</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1507501"/>
      </Next>
@@ -5072,14 +4841,9 @@
     <CueList Caption="Cue-Liste" ID="106" Page="24">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>30</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1573037"/>
      </Next>
@@ -5096,14 +4860,9 @@
     <CueList Caption="Cue-Liste" ID="107" Page="25">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>98</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1638573"/>
      </Next>
@@ -5120,14 +4879,9 @@
     <CueList Caption="Cue-Liste" ID="108" Page="26">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>99</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1704109"/>
      </Next>
@@ -5144,14 +4898,9 @@
     <CueList Caption="Cue-Liste" ID="109" Page="30">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>100</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1966253"/>
      </Next>
@@ -5168,14 +4917,9 @@
     <CueList Caption="Cue-Liste" ID="110" Page="31">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>101</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2031789"/>
      </Next>
@@ -5192,14 +4936,9 @@
     <CueList Caption="Cue-Liste" ID="111" Page="32">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>102</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2097325"/>
      </Next>
@@ -5216,14 +4955,9 @@
     <CueList Caption="Cue-Liste" ID="112" Page="33">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>103</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2162861"/>
      </Next>
@@ -5240,14 +4974,9 @@
     <CueList Caption="Cue-Liste" ID="113" Page="34">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>104</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2228397"/>
      </Next>
@@ -5264,14 +4993,9 @@
     <CueList Caption="Cue-Liste" ID="114" Page="35">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>171</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2293933"/>
      </Next>
@@ -5288,14 +5012,9 @@
     <CueList Caption="Cue-Liste" ID="115" Page="36">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>105</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2359469"/>
      </Next>
@@ -5312,14 +5031,9 @@
     <CueList Caption="Cue-Liste" ID="116" Page="37">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>106</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2425005"/>
      </Next>
@@ -5336,14 +5050,9 @@
     <CueList Caption="Cue-Liste" ID="117" Page="38">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>172</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2490541"/>
      </Next>
@@ -5360,14 +5069,9 @@
     <CueList Caption="Cue-Liste" ID="118" Page="40">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>107</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2621613"/>
      </Next>
@@ -5384,14 +5088,9 @@
     <CueList Caption="Cue-Liste" ID="119" Page="41">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>56</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2687149"/>
      </Next>
@@ -5408,14 +5107,9 @@
     <CueList Caption="Cue-Liste" ID="120" Page="42">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>108</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2752685"/>
      </Next>
@@ -5432,14 +5126,9 @@
     <CueList Caption="Cue-Liste" ID="121" Page="43">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>73</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2818221"/>
      </Next>
@@ -5456,14 +5145,9 @@
     <CueList Caption="Cue-Liste" ID="122" Page="44">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>173</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2883757"/>
      </Next>
@@ -5480,14 +5164,9 @@
     <CueList Caption="Cue-Liste" ID="123" Page="45">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>109</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="2949293"/>
      </Next>
@@ -5504,14 +5183,9 @@
     <CueList Caption="Cue-Liste" ID="124" Page="46">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>110</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="0" Channel="3014829"/>
      </Next>
@@ -5528,14 +5202,9 @@
     <CueList Caption="Cue-Liste" ID="125" Page="47">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>111</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="3080365"/>
      </Next>
@@ -5552,14 +5221,9 @@
     <CueList Caption="Cue-Liste" ID="126" Page="50">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>72</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="3276973"/>
      </Next>
@@ -5574,16 +5238,11 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="127" Page="51">
-     <WindowState Visible="False" X="5" Y="45" Width="640" Height="730"/>
+     <WindowState Visible="True" X="5" Y="45" Width="640" Height="730"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>112</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="3342509"/>
      </Next>
@@ -5600,14 +5259,9 @@
     <CueList Caption="Cue-Liste" ID="128" Page="52">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>24</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="3408045"/>
      </Next>
@@ -5624,14 +5278,9 @@
     <CueList Caption="Cue-Liste" ID="3" Page="7">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
       <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>266</Chaser>
-     <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="393389"/>
      </Next>
@@ -5646,50 +5295,6 @@
      </Stop>
     </CueList>
    </SoloFrame>
-   <SpeedDial Caption="Dauer" ID="0">
-    <WindowState Visible="False" X="965" Y="190" Width="200" Height="175"/>
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Visibility>4</Visibility>
-    <AbsoluteValue Minimum="0" Maximum="10000"/>
-    <Tap>
-     <Input Universe="1" Channel="3"/>
-    </Tap>
-    <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
-    <Time>887</Time>
-    <Function FadeIn="0" FadeOut="0" Duration="7">140</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">52</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">139</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">65</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">263</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">138</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">54</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">62</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">126</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">58</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">35</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">59</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">265</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="6">55</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">79</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">78</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">77</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">76</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="8">75</Function>
-    <Function FadeIn="0" FadeOut="0" Duration="7">74</Function>
-   </SpeedDial>
   </Frame>
-  <Properties>
-   <Size Width="1200" Height="800"/>
-   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
-  </Properties>
  </VirtualConsole>
- <SimpleDesk>
-  <Engine/>
- </SimpleDesk>
 </Workspace>
