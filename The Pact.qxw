@@ -9,16 +9,13 @@
  <Engine Autostart="82">
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
-   <Universe Name="Universe 1" ID="0">
+   <Universe Name="Output" ID="0">
     <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Ausgang 1 - (S/N: EN429695)" Line="0">
      <PluginParameters UniverseChannels="196"/>
     </Output>
    </Universe>
-   <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="PACER" Line="0"/>
-   </Universe>
-   <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" UID="rptMIDI" Line="2"/>
+   <Universe Name="Input" ID="1">
+    <Input Plugin="MIDI" UID="PACER" Line="0" Profile="Nektar Pacer"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -543,7 +540,7 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="YELLOW">82</Step>
-   <Step Number="1" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro (nur Axel)">6</Step>
+   <Step Number="1" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro (nur Pete)">86</Step>
    <Step Number="2" FadeIn="0" Hold="22000" FadeOut="0" Note="Intro (alle)">78</Step>
    <Step Number="3" FadeIn="0" Hold="58000" FadeOut="0" Note="Verse 1">74</Step>
    <Step Number="4" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 1">70</Step>
@@ -661,7 +658,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -816,8 +813,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -906,7 +903,7 @@
     <StartOffset>270</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -965,7 +962,7 @@
     <StartOffset>280</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -986,7 +983,7 @@
    </Axis>
   </Function>
   <Function ID="55" Type="RGBMatrix" Name="Backlights blinking">
-   <Speed FadeIn="0" FadeOut="0" Duration="887"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="676"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -1039,7 +1036,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -1060,7 +1057,7 @@
    </Axis>
   </Function>
   <Function ID="59" Type="RGBMatrix" Name="Blinking rainbow">
-   <Speed FadeIn="0" FadeOut="0" Duration="80"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="676"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Waves</Algorithm>
@@ -1154,7 +1151,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1182,14 +1179,14 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="presetSize" Value="2"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
-   <Property Name="color5Index" Value="Orange"/>
    <Property Name="presetCollision" Value="No"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="color5Index" Value="Orange"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1247,7 +1244,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -1448,14 +1445,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="2"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color2Index" Value="Red"/>
-   <Property Name="color5Index" Value="Yellow"/>
    <Property Name="presetCollision" Value="Yes"/>
    <Property Name="presetNumber" Value="5"/>
-   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="color5Index" Value="Yellow"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1695,31 +1692,34 @@
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="DOWN IN THE PAST">82</Step>
    <Step Number="1" FadeIn="0" Hold="9000" FadeOut="0" Note="Intro">80</Step>
    <Step Number="2" FadeIn="0" Hold="18000" FadeOut="0" Note="Thema">81</Step>
-   <Step Number="3" FadeIn="0" Hold="23000" FadeOut="0" Note="Verse 1">74</Step>
-   <Step Number="4" FadeIn="0" Hold="4000" FadeOut="0" Note="Bridge1">80</Step>
-   <Step Number="5" FadeIn="0" Hold="4000" FadeOut="0">74</Step>
-   <Step Number="6" FadeIn="0" Hold="5000" FadeOut="0">78</Step>
-   <Step Number="7" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 1">80</Step>
-   <Step Number="8" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
-   <Step Number="9" FadeIn="0" Hold="9000" FadeOut="0" Note="Thema">80</Step>
-   <Step Number="10" FadeIn="0" Hold="22000" FadeOut="0" Note="Verse 2">74</Step>
-   <Step Number="11" FadeIn="0" Hold="5000" FadeOut="0" Note="Bridge">80</Step>
-   <Step Number="12" FadeIn="0" Hold="4000" FadeOut="0">74</Step>
-   <Step Number="13" FadeIn="0" Hold="4000" FadeOut="0">78</Step>
-   <Step Number="14" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 2">80</Step>
-   <Step Number="15" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
-   <Step Number="16" FadeIn="0" Hold="19000" FadeOut="0" Note="Guitar Solo">169</Step>
-   <Step Number="17" FadeIn="0" Hold="8000" FadeOut="0" Note="Bass Solo">167</Step>
-   <Step Number="18" FadeIn="0" Hold="18000" FadeOut="0" Note="Intro">74</Step>
-   <Step Number="19" FadeIn="0" Hold="9000" FadeOut="0" Note="ruhiger Teil">70</Step>
-   <Step Number="20" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 3 (ruhig)">74</Step>
-   <Step Number="21" FadeIn="0" Hold="1000" FadeOut="0">81</Step>
-   <Step Number="22" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 3">80</Step>
-   <Step Number="23" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
-   <Step Number="24" FadeIn="0" Hold="9000" FadeOut="0" Note="Thema">80</Step>
-   <Step Number="25" FadeIn="0" Hold="9000" FadeOut="0">81</Step>
-   <Step Number="26" FadeIn="0" Hold="6000" FadeOut="0" Note="Ausklang">43</Step>
-   <Step Number="27" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="3" FadeIn="0" Hold="18000" FadeOut="0" Note="Verse 1">74</Step>
+   <Step Number="4" FadeIn="0" Hold="4500" FadeOut="0" Note="Bridge 1a">78</Step>
+   <Step Number="5" FadeIn="0" Hold="4500" FadeOut="0" Note="instr.">205</Step>
+   <Step Number="6" FadeIn="0" Hold="4500" FadeOut="0" Note="Bridge 1b">78</Step>
+   <Step Number="7" FadeIn="0" Hold="4500" FadeOut="0" Note="instr.">74</Step>
+   <Step Number="8" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 1">80</Step>
+   <Step Number="9" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
+   <Step Number="10" FadeIn="0" Hold="9000" FadeOut="0" Note="Thema">80</Step>
+   <Step Number="11" FadeIn="0" Hold="18000" FadeOut="0" Note="Verse 2">74</Step>
+   <Step Number="12" FadeIn="0" Hold="4500" FadeOut="0" Note="Bridge 1a">78</Step>
+   <Step Number="13" FadeIn="0" Hold="4500" FadeOut="0" Note="instr.">205</Step>
+   <Step Number="14" FadeIn="0" Hold="4500" FadeOut="0" Note="Bridge 1b">78</Step>
+   <Step Number="15" FadeIn="0" Hold="4500" FadeOut="0" Note="instr.">74</Step>
+   <Step Number="16" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 2">80</Step>
+   <Step Number="17" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
+   <Step Number="18" FadeIn="0" Hold="9000" FadeOut="0" Note="Thema">80</Step>
+   <Step Number="19" FadeIn="0" Hold="9000" FadeOut="0" Note="Guitar Solo">169</Step>
+   <Step Number="20" FadeIn="0" Hold="9000" FadeOut="0" Note="Bass Solo">167</Step>
+   <Step Number="21" FadeIn="0" Hold="18000" FadeOut="0" Note="Intro">74</Step>
+   <Step Number="22" FadeIn="0" Hold="9000" FadeOut="0" Note="ruhiger Teil">70</Step>
+   <Step Number="23" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 3 (ruhig)">74</Step>
+   <Step Number="24" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+   <Step Number="25" FadeIn="0" Hold="9000" FadeOut="0" Note="Chorus 3">80</Step>
+   <Step Number="26" FadeIn="0" Hold="7000" FadeOut="0">81</Step>
+   <Step Number="27" FadeIn="0" Hold="9000" FadeOut="0" Note="Thema">80</Step>
+   <Step Number="28" FadeIn="0" Hold="9000" FadeOut="0">81</Step>
+   <Step Number="29" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Ausklang">43</Step>
+   <Step Number="30" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="95" Type="Chaser" Name="Every you every me" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
@@ -1824,7 +1824,7 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
-  <Function ID="98" Type="Chaser" Name="Mr. Brightside" Path="Pact Songs">
+  <Function ID="98" Type="Chaser" Name="Mr. Brightside">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
@@ -1918,21 +1918,19 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="RUN">82</Step>
-   <Step Number="1" FadeIn="0" Hold="10" FadeOut="0">255</Step>
-   <Step Number="2" FadeIn="0" Hold="5000" FadeOut="0" Note="Intro Pete">86</Step>
-   <Step Number="3" FadeIn="0" Hold="10" FadeOut="0">256</Step>
-   <Step Number="4" FadeIn="0" Hold="9000" FadeOut="0" Note="Intro Pete">86</Step>
-   <Step Number="5" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro alle 14s">70</Step>
-   <Step Number="6" FadeIn="0" Hold="50000" FadeOut="0" Note="Verse 1 26s">74</Step>
-   <Step Number="7" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 1 1:16">77</Step>
-   <Step Number="8" FadeIn="0" Hold="12500" FadeOut="0" Note="Interlude 2:07">70</Step>
-   <Step Number="9" FadeIn="0" Hold="12500" FadeOut="0" Note="Verse 2 - Stop 2:19:500">86</Step>
-   <Step Number="10" FadeIn="0" Hold="12000" FadeOut="0" Note="Verse 2 2:32">74</Step>
-   <Step Number="11" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 2 2:44">77</Step>
-   <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Guitar Solo 3:35">6</Step>
-   <Step Number="13" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 3 5:15">77</Step>
-   <Step Number="14" FadeIn="0" Hold="27" FadeOut="0" Note="Outro 6:05">86</Step>
-   <Step Number="15" FadeIn="0" Hold="3000" FadeOut="0" Note="Ende 6.30">36</Step>
+   <Step Number="1" FadeIn="0" Hold="5000" FadeOut="0" Note="Intro Pete">281</Step>
+   <Step Number="2" FadeIn="0" Hold="9000" FadeOut="0" Note="Intro Pete">282</Step>
+   <Step Number="3" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro alle 14s">70</Step>
+   <Step Number="4" FadeIn="0" Hold="50000" FadeOut="0" Note="Verse 1 26s">74</Step>
+   <Step Number="5" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 1 1:16">77</Step>
+   <Step Number="6" FadeIn="0" Hold="12500" FadeOut="0" Note="Interlude 2:07">70</Step>
+   <Step Number="7" FadeIn="0" Hold="12500" FadeOut="0" Note="Verse 2 - Stop 2:19:500">86</Step>
+   <Step Number="8" FadeIn="0" Hold="12000" FadeOut="0" Note="Verse 2 2:32">74</Step>
+   <Step Number="9" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 2 2:44">77</Step>
+   <Step Number="10" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Guitar Solo 3:35">6</Step>
+   <Step Number="11" FadeIn="0" Hold="51000" FadeOut="0" Note="Chorus 3 5:15">77</Step>
+   <Step Number="12" FadeIn="0" Hold="27000" FadeOut="0" Note="Outro 6:05">86</Step>
+   <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0" Note="Ende 6.30">36</Step>
   </Function>
   <Function ID="102" Type="Chaser" Name="Self Esteem" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2350,7 +2348,7 @@
     <StartOffset>270</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -2489,7 +2487,7 @@
     <StartOffset>40</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -2525,7 +2523,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -2561,7 +2559,7 @@
     <StartOffset>20</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -2905,20 +2903,22 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="SHE HATES ME">82</Step>
-   <Step Number="1" FadeIn="0" Hold="22000" FadeOut="0" Note="Verse 1a (ohne Drums)">86</Step>
-   <Step Number="2" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 1b">70</Step>
-   <Step Number="3" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 1">74</Step>
-   <Step Number="4" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 2">79</Step>
-   <Step Number="5" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 3">78</Step>
-   <Step Number="6" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 2">77</Step>
-   <Step Number="7" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 3 (nananana)">80</Step>
-   <Step Number="8" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 4">70</Step>
-   <Step Number="9" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 4">80</Step>
-   <Step Number="10" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 5 (nananana)">81</Step>
-   <Step Number="11" FadeIn="0" Hold="500" FadeOut="0" Note="&quot;hates&quot;">43</Step>
-   <Step Number="12" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0" Note="&quot;me&quot;">43</Step>
-   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+   <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0">6</Step>
+   <Step Number="2" FadeIn="0" Hold="22000" FadeOut="0" Note="Verse 1a (ohne Drums)">86</Step>
+   <Step Number="3" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 1b">70</Step>
+   <Step Number="4" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 1">74</Step>
+   <Step Number="5" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 2">79</Step>
+   <Step Number="6" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 3">78</Step>
+   <Step Number="7" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 2">77</Step>
+   <Step Number="8" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 3 (nananana)">80</Step>
+   <Step Number="9" FadeIn="0" Hold="15000" FadeOut="0" Note="Verse 4">70</Step>
+   <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
+   <Step Number="11" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 4">80</Step>
+   <Step Number="12" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 5 (nananana)">81</Step>
+   <Step Number="13" FadeIn="0" Hold="500" FadeOut="0" Note="&quot;hates&quot;">43</Step>
+   <Step Number="14" FadeIn="0" Hold="500" FadeOut="0">36</Step>
+   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0" Note="&quot;me&quot;">43</Step>
+   <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="172" Type="Chaser" Name="Space Lord" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
@@ -3892,7 +3892,7 @@
    <FixtureVal ID="5">3,117,7,255</FixtureVal>
   </Function>
   <Function ID="263" Type="Chaser" Name="TourSpots blinking">
-   <Speed FadeIn="0" FadeOut="0" Duration="1774"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1352"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -3905,7 +3905,7 @@
    <FixtureVal ID="5">7,0</FixtureVal>
   </Function>
   <Function ID="265" Type="Chaser" Name="blinking PARs">
-   <Speed FadeIn="0" FadeOut="0" Duration="887"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="676"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -3923,7 +3923,7 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="BOYS DONT CRY">82</Step>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="BOYS DONT CRY + BOYS OF SUMMER">82</Step>
    <Step Number="1" FadeIn="0" Hold="1500" FadeOut="0" Note="2s">43</Step>
    <Step Number="2" FadeIn="0" Hold="1500" FadeOut="0">71</Step>
    <Step Number="3" FadeIn="0" Hold="1500" FadeOut="0">43</Step>
@@ -4052,6 +4052,14 @@
   <Function ID="280" Type="Scene" Name="18 LED PAR Pete" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="13">0,64,1,65,2,6</FixtureVal>
+  </Function>
+  <Function ID="281" Type="Collection" Name="Spot auf Pete, Fog on">
+   <Step Number="0">38</Step>
+   <Step Number="1">86</Step>
+  </Function>
+  <Function ID="282" Type="Collection" Name="Spot auf Pete, fog off">
+   <Step Number="0">86</Step>
+   <Step Number="1">39</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -4441,7 +4449,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="20" Width="650" Height="780"/>
+    <WindowState Visible="False" X="0" Y="15" Width="650" Height="780"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -4449,7 +4457,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="51"/>
+    <Multipage PagesNum="60" CurrentPage="38"/>
     <Next>
      <Key>N</Key>
      <Input Universe="1" Channel="169"/>
@@ -4633,7 +4641,7 @@
     <Shortcut Page="58" Name="Seite: 59">
      <Input Universe="2" Channel="443"/>
     </Shortcut>
-    <Shortcut Page="59" Name="Seite: 60">
+    <Shortcut Page="59" Name="Inital Setup">
      <Input Universe="2" Channel="444"/>
     </Shortcut>
     <PagesLoop>False</PagesLoop>
@@ -4657,9 +4665,7 @@
      <Playback>
       <Input Universe="1" Channel="171"/>
      </Playback>
-     <Stop>
-      <Input Universe="1" Channel="170"/>
-     </Stop>
+     <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="23" Page="1">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
@@ -4873,9 +4879,7 @@
      <Playback>
       <Input Universe="1" Channel="393387"/>
      </Playback>
-     <Stop>
-      <Input Universe="1" Channel="393386"/>
-     </Stop>
+     <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="99" Page="10">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="730"/>
@@ -4921,9 +4925,7 @@
      <Playback>
       <Input Universe="1" Channel="852139"/>
      </Playback>
-     <Stop>
-      <Input Universe="1" Channel="852138"/>
-     </Stop>
+     <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="100" Page="14">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
@@ -5185,9 +5187,7 @@
      <Playback>
       <Input Universe="1" Channel="2031787"/>
      </Playback>
-     <Stop>
-      <Input Universe="1" Channel="2031786"/>
-     </Stop>
+     <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="111" Page="32">
      <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
@@ -5633,17 +5633,31 @@
      <Chaser>266</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
-      <Input Universe="1" Channel="393389"/>
+      <Input Universe="1" Channel="458925"/>
      </Next>
      <Previous>
-      <Input Universe="1" Channel="393388"/>
+      <Input Universe="1" Channel="458924"/>
      </Previous>
      <Playback>
-      <Input Universe="1" Channel="393387"/>
+      <Input Universe="1" Channel="458923"/>
      </Playback>
-     <Stop>
-      <Input Universe="1" Channel="393386"/>
-     </Stop>
+     <Stop/>
+    </CueList>
+    <CueList Caption="Cue-Liste" ID="24" Page="59">
+     <WindowState Visible="False" X="10" Y="45" Width="630" Height="725"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>186</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next/>
+     <Previous/>
+     <Playback/>
+     <Stop/>
     </CueList>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="0">
@@ -5661,7 +5675,7 @@
      <Input Universe="1" Channel="3"/>
     </Tap>
     <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
-    <Time>887</Time>
+    <Time>676</Time>
     <Function FadeIn="0" FadeOut="0" Duration="7">140</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">52</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">139</Function>
@@ -5683,6 +5697,19 @@
     <Function FadeIn="0" FadeOut="0" Duration="8">75</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">74</Function>
    </SpeedDial>
+   <Button Caption="ignite 5" ID="26" Icon="">
+    <WindowState Visible="False" X="725" Y="20" Width="70" Height="70"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="131"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1200" Height="800"/>
