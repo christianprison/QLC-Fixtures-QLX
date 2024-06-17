@@ -2110,7 +2110,7 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="THE BOYS OF SUMMER">82</Step>
-   <Step Number="1" FadeIn="0" Hold="5000" FadeOut="0" Note="Intro">43</Step>
+   <Step Number="1" FadeIn="0" Hold="5000" FadeOut="0" Note="Intro">212</Step>
    <Step Number="2" FadeIn="0" Hold="21000" FadeOut="0" Note="[26s]">70</Step>
    <Step Number="3" FadeIn="0" Hold="19000" FadeOut="0" Note="Verse 1">79</Step>
    <Step Number="4" FadeIn="0" Hold="20000" FadeOut="0" Note="Chorus 1 [45s]">80</Step>
@@ -2124,7 +2124,7 @@
    <Step Number="12" FadeIn="0" Hold="2500" FadeOut="0" Note="Stop [2:54]">71</Step>
    <Step Number="13" FadeIn="0" Hold="20000" FadeOut="0" Note="Chorus 3 [2:56]">80</Step>
    <Step Number="14" FadeIn="0" Hold="20000" FadeOut="0" Note="Chours 4 [3:16]">81</Step>
-   <Step Number="15" FadeIn="0" Hold="3000" FadeOut="0" Note="Outro [3:36]">43</Step>
+   <Step Number="15" FadeIn="0" Hold="3000" FadeOut="0" Note="Outro [3:36]">212</Step>
    <Step Number="16" FadeIn="0" Hold="3000" FadeOut="0" Note="[3:39]">71</Step>
    <Step Number="17" FadeIn="0" Hold="3000" FadeOut="0" Note="[3:42]">31</Step>
    <Step Number="18" FadeIn="0" Hold="10000" FadeOut="0" Note="[3:45]">71</Step>
@@ -2235,7 +2235,7 @@
    <Step Number="30" FadeIn="0" Hold="1250" FadeOut="0" Note="up">133</Step>
    <Step Number="31" FadeIn="0" Hold="32000" FadeOut="0" Note="Verse 3">80</Step>
    <Step Number="32" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 3">81</Step>
-   <Step Number="33" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">43</Step>
+   <Step Number="33" FadeIn="0" Hold="3000" FadeOut="0" Note="Ausklang">212</Step>
    <Step Number="34" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="113" Type="Scene" Name="23 Martin MAC250+" Path="ZZZ identify fixtures">
@@ -2710,7 +2710,7 @@
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">36</Step>
    <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">189</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">43</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">212</Step>
   </Function>
   <Function ID="148" Type="Scene" Name="up'n'down 5" Path="Movement Heads/scenes for heads up'n'down">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2913,9 +2913,9 @@
    <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">81</Step>
    <Step Number="11" FadeIn="0" Hold="17000" FadeOut="0" Note="Chorus 4">80</Step>
    <Step Number="12" FadeIn="0" Hold="16000" FadeOut="0" Note="Chorus 5 (nananana)">81</Step>
-   <Step Number="13" FadeIn="0" Hold="500" FadeOut="0" Note="&quot;hates&quot;">43</Step>
+   <Step Number="13" FadeIn="0" Hold="500" FadeOut="0" Note="&quot;hates&quot;">212</Step>
    <Step Number="14" FadeIn="0" Hold="500" FadeOut="0">36</Step>
-   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0" Note="&quot;me&quot;">43</Step>
+   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0" Note="&quot;me&quot;">212</Step>
    <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="172" Type="Chaser" Name="Space Lord" Path="Pact Songs">
@@ -2962,7 +2962,7 @@
    <Step Number="36" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
    <Step Number="37" FadeIn="0" Hold="2500" FadeOut="0">81</Step>
    <Step Number="38" FadeIn="0" Hold="2500" FadeOut="0">80</Step>
-   <Step Number="39" FadeIn="0" Hold="8000" FadeOut="0">43</Step>
+   <Step Number="39" FadeIn="0" Hold="8000" FadeOut="0">212</Step>
    <Step Number="40" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="173" Type="Chaser" Name="The Pretender" Path="Pact Songs">
@@ -3042,39 +3042,39 @@
    <Step Number="9" FadeIn="0" Hold="4500" FadeOut="0">86</Step>
    <Step Number="10" FadeIn="0" Hold="4400" FadeOut="0">80</Step>
    <Step Number="11" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="12" FadeIn="0" Hold="200" FadeOut="0" Note="Bridge (big)">43</Step>
+   <Step Number="12" FadeIn="0" Hold="200" FadeOut="0" Note="Bridge (big)">212</Step>
    <Step Number="13" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="14" FadeIn="0" Hold="200" FadeOut="0" Note="black">43</Step>
+   <Step Number="14" FadeIn="0" Hold="200" FadeOut="0" Note="black">212</Step>
    <Step Number="15" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="16" FadeIn="0" Hold="900" FadeOut="0" Note="boots">71</Step>
    <Step Number="17" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="18" FadeIn="0" Hold="200" FadeOut="0" Note="long">43</Step>
+   <Step Number="18" FadeIn="0" Hold="200" FadeOut="0" Note="long">212</Step>
    <Step Number="19" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="20" FadeIn="0" Hold="200" FadeOut="0" Note="brown">43</Step>
+   <Step Number="20" FadeIn="0" Hold="200" FadeOut="0" Note="brown">212</Step>
    <Step Number="21" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="22" FadeIn="0" Hold="900" FadeOut="0" Note="hair">71</Step>
    <Step Number="23" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="24" FadeIn="0" Hold="200" FadeOut="0" Note="she's">43</Step>
+   <Step Number="24" FadeIn="0" Hold="200" FadeOut="0" Note="she's">212</Step>
    <Step Number="25" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="26" FadeIn="0" Hold="200" FadeOut="0" Note="so">43</Step>
+   <Step Number="26" FadeIn="0" Hold="200" FadeOut="0" Note="so">212</Step>
    <Step Number="27" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="28" FadeIn="0" Hold="900" FadeOut="0" Note="sweet ">71</Step>
    <Step Number="29" FadeIn="0" Hold="400" FadeOut="0" Note="with her">36</Step>
-   <Step Number="30" FadeIn="0" Hold="200" FadeOut="0" Note="get ">43</Step>
+   <Step Number="30" FadeIn="0" Hold="200" FadeOut="0" Note="get ">212</Step>
    <Step Number="31" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="32" FadeIn="0" Hold="200" FadeOut="0" Note="back">43</Step>
+   <Step Number="32" FadeIn="0" Hold="200" FadeOut="0" Note="back">212</Step>
    <Step Number="33" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="34" FadeIn="0" Hold="900" FadeOut="0" Note="stare">71</Step>
    <Step Number="35" FadeIn="0" Hold="400" FadeOut="0">36</Step>
    <Step Number="36" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 1">80</Step>
    <Step Number="37" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="38" FadeIn="0" Hold="200" FadeOut="0">43</Step>
+   <Step Number="38" FadeIn="0" Hold="200" FadeOut="0">212</Step>
    <Step Number="39" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="40" FadeIn="0" Hold="200" FadeOut="0">43</Step>
+   <Step Number="40" FadeIn="0" Hold="200" FadeOut="0">212</Step>
    <Step Number="41" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="42" FadeIn="0" Hold="600" FadeOut="0">43</Step>
+   <Step Number="42" FadeIn="0" Hold="600" FadeOut="0">212</Step>
    <Step Number="43" FadeIn="0" Hold="600" FadeOut="0">36</Step>
-   <Step Number="44" FadeIn="0" Hold="500" FadeOut="0">43</Step>
+   <Step Number="44" FadeIn="0" Hold="500" FadeOut="0">212</Step>
    <Step Number="45" FadeIn="0" Hold="4500" FadeOut="0">86</Step>
    <Step Number="46" FadeIn="0" Hold="9000" FadeOut="0">80</Step>
    <Step Number="47" FadeIn="0" Hold="4500" FadeOut="0" Note="Verse 2">86</Step>
@@ -3084,48 +3084,48 @@
    <Step Number="51" FadeIn="0" Hold="5000" FadeOut="0">86</Step>
    <Step Number="52" FadeIn="0" Hold="4400" FadeOut="0">80</Step>
    <Step Number="53" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="54" FadeIn="0" Hold="200" FadeOut="0" Note="Bridge (big)">43</Step>
+   <Step Number="54" FadeIn="0" Hold="200" FadeOut="0" Note="Bridge (big)">212</Step>
    <Step Number="55" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="56" FadeIn="0" Hold="200" FadeOut="0" Note="black">43</Step>
+   <Step Number="56" FadeIn="0" Hold="200" FadeOut="0" Note="black">212</Step>
    <Step Number="57" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="58" FadeIn="0" Hold="900" FadeOut="0" Note="boots">71</Step>
    <Step Number="59" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="60" FadeIn="0" Hold="200" FadeOut="0" Note="long">43</Step>
+   <Step Number="60" FadeIn="0" Hold="200" FadeOut="0" Note="long">212</Step>
    <Step Number="61" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="62" FadeIn="0" Hold="200" FadeOut="0" Note="brown">43</Step>
+   <Step Number="62" FadeIn="0" Hold="200" FadeOut="0" Note="brown">212</Step>
    <Step Number="63" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="64" FadeIn="0" Hold="900" FadeOut="0" Note="hair">71</Step>
    <Step Number="65" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="66" FadeIn="0" Hold="200" FadeOut="0" Note="she's">43</Step>
+   <Step Number="66" FadeIn="0" Hold="200" FadeOut="0" Note="she's">212</Step>
    <Step Number="67" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="68" FadeIn="0" Hold="200" FadeOut="0" Note="so">43</Step>
+   <Step Number="68" FadeIn="0" Hold="200" FadeOut="0" Note="so">212</Step>
    <Step Number="69" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="70" FadeIn="0" Hold="900" FadeOut="0" Note="sweet ">71</Step>
    <Step Number="71" FadeIn="0" Hold="400" FadeOut="0" Note="with her">36</Step>
-   <Step Number="72" FadeIn="0" Hold="200" FadeOut="0" Note="get ">43</Step>
+   <Step Number="72" FadeIn="0" Hold="200" FadeOut="0" Note="get ">212</Step>
    <Step Number="73" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="74" FadeIn="0" Hold="200" FadeOut="0" Note="back">43</Step>
+   <Step Number="74" FadeIn="0" Hold="200" FadeOut="0" Note="back">212</Step>
    <Step Number="75" FadeIn="0" Hold="200" FadeOut="0">36</Step>
    <Step Number="76" FadeIn="0" Hold="900" FadeOut="0" Note="stare">71</Step>
    <Step Number="77" FadeIn="0" Hold="400" FadeOut="0">36</Step>
    <Step Number="78" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 2">80</Step>
    <Step Number="79" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="80" FadeIn="0" Hold="200" FadeOut="0">43</Step>
+   <Step Number="80" FadeIn="0" Hold="200" FadeOut="0">212</Step>
    <Step Number="81" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="82" FadeIn="0" Hold="200" FadeOut="0">43</Step>
+   <Step Number="82" FadeIn="0" Hold="200" FadeOut="0">212</Step>
    <Step Number="83" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="84" FadeIn="0" Hold="600" FadeOut="0">43</Step>
+   <Step Number="84" FadeIn="0" Hold="600" FadeOut="0">212</Step>
    <Step Number="85" FadeIn="0" Hold="600" FadeOut="0">36</Step>
    <Step Number="86" FadeIn="0" Hold="4000" FadeOut="0">86</Step>
    <Step Number="87" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Guitar Solo">6</Step>
    <Step Number="88" FadeIn="0" Hold="18000" FadeOut="0" Note="Chorus 3">80</Step>
    <Step Number="89" FadeIn="0" Hold="7000" FadeOut="0" Note="Chorus 4">81</Step>
    <Step Number="90" FadeIn="0" Hold="400" FadeOut="0">36</Step>
-   <Step Number="91" FadeIn="0" Hold="200" FadeOut="0">43</Step>
+   <Step Number="91" FadeIn="0" Hold="200" FadeOut="0">212</Step>
    <Step Number="92" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="93" FadeIn="0" Hold="200" FadeOut="0">43</Step>
+   <Step Number="93" FadeIn="0" Hold="200" FadeOut="0">212</Step>
    <Step Number="94" FadeIn="0" Hold="200" FadeOut="0">36</Step>
-   <Step Number="95" FadeIn="0" Hold="600" FadeOut="0">43</Step>
+   <Step Number="95" FadeIn="0" Hold="600" FadeOut="0">212</Step>
    <Step Number="96" FadeIn="0" Hold="600" FadeOut="0">36</Step>
    <Step Number="97" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
    <Step Number="98" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
