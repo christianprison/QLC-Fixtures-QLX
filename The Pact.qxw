@@ -753,6 +753,7 @@
    <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="10">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="4">1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="13">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="43" Type="Scene" Name="blind" Path="Colors all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -779,6 +780,7 @@
    <FixtureVal ID="10">0,255,1,0,2,147,3,255</FixtureVal>
    <FixtureVal ID="4">0,0,1,162,2,255,3,0,4,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,255,2,255,3,0,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,0,12,255,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,255,21,0,22,0,23,255</FixtureVal>
+   <FixtureVal ID="13">0,255,1,54,2,0</FixtureVal>
   </Function>
   <Function ID="45" Type="Scene" Name="09 LED Bar" Path="ZZZ identify fixtures">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -995,18 +997,19 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="TENSION">82</Step>
-   <Step Number="1" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro">83</Step>
-   <Step Number="2" FadeIn="0" Hold="14000" FadeOut="0" Note="Verse 1a">86</Step>
-   <Step Number="3" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 1b">76</Step>
-   <Step Number="4" FadeIn="0" Hold="27000" FadeOut="0" Note="Chorus 1">78</Step>
-   <Step Number="5" FadeIn="0" Hold="23000" FadeOut="0" Note="Verse 2">76</Step>
-   <Step Number="6" FadeIn="0" Hold="27000" FadeOut="0" Note="Chorus 2">78</Step>
-   <Step Number="7" FadeIn="0" Hold="13000" FadeOut="0" Note="Thema">75</Step>
-   <Step Number="8" FadeIn="0" Hold="27000" FadeOut="0" Note="Interlude">80</Step>
-   <Step Number="9" FadeIn="0" Hold="26000" FadeOut="0" Note="Chorus 3">78</Step>
-   <Step Number="10" FadeIn="0" Hold="27000" FadeOut="0" Note="Solo Axel">6</Step>
-   <Step Number="11" FadeIn="0" Hold="13000" FadeOut="0" Note="Thema">75</Step>
-   <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0" Note="abruptes Ende">36</Step>
+   <Step Number="1" FadeIn="0" Hold="45000" FadeOut="0" Note="Laudatio by Grant Kilpatrick">215</Step>
+   <Step Number="2" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro">83</Step>
+   <Step Number="3" FadeIn="0" Hold="14000" FadeOut="0" Note="Verse 1a">86</Step>
+   <Step Number="4" FadeIn="0" Hold="13000" FadeOut="0" Note="Verse 1b">76</Step>
+   <Step Number="5" FadeIn="0" Hold="27000" FadeOut="0" Note="Chorus 1">78</Step>
+   <Step Number="6" FadeIn="0" Hold="23000" FadeOut="0" Note="Verse 2">76</Step>
+   <Step Number="7" FadeIn="0" Hold="27000" FadeOut="0" Note="Chorus 2">78</Step>
+   <Step Number="8" FadeIn="0" Hold="13000" FadeOut="0" Note="Thema">75</Step>
+   <Step Number="9" FadeIn="0" Hold="27000" FadeOut="0" Note="Interlude">80</Step>
+   <Step Number="10" FadeIn="0" Hold="26000" FadeOut="0" Note="Chorus 3">78</Step>
+   <Step Number="11" FadeIn="0" Hold="27000" FadeOut="0" Note="Solo Axel">6</Step>
+   <Step Number="12" FadeIn="0" Hold="13000" FadeOut="0" Note="Thema">75</Step>
+   <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0" Note="abruptes Ende">36</Step>
   </Function>
   <Function ID="57" Type="RGBMatrix" Name="Stripes from Center">
    <Speed FadeIn="0" FadeOut="0" Duration="510"/>
@@ -1192,25 +1195,26 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="ALWAYS WHERE I NEED TO BE">82</Step>
-   <Step Number="1" FadeIn="0" Hold="6000" FadeOut="0" Note="Intro (nur Axel)">6</Step>
-   <Step Number="2" FadeIn="0" Hold="11000" FadeOut="0" Note="Intro (alle)">80</Step>
-   <Step Number="3" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 1">74</Step>
-   <Step Number="4" FadeIn="0" Hold="12000" FadeOut="0" Note="Chorus 1">77</Step>
-   <Step Number="5" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 1">80</Step>
-   <Step Number="6" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 2">74</Step>
-   <Step Number="7" FadeIn="0" Hold="11000" FadeOut="0" Note="Chorus 2">77</Step>
-   <Step Number="8" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 2">80</Step>
-   <Step Number="9" FadeIn="0" Hold="23000" FadeOut="0" Note="Solo Axel">6</Step>
-   <Step Number="10" FadeIn="0" Hold="11000" FadeOut="0" Note="Interlude 1">77</Step>
-   <Step Number="11" FadeIn="0" Hold="3000" FadeOut="0" Note="Interlude 2 (stop)">71</Step>
-   <Step Number="12" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
-   <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
-   <Step Number="14" FadeIn="0" Hold="1500" FadeOut="0">36</Step>
-   <Step Number="15" FadeIn="0" Hold="1500" FadeOut="0" Note="&quot;eventually&quot;">81</Step>
-   <Step Number="16" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 3">80</Step>
-   <Step Number="17" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 4">81</Step>
-   <Step Number="18" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
-   <Step Number="19" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="1" FadeIn="0" Hold="33000" FadeOut="0" Note="The Pact Part I">216</Step>
+   <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0" Note="Intro (nur Axel)">6</Step>
+   <Step Number="3" FadeIn="0" Hold="11000" FadeOut="0" Note="Intro (alle)">80</Step>
+   <Step Number="4" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 1">74</Step>
+   <Step Number="5" FadeIn="0" Hold="12000" FadeOut="0" Note="Chorus 1">77</Step>
+   <Step Number="6" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 1">80</Step>
+   <Step Number="7" FadeIn="0" Hold="17000" FadeOut="0" Note="Verse 2">74</Step>
+   <Step Number="8" FadeIn="0" Hold="11000" FadeOut="0" Note="Chorus 2">77</Step>
+   <Step Number="9" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 2">80</Step>
+   <Step Number="10" FadeIn="0" Hold="23000" FadeOut="0" Note="Solo Axel">6</Step>
+   <Step Number="11" FadeIn="0" Hold="11000" FadeOut="0" Note="Interlude 1">77</Step>
+   <Step Number="12" FadeIn="0" Hold="3000" FadeOut="0" Note="Interlude 2 (stop)">71</Step>
+   <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="14" FadeIn="0" Hold="3000" FadeOut="0">71</Step>
+   <Step Number="15" FadeIn="0" Hold="1500" FadeOut="0">36</Step>
+   <Step Number="16" FadeIn="0" Hold="1500" FadeOut="0" Note="&quot;eventually&quot;">81</Step>
+   <Step Number="17" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 3">80</Step>
+   <Step Number="18" FadeIn="0" Hold="11000" FadeOut="0" Note="Dudup 4">81</Step>
+   <Step Number="19" FadeIn="0" Hold="4000" FadeOut="0" Note="Ausklang">71</Step>
+   <Step Number="20" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="65" Type="EFX" Name="up and down Martins">
    <Fixture>
@@ -1306,6 +1310,7 @@
    <FixtureVal ID="25">1,255,2,17</FixtureVal>
    <FixtureVal ID="26">1,255,2,178</FixtureVal>
    <FixtureVal ID="11">0,0,1,85,2,171,3,85,4,171,5,255,6,171,7,255,8,0,9,255,10,0,11,85,12,0,13,85,14,171,15,85,16,171,17,255,18,171,19,255,20,0,21,255,22,0,23,85</FixtureVal>
+   <FixtureVal ID="13">0,255,1,64,2,0</FixtureVal>
   </Function>
   <Function ID="70" Type="Collection" Name="02 slow blue 🔵">
    <Step Number="0">50</Step>
@@ -1458,7 +1463,7 @@
   </Function>
   <Function ID="86" Type="Scene" Name="Spot auf Pete 🔵" Path="Head positions with colors/Spots auf ...">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,130,1,0,2,255</FixtureVal>
+   <FixtureVal ID="4">0,130,1,0,2,255,3,0</FixtureVal>
    <FixtureVal ID="1">0,113,1,28,3,84,4,0,5,88,7,110,8,110,9,204</FixtureVal>
    <FixtureVal ID="5">0,108,1,28,2,24,3,86,4,0,5,129,6,37,7,110,8,110,9,204</FixtureVal>
    <FixtureVal ID="12">0,127,1,0,2,255,3,255,4,0</FixtureVal>
@@ -1466,7 +1471,7 @@
    <FixtureVal ID="24">0,20,1,133,2,142,3,19,4,8,5,61,6,0,7,135,9,196</FixtureVal>
    <FixtureVal ID="25">0,20,1,133,2,142,3,19,4,8,6,0,7,116,9,194</FixtureVal>
    <FixtureVal ID="26">0,255,1,135,2,156,3,22,4,0,6,0,7,29,9,57</FixtureVal>
-   <FixtureVal ID="13">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="13">0,124,1,0,2,255</FixtureVal>
   </Function>
   <Function ID="87" Type="Chaser" Name="Inside" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2131,22 +2136,20 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="THE REASON">82</Step>
-   <Step Number="1" FadeIn="0" Hold="3000" FadeOut="0" Note="Intro (Bass hoch) 16s">167</Step>
-   <Step Number="2" FadeIn="0" Hold="3000" FadeOut="0" Note="19s">168</Step>
-   <Step Number="3" FadeIn="0" Hold="6000" FadeOut="0" Note="22s">6</Step>
-   <Step Number="4" FadeIn="0" Hold="34000" FadeOut="0" Note="Verse 1 28s">74</Step>
-   <Step Number="5" FadeIn="0" Hold="13000" FadeOut="0" Note="Chorus 1 1:02">76</Step>
-   <Step Number="6" FadeIn="0" Hold="35000" FadeOut="0" Note="Verse 2 1:25">74</Step>
-   <Step Number="7" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 2 2:00">76</Step>
-   <Step Number="8" FadeIn="0" Hold="10" FadeOut="0" Note="Interlude 2:23">78</Step>
-   <Step Number="9" FadeIn="0" Hold="10000" FadeOut="0">37</Step>
-   <Step Number="10" FadeIn="0" Hold="14000" FadeOut="0">78</Step>
-   <Step Number="11" FadeIn="0" Hold="11500" FadeOut="0" Note="Verse 3a Drums Stop 2:47">83</Step>
-   <Step Number="12" FadeIn="0" Hold="11500" FadeOut="0" Note="Verse 3b normal 2:58">74</Step>
-   <Step Number="13" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 3 3:10">76</Step>
-   <Step Number="14" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 4 3:33">80</Step>
-   <Step Number="15" FadeIn="0" Hold="8000" FadeOut="0" Note="Ausklang 3:56">70</Step>
-   <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
+   <Step Number="1" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro (Piano - Drums - Guitar)">219</Step>
+   <Step Number="2" FadeIn="0" Hold="34000" FadeOut="0" Note="Verse 1 28s">74</Step>
+   <Step Number="3" FadeIn="0" Hold="13000" FadeOut="0" Note="Chorus 1 1:02">76</Step>
+   <Step Number="4" FadeIn="0" Hold="35000" FadeOut="0" Note="Verse 2 1:25">74</Step>
+   <Step Number="5" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 2 2:00">76</Step>
+   <Step Number="6" FadeIn="0" Hold="10" FadeOut="0" Note="Interlude 2:23">78</Step>
+   <Step Number="7" FadeIn="0" Hold="10000" FadeOut="0">37</Step>
+   <Step Number="8" FadeIn="0" Hold="14000" FadeOut="0">78</Step>
+   <Step Number="9" FadeIn="0" Hold="11500" FadeOut="0" Note="Verse 3a Drums Stop 2:47">83</Step>
+   <Step Number="10" FadeIn="0" Hold="11500" FadeOut="0" Note="Verse 3b normal 2:58">74</Step>
+   <Step Number="11" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 3 3:10">76</Step>
+   <Step Number="12" FadeIn="0" Hold="23000" FadeOut="0" Note="Chorus 4 3:33">80</Step>
+   <Step Number="13" FadeIn="0" Hold="8000" FadeOut="0" Note="Ausklang 3:56">70</Step>
+   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">36</Step>
   </Function>
   <Function ID="110" Type="Chaser" Name="Today" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2413,6 +2416,7 @@
    <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="10">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="11">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+   <FixtureVal ID="13">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="135" Type="Scene" Name="PAR off" Path="Colors PARs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2423,6 +2427,7 @@
    <FixtureVal ID="8">0,0,1,0,2,0,3,0</FixtureVal>
    <FixtureVal ID="10">0,0,1,0,2,0,3,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="136" Type="EFX" Name="slow left and right Martins 2+5">
    <Fixture>
@@ -3370,6 +3375,7 @@
    <FixtureVal ID="8">0,0,1,13,2,0,3,73</FixtureVal>
    <FixtureVal ID="10">0,0,1,13,2,0,3,73</FixtureVal>
    <FixtureVal ID="4">1,123,2,255,3,146</FixtureVal>
+   <FixtureVal ID="13">0,12,1,25,2,14</FixtureVal>
   </Function>
   <Function ID="199" Type="Scene" Name="reset TourSpots" Path="ZZZ Showvorbereitung">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3542,6 +3548,34 @@
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">279</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">80</Step>
   </Function>
+  <Function ID="215" Type="Audio" Name="Grant.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="45608"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>/home/thepact/Music/Grant.wav</Source>
+  </Function>
+  <Function ID="216" Type="Audio" Name="The Pact - part 1.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="33500"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>/home/thepact/Music/The Pact - part 1.wav</Source>
+  </Function>
+  <Function ID="217" Type="Audio" Name="The Reason Piano intro.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="18000"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>/home/thepact/Music/The Reason Piano intro.wav</Source>
+  </Function>
+  <Function ID="218" Type="Chaser" Name="The Reason Intro (Chaser)">
+   <Speed FadeIn="0" FadeOut="0" Duration="6000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
+   <Step Number="1" FadeIn="0" Hold="3000" FadeOut="0">168</Step>
+   <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">6</Step>
+  </Function>
+  <Function ID="219" Type="Collection" Name="The Reason Intro (Collection)">
+   <Step Number="0">218</Step>
+   <Step Number="1">217</Step>
+  </Function>
   <Function ID="255" Type="Script" Name="Fog on (Script)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
@@ -3568,6 +3602,7 @@
    <FixtureVal ID="10">0,0,1,255,2,0</FixtureVal>
    <FixtureVal ID="4">1,0,2,255,3,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,82,2,0,3,0,4,150,5,0,6,0,7,211,8,0,9,0,10,255,11,0,12,0,13,255,14,0,15,0,16,202,17,0,18,0,19,127,20,0,21,0,22,68,23,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,255,2,0</FixtureVal>
   </Function>
   <Function ID="258" Type="Scene" Name="Tim PARs white ⚪️" Path="Colors PARs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3675,9 +3710,6 @@
    <FixtureVal ID="1">6,192</FixtureVal>
    <FixtureVal ID="5">6,195</FixtureVal>
   </Function>
-  <Function ID="268" Type="Scene" Name="Neue Szene 268" Path="Colors Heads">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
   <Function ID="269" Type="Scene" Name="Fan backwards high" Path="Movement Heads/Fan">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="23">7,148,9,200</FixtureVal>
@@ -3702,7 +3734,7 @@
    <FixtureVal ID="9">0,0,1,255,2,0,3,0</FixtureVal>
    <FixtureVal ID="10">0,0,1,0,2,0,3,255</FixtureVal>
   </Function>
-  <Function ID="273" Type="Scene" Name="Alarm 2+8+11" Path="Colors PARs/subscenes for Alarm">
+  <Function ID="273" Type="Scene" Name="Alarm 2+8+11+18" Path="Colors PARs/subscenes for Alarm">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,255,2,255,3,0</FixtureVal>
    <FixtureVal ID="3">0,255,1,0,2,0</FixtureVal>
@@ -3715,14 +3747,14 @@
    <FixtureVal ID="6">0,255,2,255</FixtureVal>
    <FixtureVal ID="7">0,255,1,0,2,0,3,62</FixtureVal>
   </Function>
-  <Function ID="275" Type="Scene" Name="Alarm 9+15+16" Path="Colors PARs/subscenes for Alarm">
+  <Function ID="275" Type="Scene" Name="Alarm 9+15+16+18" Path="Colors PARs/subscenes for Alarm">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="11">1,255,4,255,7,255,10,255,13,255,16,255,19,255,22,255</FixtureVal>
    <FixtureVal ID="8"/>
    <FixtureVal ID="10"/>
    <FixtureVal ID="13">0,255,1,255,2,0</FixtureVal>
   </Function>
-  <Function ID="276" Type="Scene" Name="Alarm 7+8+9+11" Path="Colors PARs/subscenes for Alarm">
+  <Function ID="276" Type="Scene" Name="Alarm 7+8+9+11+18" Path="Colors PARs/subscenes for Alarm">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="6">1,255</FixtureVal>
    <FixtureVal ID="3">1,255</FixtureVal>
