@@ -615,7 +615,7 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="300" FadeOut="0">43</Step>
+   <Step Number="0" FadeIn="0" Hold="300" FadeOut="0">212</Step>
   </Function>
   <Function ID="32" Type="Collection" Name="static dark blue">
    <Step Number="0">4</Step>
@@ -811,8 +811,8 @@
    <MonoColor>4278465535</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
    <Property Name="InvertBrightness" Value="Bright-&gt;Dim"/>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="49" Type="Scene" Name="Heads blue" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -867,9 +867,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -1177,14 +1177,14 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="presetCollision" Value="No"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color5Index" Value="Orange"/>
    <Property Name="presetNumber" Value="5"/>
    <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetSize" Value="2"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="presetCollision" Value="No"/>
+   <Property Name="presetSize" Value="2"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1407,12 +1407,7 @@
    <Step Number="4">203</Step>
   </Function>
   <Function ID="80" Type="Collection" Name="09 Alarm 🔔">
-   <Step Number="0">267</Step>
-   <Step Number="1">269</Step>
-   <Step Number="2">60</Step>
-   <Step Number="3">59</Step>
-   <Step Number="4">53</Step>
-   <Step Number="5">270</Step>
+   <Step Number="0">279</Step>
   </Function>
   <Function ID="81" Type="Collection" Name="10 Strobe ✳️">
    <Step Number="0">61</Step>
@@ -1443,14 +1438,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color5Index" Value="Yellow"/>
    <Property Name="presetNumber" Value="5"/>
    <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetSize" Value="2"/>
    <Property Name="color1Index" Value="Orange"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Red"/>
+   <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="presetSize" Value="2"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3178,12 +3173,12 @@
    <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0">37</Step>
    <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0" Note="JOIN ME IN DEATH">82</Step>
    <Step Number="2" FadeIn="0" Hold="17000" FadeOut="0" Note="Intro (nur Git+Vox)">83</Step>
-   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">43</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">212</Step>
    <Step Number="4" FadeIn="0" Hold="12000" FadeOut="0" Note="Intro (alle)">78</Step>
    <Step Number="5" FadeIn="0" Hold="32000" FadeOut="0" Note="Verse 1">79</Step>
-   <Step Number="6" FadeIn="0" Hold="260" FadeOut="0">43</Step>
+   <Step Number="6" FadeIn="0" Hold="260" FadeOut="0">212</Step>
    <Step Number="7" FadeIn="0" Hold="260" FadeOut="0">36</Step>
-   <Step Number="8" FadeIn="0" Hold="260" FadeOut="0">43</Step>
+   <Step Number="8" FadeIn="0" Hold="260" FadeOut="0">212</Step>
    <Step Number="9" FadeIn="0" Hold="520" FadeOut="0">36</Step>
    <Step Number="10" FadeIn="0" Hold="780" FadeOut="0">81</Step>
    <Step Number="11" FadeIn="0" Hold="4160" FadeOut="0" Note="Chorus 1">80</Step>
@@ -3194,9 +3189,9 @@
    <Step Number="16" FadeIn="0" Hold="4160" FadeOut="0">78</Step>
    <Step Number="17" FadeIn="0" Hold="4160" FadeOut="0">80</Step>
    <Step Number="18" FadeIn="0" Hold="14160" FadeOut="0" Note="Verse 2">79</Step>
-   <Step Number="19" FadeIn="0" Hold="260" FadeOut="0">43</Step>
+   <Step Number="19" FadeIn="0" Hold="260" FadeOut="0">212</Step>
    <Step Number="20" FadeIn="0" Hold="260" FadeOut="0">36</Step>
-   <Step Number="21" FadeIn="0" Hold="260" FadeOut="0">43</Step>
+   <Step Number="21" FadeIn="0" Hold="260" FadeOut="0">212</Step>
    <Step Number="22" FadeIn="0" Hold="520" FadeOut="0">36</Step>
    <Step Number="23" FadeIn="0" Hold="780" FadeOut="0">81</Step>
    <Step Number="24" FadeIn="0" Hold="4160" FadeOut="0" Note="Chorus 2">80</Step>
@@ -3218,7 +3213,7 @@
    <Step Number="40" FadeIn="0" Hold="4160" FadeOut="0">80</Step>
    <Step Number="41" FadeIn="0" Hold="4160" FadeOut="0">78</Step>
    <Step Number="42" FadeIn="0" Hold="4260" FadeOut="0">80</Step>
-   <Step Number="43" FadeIn="0" Hold="5000" FadeOut="0" Note="Ausklang">43</Step>
+   <Step Number="43" FadeIn="0" Hold="5000" FadeOut="0" Note="Ausklang">212</Step>
    <Step Number="44" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
   </Function>
   <Function ID="179" Type="Scene" Name="19 TourSpot" Path="ZZZ identify fixtures">
@@ -3544,8 +3539,8 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Note="right">212</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Note="right too">212</Step>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">279</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">80</Step>
   </Function>
   <Function ID="255" Type="Script" Name="Fog on (Script)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
