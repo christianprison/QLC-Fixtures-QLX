@@ -3,17 +3,21 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.0</Version>
-  <Author>Christian Prison</Author>
+  <Version>4.13.1</Version>
+  <Author>thepact</Author>
  </Creator>
  <Engine Autostart="82">
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Output" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN429695)" Line="0">
+     <PluginParameters UniverseChannels="196"/>
+    </Output>
    </Universe>
    <Universe Name="Input" ID="1">
-    <Input Plugin="MIDI" UID="None" Line="2"/>
+    <Input Plugin="MIDI" UID="PACER MIDI1" Line="1" Profile="Nektar Pacer">
+     <PluginParameters MIDISendNoteOff="true"/>
+    </Input>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -1186,14 +1190,14 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
    <Property Name="presetCollision" Value="No"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetSize" Value="2"/>
-   <Property Name="color5Index" Value="Orange"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
    <Property Name="presetNumber" Value="5"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="color4Index" Value="Blue"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -1455,14 +1459,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Red"/>
    <Property Name="presetCollision" Value="Yes"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetSize" Value="2"/>
-   <Property Name="color5Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Orange"/>
    <Property Name="presetNumber" Value="5"/>
+   <Property Name="color5Index" Value="Yellow"/>
+   <Property Name="color4Index" Value="Blue"/>
   </Function>
   <Function ID="85" Type="Scene" Name="Heads purple" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -3899,7 +3903,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="705" Y="10" Width="485" Height="775"/>
+    <WindowState Visible="True" X="1915" Y="110" Width="485" Height="775"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -4202,46 +4206,6 @@
      <Input Universe="1" Channel="159"/>
     </Button>
    </SoloFrame>
-   <Label Caption="- Nebeldauer Chaser anpassen" ID="32">
-    <WindowState Visible="True" X="715" Y="695" Width="235" Height="20"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-   </Label>
-   <Label Caption="- Fixtures identifizieren" ID="33">
-    <WindowState Visible="True" X="715" Y="650" Width="170" Height="20"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-   </Label>
-   <Label Caption="- Solo-Szenen anpassen" ID="34">
-    <WindowState Visible="True" X="715" Y="750" Width="185" Height="25"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-   </Label>
-   <Label Caption="- Offset Heads in Effects anpassen (kleine/große s separat)" ID="35">
-    <WindowState Visible="True" X="715" Y="720" Width="435" Height="25"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0</Font>
-    </Appearance>
-   </Label>
    <SoloFrame Caption="The Pact" ID="2">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
@@ -4250,7 +4214,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="15" Width="650" Height="780"/>
+    <WindowState Visible="True" X="0" Y="20" Width="1865" Height="1255"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -4258,7 +4222,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="47"/>
+    <Multipage PagesNum="60" CurrentPage="59"/>
     <Next>
      <Key>N</Key>
      <Input Universe="1" Channel="169"/>
@@ -4288,9 +4252,7 @@
     <Shortcut Page="6" Name="Boys don't cry">
      <Input Universe="1" Channel="399"/>
     </Shortcut>
-    <Shortcut Page="7" Name="Boys Cry + Summer">
-     <Input Universe="1" Channel="399"/>
-    </Shortcut>
+    <Shortcut Page="7" Name="Boys Cry + Summer"/>
     <Shortcut Page="8" Name="Seite: 9">
      <Input Universe="2" Channel="393"/>
     </Shortcut>
@@ -4331,7 +4293,7 @@
      <Input Universe="2" Channel="405"/>
     </Shortcut>
     <Shortcut Page="21" Name="Inside">
-     <Input Universe="1" Channel="391"/>
+     <Input Universe="1" Channel="390"/>
     </Shortcut>
     <Shortcut Page="22" Name="Join me in death">
      <Input Universe="1" Channel="389"/>
@@ -4340,7 +4302,7 @@
      <Input Universe="2" Channel="408"/>
     </Shortcut>
     <Shortcut Page="24" Name="Lonely Boy">
-     <Input Universe="1" Channel="390"/>
+     <Input Universe="1" Channel="391"/>
     </Shortcut>
     <Shortcut Page="25" Name="Mr. Brightside">
      <Input Universe="1" Channel="398"/>
@@ -4391,9 +4353,11 @@
      <Input Universe="1" Channel="404"/>
     </Shortcut>
     <Shortcut Page="41" Name="Tension">
-     <Input Universe="2" Channel="426"/>
+     <Input Universe="1" Channel="384"/>
     </Shortcut>
-    <Shortcut Page="42" Name="The boys of summer"/>
+    <Shortcut Page="42" Name="The boys of summer">
+     <Input Universe="1" Channel="400"/>
+    </Shortcut>
     <Shortcut Page="43" Name="The Middle">
      <Input Universe="2" Channel="428"/>
     </Shortcut>
@@ -4447,13 +4411,13 @@
     </Shortcut>
     <PagesLoop>False</PagesLoop>
     <CueList Caption="Cue-Liste" ID="22">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1835" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
+      <Font>Ubuntu,12,-1,5,50,0,0,0,0,0,Regular</Font>
      </Appearance>
      <Chaser>88</Chaser>
      <NextPrevBehavior>3</NextPrevBehavior>
@@ -4469,7 +4433,7 @@
      <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="23" Page="1">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1825" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4493,7 +4457,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="25" Page="2">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="15" Y="55" Width="1835" Height="1190"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4517,7 +4481,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="92" Page="4">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1835" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4541,7 +4505,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="93" Page="11">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1835" Height="1195"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4565,7 +4529,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="94" Page="12">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4589,7 +4553,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="95" Page="20">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1855" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4613,7 +4577,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="96" Page="3">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="20" Y="45" Width="1815" Height="1195"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4637,7 +4601,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="97" Page="5">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1190"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4661,7 +4625,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="98" Page="6">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4683,7 +4647,7 @@
      <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="99" Page="10">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="730"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1840" Height="1195"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4707,7 +4671,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="46" Page="13">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4729,7 +4693,7 @@
      <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="100" Page="14">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4753,7 +4717,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="101" Page="15">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4777,7 +4741,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="102" Page="16">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4801,7 +4765,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="103" Page="21">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4825,7 +4789,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="104" Page="22">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4849,7 +4813,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="105" Page="23">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4873,7 +4837,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="106" Page="24">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4897,7 +4861,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="107" Page="25">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4921,7 +4885,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="108" Page="26">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4945,7 +4909,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="109" Page="30">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4969,7 +4933,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="110" Page="31">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -4991,7 +4955,7 @@
      <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="111" Page="32">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1855" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5015,7 +4979,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="112" Page="33">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5039,7 +5003,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="113" Page="34">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5063,7 +5027,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="114" Page="35">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5087,7 +5051,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="115" Page="36">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5111,7 +5075,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="116" Page="37">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5135,7 +5099,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="117" Page="38">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="10" Y="45" Width="1835" Height="1195"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5159,13 +5123,13 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="118" Page="40">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1815" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
+      <Font>Ubuntu,12,-1,5,50,0,0,0,0,0,Regular</Font>
      </Appearance>
      <Chaser>107</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -5183,7 +5147,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="119" Page="41">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5207,7 +5171,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="120" Page="42">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1855" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5231,7 +5195,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="121" Page="43">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5255,7 +5219,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="122" Page="44">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5279,7 +5243,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="123" Page="45">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5303,7 +5267,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="124" Page="46">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5327,7 +5291,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="125" Page="47">
-     <WindowState Visible="True" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5351,7 +5315,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="126" Page="50">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5375,7 +5339,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="127" Page="51">
-     <WindowState Visible="False" X="5" Y="45" Width="640" Height="730"/>
+     <WindowState Visible="False" X="5" Y="45" Width="1855" Height="1195"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5399,7 +5363,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="128" Page="52">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5423,7 +5387,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="3" Page="7">
-     <WindowState Visible="False" X="5" Y="40" Width="640" Height="735"/>
+     <WindowState Visible="False" X="10" Y="50" Width="1840" Height="1190"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5445,7 +5409,7 @@
      <Stop/>
     </CueList>
     <CueList Caption="Cue-Liste" ID="24" Page="59">
-     <WindowState Visible="False" X="10" Y="45" Width="630" Height="725"/>
+     <WindowState Visible="True" X="10" Y="45" Width="1850" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -5462,7 +5426,7 @@
     </CueList>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="0">
-    <WindowState Visible="True" X="965" Y="190" Width="200" Height="175"/>
+    <WindowState Visible="True" X="2165" Y="300" Width="200" Height="175"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -5498,7 +5462,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="8">75</Function>
    </SpeedDial>
    <Button Caption="ignite 5" ID="26" Icon="">
-    <WindowState Visible="True" X="725" Y="20" Width="70" Height="70"/>
+    <WindowState Visible="True" X="1940" Y="125" Width="70" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -5512,7 +5476,7 @@
    </Button>
   </Frame>
   <Properties>
-   <Size Width="1200" Height="800"/>
+   <Size Width="2400" Height="1280"/>
    <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
   </Properties>
  </VirtualConsole>
