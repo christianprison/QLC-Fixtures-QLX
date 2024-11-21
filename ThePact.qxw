@@ -10,16 +10,14 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Output" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN429695)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Input" ID="1">
-    <Input Plugin="MIDI" UID="PACER MIDI1" Line="1" Profile="Nektar Pacer"/>
+    <Input Plugin="MIDI" UID="None" Line="1" Profile="Nektar Pacer"/>
    </Universe>
    <Universe Name="MicStand (out)" ID="2">
     <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
-     <PluginParameters outputIP="192.168.0.112"/>
+     <PluginParameters outputIP="192.168.0.102" outputUni="0"/>
     </Output>
    </Universe>
    <Universe Name="Säule1 (out)" ID="3">
@@ -47,6 +45,7 @@
      <PluginParameters outputIP="192.168.0.107"/>
     </Output>
    </Universe>
+   <Universe Name="Audio In" ID="8"/>
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Fun-Generation</Manufacturer>
@@ -2173,7 +2172,7 @@
    <Step Number="11" FadeIn="0" Hold="5000" FadeOut="0">229</Step>
    <Step Number="12" FadeIn="0" Hold="10000" FadeOut="0">79</Step>
    <Step Number="13" FadeIn="0" Hold="23000" FadeOut="0">81</Step>
-   <Step Number="14" FadeIn="0" Hold="6000" FadeOut="0">227</Step>
+   <Step Number="14" FadeIn="0" Hold="6000" FadeOut="0">71</Step>
    <Step Number="15" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
    <Step Number="16" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
   </Function>
@@ -2428,8 +2427,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
    <Property Name="color2Index" Value="Green"/>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -2738,14 +2737,14 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="presetSize" Value="2"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetCollision" Value="No"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color1Index" Value="Dim Yellow"/>
+   <Property Name="color5Index" Value="Orange"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -5209,10 +5208,10 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="direction" Value="Left"/>
    <Property Name="tailfade" Value="Yes"/>
-   <Property Name="taillength" Value="50"/>
    <Property Name="orientation" Value="Vertical"/>
+   <Property Name="direction" Value="Left"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Function ID="224" Type="Collection" Name="Spot auf Axel 🟢">
    <Step Number="0">6</Step>
@@ -5340,10 +5339,10 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="direction" Value="Right"/>
    <Property Name="tailfade" Value="Yes"/>
-   <Property Name="taillength" Value="20"/>
    <Property Name="orientation" Value="Vertical"/>
+   <Property Name="direction" Value="Right"/>
+   <Property Name="taillength" Value="20"/>
   </Function>
   <Function ID="241" Type="Script" Name="Micstand drop down counter red">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -11035,8 +11034,8 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="159"/>
     </Button>
-    <Slider Caption="Slider 29" ID="29" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="20" Y="190" Width="60" Height="200"/>
+    <Slider Caption="Haze" ID="29" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="20" Y="85" Width="70" Height="335"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11044,8 +11043,10 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="37">0</Channel>
+     </Level>
      <Playback>
       <Function>4294967295</Function>
      </Playback>
@@ -11067,35 +11068,30 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="4"/>
-    <Next>
-     <Key>N</Key>
-    </Next>
-    <Previous>
-     <Key>P</Key>
-    </Previous>
+    <Multipage PagesNum="60" CurrentPage="52"/>
     <Shortcut Page="0" Name="All the small things">
-     <Input Universe="1" Channel="384"/>
+     <Input Universe="1" Channel="399"/>
+     <Key>Shift+%</Key>
     </Shortcut>
-    <Shortcut Page="1" Name="Along comes Mary">
-     <Input Universe="2" Channel="386"/>
-    </Shortcut>
+    <Shortcut Page="1" Name="Along comes Mary"/>
     <Shortcut Page="2" Name="Always where I need to be">
      <Input Universe="1" Channel="385"/>
+     <Key>1</Key>
     </Shortcut>
-    <Shortcut Page="3" Name="Animal">
-     <Input Universe="2" Channel="388"/>
-    </Shortcut>
+    <Shortcut Page="3" Name="Animal"/>
     <Shortcut Page="4" Name="Are you gonna be my girl">
-     <Input Universe="1" Channel="392"/>
+     <Input Universe="1" Channel="393"/>
+     <Key>9</Key>
     </Shortcut>
     <Shortcut Page="5" Name="Basket Case">
-     <Input Universe="1" Channel="407"/>
+     <Input Universe="1" Channel="405"/>
+     <Key>Alt+1</Key>
     </Shortcut>
     <Shortcut Page="6" Name="Boys don't cry">
-     <Input Universe="1" Channel="399"/>
+     <Input Universe="1" Channel="401"/>
+     <Key>Shift+/</Key>
     </Shortcut>
-    <Shortcut Page="7" Name="Boys Cry + Summer"/>
+    <Shortcut Page="7" Name="Boys cry + summer"/>
     <Shortcut Page="8" Name="Seite: 9">
      <Input Universe="2" Channel="393"/>
     </Shortcut>
@@ -11103,26 +11099,21 @@
      <Input Universe="2" Channel="394"/>
     </Shortcut>
     <Shortcut Page="10" Name="Chalsea Dagger">
-     <Input Universe="1" Channel="411"/>
+     <Input Universe="1" Channel="408"/>
+     <Key>Alt+4</Key>
     </Shortcut>
-    <Shortcut Page="11" Name="Creep">
-     <Input Universe="1" Channel="397"/>
-    </Shortcut>
-    <Shortcut Page="12" Name="Dancing with myself">
-     <Input Universe="2" Channel="397"/>
-    </Shortcut>
+    <Shortcut Page="11" Name="Creep"/>
+    <Shortcut Page="12" Name="Dancing with myself"/>
     <Shortcut Page="13" Name="Down in the past">
-     <Input Universe="1" Channel="402"/>
+     <Input Universe="1" Channel="395"/>
+     <Key>Shift+!</Key>
     </Shortcut>
-    <Shortcut Page="14" Name="Every you every me">
-     <Input Universe="2" Channel="399"/>
-    </Shortcut>
+    <Shortcut Page="14" Name="Every you every me"/>
     <Shortcut Page="15" Name="Fight for your right">
-     <Input Universe="1" Channel="410"/>
+     <Input Universe="1" Channel="407"/>
+     <Key>Alt+3</Key>
     </Shortcut>
-    <Shortcut Page="16" Name="Fluorescent Adolescent">
-     <Input Universe="2" Channel="401"/>
-    </Shortcut>
+    <Shortcut Page="16" Name="Fluorescent Adolescent"/>
     <Shortcut Page="17" Name="Seite: 18">
      <Input Universe="2" Channel="402"/>
     </Shortcut>
@@ -11132,29 +11123,31 @@
     <Shortcut Page="19" Name="Seite: 20">
      <Input Universe="2" Channel="404"/>
     </Shortcut>
-    <Shortcut Page="20" Name="Hail to the freaks">
-     <Input Universe="2" Channel="405"/>
-    </Shortcut>
+    <Shortcut Page="20" Name="Hail to the freaks"/>
     <Shortcut Page="21" Name="Inside">
      <Input Universe="1" Channel="390"/>
+     <Key>6</Key>
     </Shortcut>
     <Shortcut Page="22" Name="Join me in death">
      <Input Universe="1" Channel="389"/>
+     <Key>5</Key>
     </Shortcut>
-    <Shortcut Page="23" Name="Last Nite">
-     <Input Universe="2" Channel="408"/>
-    </Shortcut>
+    <Shortcut Page="23" Name="Last Nite"/>
     <Shortcut Page="24" Name="Lonely Boy">
-     <Input Universe="1" Channel="391"/>
+     <Input Universe="1" Channel="392"/>
+     <Key>8</Key>
     </Shortcut>
     <Shortcut Page="25" Name="Mr. Brightside">
-     <Input Universe="1" Channel="398"/>
+     <Input Universe="1" Channel="400"/>
+     <Key>Shift+&amp;</Key>
     </Shortcut>
     <Shortcut Page="26" Name="Narcotic">
-     <Input Universe="1" Channel="406"/>
+     <Input Universe="1" Channel="403"/>
+     <Key>Shift+)</Key>
     </Shortcut>
-    <Shortcut Page="27" Name="Seite: 28">
-     <Input Universe="2" Channel="412"/>
+    <Shortcut Page="27" Name="Killing in the name of">
+     <Input Universe="1" Channel="409"/>
+     <Key>Alt+5</Key>
     </Shortcut>
     <Shortcut Page="28" Name="Seite: 29">
      <Input Universe="2" Channel="413"/>
@@ -11162,59 +11155,49 @@
     <Shortcut Page="29" Name="Seite: 30">
      <Input Universe="2" Channel="414"/>
     </Shortcut>
-    <Shortcut Page="30" Name="Rock'n'Roll Queen">
-     <Input Universe="2" Channel="415"/>
-    </Shortcut>
+    <Shortcut Page="30" Name="Rock'n'Roll Queen"/>
     <Shortcut Page="31" Name="Run">
-     <Input Universe="1" Channel="401"/>
+     <Input Universe="1" Channel="391"/>
+     <Key>7</Key>
     </Shortcut>
-    <Shortcut Page="32" Name="Self Esteem">
-     <Input Universe="1" Channel="408"/>
-    </Shortcut>
-    <Shortcut Page="33" Name="Seven Nation Army / Sweet Dreams">
-     <Input Universe="2" Channel="418"/>
-    </Shortcut>
-    <Shortcut Page="34" Name="Sex on fire">
-     <Input Universe="1" Channel="409"/>
-    </Shortcut>
-    <Shortcut Page="35" Name="She hates me">
-     <Input Universe="1" Channel="403"/>
-    </Shortcut>
-    <Shortcut Page="36" Name="Should I stay or should I go">
-     <Input Universe="2" Channel="421"/>
-    </Shortcut>
+    <Shortcut Page="32" Name="Self Esteem"/>
+    <Shortcut Page="33" Name="Seven Nation Army / Sweet Dreams"/>
+    <Shortcut Page="34" Name="Sex on fire"/>
+    <Shortcut Page="35" Name="She hates me"/>
+    <Shortcut Page="36" Name="Should I stay or should I go"/>
     <Shortcut Page="37" Name="Song 2">
-     <Input Universe="1" Channel="405"/>
+     <Input Universe="1" Channel="406"/>
+     <Key>Alt+2</Key>
     </Shortcut>
     <Shortcut Page="38" Name="Space Lord">
-     <Input Universe="1" Channel="393"/>
+     <Input Universe="1" Channel="396"/>
+     <Key>Shift+&quot;</Key>
     </Shortcut>
     <Shortcut Page="39" Name="Seite: 40">
      <Input Universe="2" Channel="424"/>
     </Shortcut>
     <Shortcut Page="40" Name="Teenage dirtbag">
      <Input Universe="1" Channel="404"/>
+     <Key>Shift+=</Key>
     </Shortcut>
-    <Shortcut Page="41" Name="Tension">
-     <Input Universe="1" Channel="384"/>
-    </Shortcut>
+    <Shortcut Page="41" Name="Tension"/>
     <Shortcut Page="42" Name="The boys of summer">
-     <Input Universe="1" Channel="400"/>
+     <Input Universe="1" Channel="402"/>
+     <Key>Shift+(</Key>
     </Shortcut>
     <Shortcut Page="43" Name="The Middle">
-     <Input Universe="2" Channel="428"/>
+     <Input Universe="1" Channel="394"/>
+     <Key>0</Key>
     </Shortcut>
     <Shortcut Page="44" Name="The Pretender">
-     <Input Universe="1" Channel="395"/>
+     <Input Universe="1" Channel="398"/>
+     <Key>Shift+$</Key>
     </Shortcut>
-    <Shortcut Page="45" Name="The Reason">
-     <Input Universe="2" Channel="430"/>
-    </Shortcut>
-    <Shortcut Page="46" Name="Today">
-     <Input Universe="2" Channel="431"/>
-    </Shortcut>
+    <Shortcut Page="45" Name="The Reason"/>
+    <Shortcut Page="46" Name="Today"/>
     <Shortcut Page="47" Name="Torn">
      <Input Universe="1" Channel="387"/>
+     <Key>3</Key>
     </Shortcut>
     <Shortcut Page="48" Name="Seite: 49">
      <Input Universe="2" Channel="433"/>
@@ -11224,12 +11207,14 @@
     </Shortcut>
     <Shortcut Page="50" Name="Valerie">
      <Input Universe="1" Channel="386"/>
+     <Key>2</Key>
     </Shortcut>
     <Shortcut Page="51" Name="Word up">
-     <Input Universe="1" Channel="394"/>
+     <Input Universe="1" Channel="397"/>
+     <Key>Shift+§</Key>
     </Shortcut>
     <Shortcut Page="52" Name="Yellow">
-     <Input Universe="1" Channel="388"/>
+     <Key>4</Key>
     </Shortcut>
     <Shortcut Page="53" Name="Seite: 54">
      <Input Universe="2" Channel="438"/>
@@ -11324,7 +11309,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="92" Page="4">
-     <WindowState Visible="True" X="10" Y="50" Width="1835" Height="1205"/>
+     <WindowState Visible="False" X="10" Y="50" Width="1860" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11678,7 +11663,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="106" Page="24">
-     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1200"/>
+     <WindowState Visible="False" X="15" Y="55" Width="1850" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12204,7 +12189,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="128" Page="52">
-     <WindowState Visible="False" X="5" Y="40" Width="1845" Height="1205"/>
+     <WindowState Visible="True" X="5" Y="40" Width="1845" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12265,9 +12250,33 @@
      <Playback/>
      <Stop/>
     </CueList>
+    <CueList Caption="Cue list" ID="30" Page="27">
+     <WindowState Visible="False" X="5" Y="40" Width="1855" Height="1210"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>4294967295</Chaser>
+     <NextPrevBehavior>0</NextPrevBehavior>
+     <Next>
+      <Input Universe="1" Channel="1769645"/>
+     </Next>
+     <Previous>
+      <Input Universe="1" Channel="1769644"/>
+     </Previous>
+     <Playback>
+      <Input Universe="1" Channel="1769643"/>
+     </Playback>
+     <Stop>
+      <Input Universe="1" Channel="1769642"/>
+     </Stop>
+    </CueList>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="0">
-    <WindowState Visible="True" X="2185" Y="680" Width="200" Height="175"/>
+    <WindowState Visible="True" X="2185" Y="680" Width="185" Height="185"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -12315,7 +12324,7 @@
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
    </Button>
-   <AudioTriggers BarsNumber="16" Caption="Audio Control" ID="27">
+   <AudioTriggers BarsNumber="8" Caption="Audio Control" ID="27">
     <WindowState Visible="True" X="1905" Y="25" Width="515" Height="390"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
@@ -12324,14 +12333,29 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <SpectrumBar Name="#1 (0Hz - 312Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="0">
+    <SpectrumBar Name="#1 (0Hz - 625Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="0">
      <DMXChannels>10,0</DMXChannels>
     </SpectrumBar>
-    <SpectrumBar Name="#2 (312Hz - 625Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="1">
+    <SpectrumBar Name="#2 (625Hz - 1250Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="1">
      <DMXChannels>10,2</DMXChannels>
     </SpectrumBar>
-    <SpectrumBar Name="#3 (625Hz - 937Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="2">
+    <SpectrumBar Name="#3 (1250Hz - 1875Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="2">
      <DMXChannels>10,1</DMXChannels>
+    </SpectrumBar>
+    <SpectrumBar Name="#4 (1875Hz - 2500Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="3">
+     <DMXChannels>0,0,0,1</DMXChannels>
+    </SpectrumBar>
+    <SpectrumBar Name="#5 (2500Hz - 3125Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="4">
+     <DMXChannels>13,0,13,2</DMXChannels>
+    </SpectrumBar>
+    <SpectrumBar Name="#6 (3125Hz - 3750Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="5">
+     <DMXChannels>11,0,11,1,11,5,11,6,11,8,11,9,11,12,11,13,11,16,11,17,11,20,11,21</DMXChannels>
+    </SpectrumBar>
+    <SpectrumBar Name="#7 (3750Hz - 4375Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="6">
+     <DMXChannels>108,0,108,1,108,2,108,3,108,5,108,6,108,7,108,8,108,10,108,11,108,12,108,13,108,15,108,16,108,17,108,18,108,20,108,21,108,22,108,23,108,25,108,26,108,27,108,28,108,30,108,31,108,32,108,33,108,35,108,36,108,37,108,38,108,40,108,41,108,42,108,43,108,45,108,46,108,47,108,48,108,50,108,51,108,52,108,53,108,55,108,56,108,57,108,58,108,60,108,61,108,62,108,63,108,65,108,66,108,67,108,68,108,70,108,71,108,72,108,73,108,75,108,76,108,77,108,78,108,80,108,81,108,82,108,83,108,85,108,86,108,87,108,88</DMXChannels>
+    </SpectrumBar>
+    <SpectrumBar Name="#8 (4375Hz - 5000Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="7">
+     <DMXChannels>3,0,3,1,3,2</DMXChannels>
     </SpectrumBar>
    </AudioTriggers>
   </Frame>
