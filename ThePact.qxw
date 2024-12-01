@@ -10,38 +10,40 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Output" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN429695)" Line="0">
+     <PluginParameters UniverseChannels="196"/>
+    </Output>
    </Universe>
    <Universe Name="Input" ID="1">
-    <Input Plugin="MIDI" UID="None" Line="1" Profile="Nektar Pacer"/>
+    <Input Plugin="MIDI" UID="PACER MIDI1" Line="1" Profile="Nektar Pacer"/>
    </Universe>
    <Universe Name="MicStand (out)" ID="2">
-    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
-     <PluginParameters outputIP="192.168.0.102" outputUni="0"/>
+    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+     <PluginParameters outputIP="192.168.0.110" outputUni="0"/>
     </Output>
    </Universe>
    <Universe Name="Säule1 (out)" ID="3">
-    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
      <PluginParameters outputIP="192.168.0.111"/>
     </Output>
    </Universe>
    <Universe Name="Säule2 (out)" ID="4">
-    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
      <PluginParameters outputIP="192.168.0.110"/>
     </Output>
    </Universe>
    <Universe Name="Säule3 (out)" ID="5">
-    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
      <PluginParameters outputIP="192.168.0.109"/>
     </Output>
    </Universe>
    <Universe Name="Säule4 (out)" ID="6">
-    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
      <PluginParameters outputIP="192.168.0.108"/>
     </Output>
    </Universe>
    <Universe Name="Backlights" ID="7">
-    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
      <PluginParameters outputIP="192.168.0.107"/>
     </Output>
    </Universe>
@@ -2222,7 +2224,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -2426,8 +2428,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Green"/>
+   <Property Name="blockSize" Value="2"/>
    <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
@@ -2460,7 +2462,7 @@
     <StartOffset>270</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -2519,7 +2521,7 @@
     <StartOffset>280</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -2540,7 +2542,7 @@
    </Axis>
   </Function>
   <Function ID="55" Type="RGBMatrix" Name="Backlights blinking">
-   <Speed FadeIn="0" FadeOut="0" Duration="633"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="663"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -2594,7 +2596,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -2615,7 +2617,7 @@
    </Axis>
   </Function>
   <Function ID="59" Type="RGBMatrix" Name="Blinking rainbow">
-   <Speed FadeIn="0" FadeOut="0" Duration="633"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="663"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Waves</Algorithm>
@@ -2709,7 +2711,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -2738,13 +2740,13 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
    <Property Name="presetSize" Value="2"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="color2Index" Value="Dim Orange"/>
    <Property Name="color5Index" Value="Orange"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="presetCollision" Value="No"/>
+   <Property Name="presetNumber" Value="5"/>
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="color3Index" Value="Green"/>
+   <Property Name="presetCollision" Value="No"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -2803,7 +2805,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -3930,7 +3932,7 @@
     <StartOffset>270</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -4071,7 +4073,7 @@
     <StartOffset>40</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="10128"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10608"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -4107,7 +4109,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -4143,7 +4145,7 @@
     <StartOffset>20</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="10128"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10608"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -5110,7 +5112,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,1,1,1,2,1</FixtureVal>
   </Function>
-  <Function ID="211" Type="Scene" Name="Matrices dim white" Path="Colors Matrices">
+  <Function ID="211" Type="Scene" Name="Matrices dim white">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,2,1,0,2,2</FixtureVal>
   </Function>
@@ -10478,28 +10480,30 @@
    <Step Number="2" FadeIn="0" Hold="8800" FadeOut="0" Note="4T Bass Solo (Thema 1)">227</Step>
    <Step Number="3" FadeIn="0" Hold="15500" FadeOut="0" Note="8T Thema 2">75</Step>
    <Step Number="4" FadeIn="0" Hold="7700" FadeOut="0" Note="4T Thema 1 tutti">80</Step>
-   <Step Number="5" FadeIn="0" Hold="1100" FadeOut="0" Note="&quot;Killing in the name of&quot;">228</Step>
+   <Step Number="5" FadeIn="0" Hold="1200" FadeOut="0" Note="&quot;Killing in the name of&quot;">228</Step>
    <Step Number="6" FadeIn="0" Hold="12000" FadeOut="0" Note="4T Strophe instr.">75</Step>
-   <Step Number="7" FadeIn="0" Hold="24000" FadeOut="0" Note="4T Strophe 1">75</Step>
+   <Step Number="7" FadeIn="0" Hold="23500" FadeOut="0" Note="8T Strophe 1">75</Step>
    <Step Number="8" FadeIn="0" Hold="12000" FadeOut="0" Note="4T Bridge">77</Step>
-   <Step Number="9" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">83</Step>
-   <Step Number="10" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">74</Step>
-   <Step Number="11" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">79</Step>
-   <Step Number="12" FadeIn="0" Hold="16" FadeOut="0" Note="8T Thema 1 tutti">80</Step>
-   <Step Number="13" FadeIn="0" Hold="12000" FadeOut="0" Note="4T Bridge">77</Step>
-   <Step Number="14" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">83</Step>
-   <Step Number="15" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">74</Step>
-   <Step Number="16" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">79</Step>
-   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0" Note="8T Solo Axel">226</Step>
-   <Step Number="18" FadeIn="0" Hold="16" FadeOut="0" Note="8T Treppe">80</Step>
-   <Step Number="19" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">83</Step>
-   <Step Number="20" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">74</Step>
-   <Step Number="21" FadeIn="0" Hold="10000" FadeOut="0" Note="4T Chorus">79</Step>
-   <Step Number="22" FadeIn="0" Hold="10000" FadeOut="0" Note="1T Wirbel">83</Step>
-   <Step Number="23" FadeIn="0" Hold="3000" FadeOut="0" Note="1T Thema 1">74</Step>
-   <Step Number="24" FadeIn="0" Hold="3000" FadeOut="0" Note="4T Chorus">79</Step>
-   <Step Number="25" FadeIn="0" Hold="3000" FadeOut="0" Note="Blackout">36</Step>
-   <Step Number="26" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="9" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus">83</Step>
+   <Step Number="10" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus">79</Step>
+   <Step Number="11" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus">74</Step>
+   <Step Number="12" FadeIn="0" Hold="22000" FadeOut="0" Note="8T Thema 1 tutti">80</Step>
+   <Step Number="13" FadeIn="0" Hold="22000" FadeOut="0" Note="8T Strophe 2">75</Step>
+   <Step Number="14" FadeIn="0" Hold="12000" FadeOut="0" Note="4T Bridge">77</Step>
+   <Step Number="15" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus">83</Step>
+   <Step Number="16" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus">79</Step>
+   <Step Number="17" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus">74</Step>
+   <Step Number="18" FadeIn="0" Hold="22000" FadeOut="0" Note="8T Thema 1 tutti">80</Step>
+   <Step Number="19" FadeIn="0" Hold="22000" FadeOut="0" Note="8T Solo Axel">226</Step>
+   <Step Number="20" FadeIn="0" Hold="23000" FadeOut="0" Note="8T Treppe">80</Step>
+   <Step Number="21" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus direkt heftig">83</Step>
+   <Step Number="22" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus">79</Step>
+   <Step Number="23" FadeIn="0" Hold="10500" FadeOut="0" Note="4T Chorus Motherfucker">74</Step>
+   <Step Number="24" FadeIn="0" Hold="3000" FadeOut="0" Note="1T Wirbel">83</Step>
+   <Step Number="25" FadeIn="0" Hold="3000" FadeOut="0" Note="1T Thema 1">74</Step>
+   <Step Number="26" FadeIn="0" Hold="3000" FadeOut="0" Note="4T Chorus">79</Step>
+   <Step Number="27" FadeIn="0" Hold="3000" FadeOut="0" Note="Blackout">36</Step>
+   <Step Number="28" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
   </Function>
   <Function ID="255" Type="Script" Name="Fog on (Script)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -10555,7 +10559,7 @@
    <FixtureVal ID="5">3,117,7,255</FixtureVal>
   </Function>
   <Function ID="263" Type="Chaser" Name="TourSpots blinking" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="1266"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1326"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -10568,7 +10572,7 @@
    <FixtureVal ID="5">7,0</FixtureVal>
   </Function>
   <Function ID="265" Type="Chaser" Name="blinking PARs" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="633"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="663"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -11101,7 +11105,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="52"/>
+    <Multipage PagesNum="60" CurrentPage="27"/>
     <Shortcut Page="0" Name="All the small things">
      <Input Universe="1" Channel="399"/>
      <Key>Shift+%</Key>
@@ -12292,7 +12296,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Chaser>4294967295</Chaser>
+     <Chaser>252</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
       <Input Universe="1" Channel="1769645"/>
@@ -12323,7 +12327,7 @@
      <Input Universe="1" Channel="255"/>
     </Tap>
     <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
-    <Time>633</Time>
+    <Time>663</Time>
     <Function FadeIn="0" FadeOut="0" Duration="10">140</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">52</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">139</Function>
@@ -12366,9 +12370,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <SpectrumBar Name="#1 (0Hz - 625Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="0">
-     <DMXChannels>10,0</DMXChannels>
-    </SpectrumBar>
+    <SpectrumBar Name="#1 (0Hz - 625Hz)" Type="3" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="0"/>
     <SpectrumBar Name="#2 (625Hz - 1250Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="1">
      <DMXChannels>10,2</DMXChannels>
     </SpectrumBar>
